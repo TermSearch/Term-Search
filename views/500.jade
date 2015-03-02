@@ -1,0 +1,19 @@
+extends layout
+
+block title
+  title Serverfout!
+  
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li.active
+      | 500-pagina
+      
+block results
+  .panel.panel-default
+    .panel-heading
+      .panel-title
+        | Er is een probleem met de server!                     
+    .panel-body
+      p #{error}    

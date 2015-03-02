@@ -1,0 +1,35 @@
+extends layout
+
+block title
+  title Duits-Nederlandse vertalingen
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li.active
+      | Duits-Nederlands
+
+block results
+  .panel.panel-default
+    .panel-heading
+      .panel-title
+        | De eerste 1000 Duitse termen in de database                       
+    .panel-body
+      | In de terminologische databank van de EU (IATE) zijn de volgende Duitse termen 
+      | met een Nederlandse vertaling gevonden.
+      | Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
+      
+  - alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+  each letter in alphabet
+    - var loopArray
+    - loopArray = termArray.filter( function (term) { return term.termStr[0] === letter } )
+    if (loopArray.length > 0)
+      .panel.panel-default
+        .panel-heading
+          h1.panel-title
+              | #{letter}                        
+        .panel-body
+            ul
+              each term in loopArray
+                li: a(href='/duits-nederlands/'+term.termStr.split(' ').join('_') ) #{term.termStr}

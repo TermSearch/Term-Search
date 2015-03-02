@@ -1,0 +1,14 @@
+header {
+  margin: 18px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.logo {
+  width: 40px;
+}
+
+footer {
+  border-top: 1px dotted #ccc;
+  padding: 5px 0 0 18px;
+  font-size: 13px;
+}

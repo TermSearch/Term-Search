@@ -1,0 +1,27 @@
+extends layout
+
+block title
+  title Duits-Nederlandse vertaling van #{deStr}
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li
+      a(href="/duits-nederlands") Duits-Nederlands
+    li.active
+      | #{deStr}
+
+block results
+  each termEntry in termEntries
+    .panel.panel-default
+      .panel-heading
+        .panel-title
+          | #{termEntry.subjectFieldStr} (#{termEntry.subjectField})                      
+      .panel-body
+        each term in termEntry.langSet
+          p <b>#{term.lang.toUpperCase()}</b> #{term.termStr}                    
+      .panel-footer
+        | ID: #{termEntry.id}
+        if ( termEntry.note )
+          | . Opmerking: <i>#{termEntry.note}</i>

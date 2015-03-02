@@ -1,0 +1,44 @@
+extends layout
+
+block title
+  title Duitse terminologie op het gebied van #{sf} 
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li
+      a(href="/duits-nederlands") Duits-Nederlands
+    li
+      a(href="/duits-nederlands/vakgebied") Vakgebieden
+    li.active
+      | #{sf}
+
+block results
+  .panel.panel-default
+    .panel-heading
+      .panel-title
+        | #{sf}                         
+    .panel-body
+      if (termArray.length === 0)
+        | Voor het vakgebied <mark>#{sf}</mark> zijn voor de talencombinatie Duits-Nederlands
+        | geen termen gevonden.
+      else  
+        | In de terminologische databank van de EU (IATE) zijn voor het 
+        | vakgebied <mark>#{sf}</mark> de volgende Duitse termen met 
+        | een Nederlandse vertaling gevonden.
+        | Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
+      
+  - alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+  each letter in alphabet
+    - var loopArray
+    - loopArray = termArray.filter( function (term) { return term.termStr[0] === letter } )
+    if (loopArray.length > 0)
+      .panel.panel-default
+        .panel-heading
+          h1.panel-title
+              | #{letter}                        
+        .panel-body
+            ul
+              each term in loopArray
+                li: a(href='/duits-nederlands/'+term.termStr.split(' ').join('_') ) #{term.termStr}                

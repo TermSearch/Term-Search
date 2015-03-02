@@ -1,0 +1,35 @@
+extends layout
+
+block title
+  title Vakgebieden online woordenboek Duits-Nederlands
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li
+      a(href="/duits-nederlands") Duits-Nederlands
+    li.active
+      | Vakgebieden
+
+block results
+  .panel.panel-default
+    .panel-heading
+      .panel-title
+        | Vakgebieden in het woordenboek Duits-Nederlands                        
+    .panel-body
+      | De volgende lijst met (voorlopig nog Engelstalige) vakgebieden is afkomstig van de site van IATE. Een Nederlandse vertaling van deze vakgebieden volgt snel.
+  
+  - alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+  each letter in alphabet
+    .panel.panel-default
+      .panel-heading
+        h1.panel-title
+          | #{letter}                        
+      .panel-body
+          ul
+            - var loopArray
+            - loopArray = subjectFields.filter( function (str) { return str[0] === letter } )
+            each sf in loopArray
+              li: a(href='/duits-nederlands/vakgebied/'+sf.split(' ').join('_') ) #{sf}
+            
