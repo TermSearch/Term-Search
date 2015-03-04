@@ -37,7 +37,7 @@ function getSubjectFieldNr ( subjectFieldStr ) {
   return subjectFieldNr;
 }
 
-// Converts 123 345 to "Employment Policy, Education"
+// Converts "416005, 416008" to "Organisation of elections, Voting method"
 function getSubjectFieldStrs ( subjectFieldNrs ) {
   var strArr = [];
   var nrsArr = stringOfNumToArr ( subjectFieldNrs );

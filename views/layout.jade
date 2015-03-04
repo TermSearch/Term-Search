@@ -6,7 +6,10 @@ html(lang='nl')
     // Bootstrap -> Theme: bootswatch
     link(href='/stylesheets/bootstrap-bootswatch-lumen.min.css' rel='stylesheet')
     //- link(href='/stylesheets/bootstrap-theme.min.css' rel='stylesheet')
-
+    
+    if (showTests)
+      link(href='/vendor/mocha.css' rel='stylesheet')
+    
     // My stylesheet
     link(rel='stylesheet', href='/stylesheets/style.css')
 
@@ -44,17 +47,30 @@ html(lang='nl')
     //- Enable jQuery + bootstrap.js if needed
     
     // jQuery (necessary for Bootstrap's JavaScript plugins)  
-    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://code.jquery.com/jquery-2.0.2.min.js')
     
     // Include all compiled plugins (below), or include individual files as needed
-    //- script(src='/js/bootstrap.min.js')
+    //- script(src='/vendor/bootstrap.min.js')
     
     footer
       :markdown
         © 2015 [Van Gilst Übersetzungen](http://www.vangilst.de) | [Colofon](http://www.vangilst.de/nl/colofon) | Terminologie: IATE
       if (totalTime)
         | Reactietijd database: #{totalTime / 1000} sec.
-
+  
+  if (showTests)
+    div#mocha
+    script(src='/vendor/mocha.js')
+    script(src='/vendor/chai.js')
+    script.
+      mocha.ui('tdd');
+      var assert = chai.assert;
+    script(src='/qa/tests-global.js')
+    if (pageTestScript)
+      script(src=pageTestScript)
+    script.
+      mocha.run();
+  
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
