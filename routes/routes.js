@@ -12,7 +12,17 @@ module.exports = function(app) {
 
 	app.get('/api/', api.getTermEntries);
 
-	app.get('/duits-nederlands/vakgebied/', main.subjectField);
+	app.get('/duits-nederlands/vakgebied/', main.subjectFieldList);
+
+	app.get('/duits-nederlands/vakgebied/:vakgebied', main.subjectField);
+
+	// app.get('/duits-nederlands/vakgebied/:sf', function(req, res) {
+	// 	res.render('subjectfield', {
+	// 		sf: req.sf,
+	// 		termArray: req.termArray,
+	// 		totalTime: req.totalTime
+	// 	});
+	// });
 
 	app.get('/duits-nederlands/', main.dutchGerman);
 
@@ -62,15 +72,6 @@ module.exports = function(app) {
 	// });
 	//
 
-
-	//
-	// app.get('/duits-nederlands/:term', function(req, res) {
-	// 	res.render('term', {
-	// 		deStr: req.deStr,
-	// 		termEntries: req.termEntries,
-	// 		totalTime: req.totalTime
-	// 	});
-	// });
 	//
 	// app.get('/duits-nederlands/vakgebied/:sf', function(req, res) {
 	// 	res.render('subjectfield', {

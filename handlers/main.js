@@ -1,5 +1,5 @@
 var SubjectField = require('../models/subjectFieldModel'),
-	TermEntryModel = require('../models/termEntryModel'),
+	TermEntry = require('../models/termEntryModel'),
 	url = require('../lib/url');
 
 exports.home = function(req, res) {
@@ -9,21 +9,44 @@ exports.home = function(req, res) {
 	});
 };
 
-exports.subjectField = function(req, res) {
+exports.subjectFieldList = function(req, res) {
 	res.render('subjectfields', {
 		subjectFields: SubjectField.getAll(),
 		totalTime: 0
 	});
 };
 
-exports.dutchGerman = function (req, res) {
-	TermEntryModel.find()
+exports.subjectField = function(req, res, next){
+	var sfStr = url.decodeSlug(req.params.vakgebied);
+	var sfNr = SubjectField.getSubjectFieldNr(sfStr);
+	TermEntry.find({
+			subjectField: {
+				$all: [sfNr]
+			}
+		})
 		.limit(1000)
 		.exec()
-		.then(TermEntryModel.getGermanTranslations)
+		.then(TermEntry.getGermanTranslations)
 		.then(url.encodeSlugArr)
 		.then(function(termArray) {
-			// res.send(termArray);
+			res.render('subjectfield', {
+				sf: sfStr,
+				termArray: termArray
+			});
+		})
+		.then(null, function(err) {
+			res.send(500, 'Er is iets mis met de database.');
+			res.send(err);
+		});
+};
+
+exports.dutchGerman = function(req, res) {
+	TermEntry.find()
+		.limit(1000)
+		.exec()
+		.then(TermEntry.getGermanTranslations)
+		.then(url.encodeSlugArr)
+		.then(function(termArray) {
 			res.render('dutchgerman', {
 				termArray: termArray
 			});
@@ -34,12 +57,11 @@ exports.dutchGerman = function (req, res) {
 		});
 };
 
-exports.dutchGermanTerm = function (req, res, next) {
-
+exports.dutchGermanTerm = function(req, res, next) {
 	// convert url slug to term string format
 	// i.e. replace underscores with space etc.
 	var termStr = url.decodeSlug(req.params.term);
-	TermEntryModel.find({
+	TermEntry.find({
 			'langSet': {
 				$elemMatch: {
 					lang: 'de',

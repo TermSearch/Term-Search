@@ -1,6 +1,3 @@
-/*
- * Module dependencies
- */
 var express = require('express'),
 	morgan = require('morgan'),
 	mongoose = require('mongoose'),
@@ -11,7 +8,7 @@ var app = express();
 
 app.set('port', process.env.PORT || 3000);
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/termworld');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(callback) {
@@ -22,15 +19,15 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 // Attempts to speed things up
-app.set('view cache', true); // caching, turn off in development,
-														// automatically turned on in production?
+app.set('view cache', true); // caching, turn off in development, turned on in production?
 app.use(compression());
 app.use(minify());
+app.locals.pretty = false; // Disable this when in production!!
+
 
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
 
-app.locals.pretty = false; // Disable this when in production!!
 
 require('./routes/routes.js')(app);
 

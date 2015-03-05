@@ -37,23 +37,11 @@ function getSubjectFieldNr ( subjectFieldStr ) {
   return subjectFieldNr;
 }
 
-// Converts "416005, 416008" to "Organisation of elections, Voting method"
-function getSubjectFieldStrs ( subjectFieldNrs ) {
+// Converts [416005, 416008] to "Organisation of elections, Voting method"
+function getSubjectFieldStrs ( nrsArr ) {
   var strArr = [];
-  var nrsArr = stringOfNumToArr ( subjectFieldNrs );
   nrsArr.forEach ( function ( nr ) {
     strArr.push( getSubjectFieldStr( nr ) );
   });
   return strArr.join(', '); // returns a comma seperated string
-}
-
-// Private functions
-
-// Converts 123, 345 to [123, 345]
-function stringOfNumToArr ( subjectFieldNrs ) {
-  var arr = subjectFieldNrs.split(", ");
-  arr.forEach ( function ( num, index, array ) {
-    arr[index] = +arr[index];
-  });
-  return arr;
 }
