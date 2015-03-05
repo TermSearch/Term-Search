@@ -12,7 +12,7 @@ suite('Cross-Page Tests', function() {
 		function(done) {
 			var link = 'http://localhost:3000/';
 			browser.visit(link, function() {
-				// assert(browser.field('referrer').value === referrer);
+				browser.assert.status(200);
 				done();
 			});
 		});
@@ -22,7 +22,7 @@ suite('Cross-Page Tests', function() {
 		function(done) {
 			var link = 'http://localhost:3000/duits-nederlands/vakgebied/';
 			browser.visit(link, function() {
-				// assert(browser.field('referrer').value === referrer);
+				browser.assert.status(200);
 				done();
 			});
 		});
@@ -31,7 +31,7 @@ suite('Cross-Page Tests', function() {
 		function(done) {
 			var link = 'http://localhost:3000/duits-nederlands/lebensmittelecht';
 			browser.visit(link, function() {
-				// assert(browser.field('referrer').value === referrer);
+				browser.assert.status(200);
 				done();
 			});
 		});
@@ -40,17 +40,26 @@ suite('Cross-Page Tests', function() {
 		function(done) {
 			var link = 'http://localhost:3000/duits-nederlands/';
 			browser.visit(link, function() {
-				// assert(browser.field('referrer').value === referrer);
+				browser.assert.status(200);
 				done();
 			});
 		});
 
 
-	test('requesting the page duits-nederlands/vakgebied/Common_commercial_policy',
+	// test('requesting the page duits-nederlands/vakgebied/Common_commercial_policy',
+	// 	function(done) {
+	// 		var link = 'http://localhost:3000/duits-nederlands/vakgebied/Common_commercial_policy';
+	// 		browser.visit(link, function() {
+	// 			browser.assert.status(200);
+	// 			done();
+	// 		});
+	// 	});
+
+	test('api: requesting http://localhost:3000/api?termstr=koen',
 		function(done) {
-			var link = 'http://localhost:3000/duits-nederlands/vakgebied/Common_commercial_policy';
+			var link = 'http://localhost:3000/api?termstr=koen';
 			browser.visit(link, function() {
-				// assert(browser.field('referrer').value === referrer);
+				browser.assert.status(200);
 				done();
 			});
 		});

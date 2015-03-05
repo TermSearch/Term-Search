@@ -3,7 +3,9 @@
  */
 var express = require('express'),
 	morgan = require('morgan'),
-	mongoose = require('mongoose');
+	mongoose = require('mongoose'),
+	compression = require('compression'),
+	minify = require('express-minify');
 
 var app = express();
 
@@ -18,12 +20,19 @@ db.once('open', function(callback) {
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
+
+// Attempts to speed things up
+app.set('view cache', true); // caching, turn off in development,
+														// automatically turned on in production?
+app.use(compression());
+app.use(minify());
+
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
 
-app.locals.pretty = true; // Disable this when in production!!
+app.locals.pretty = false; // Disable this when in production!!
 
-require('./routes.js')(app);
+require('./routes/routes.js')(app);
 
 app.listen(app.get('port'), function() {
 	console.log('Express started on http://localhost:' +

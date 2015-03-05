@@ -16,6 +16,7 @@ module.exports = function(grunt) {
 				src: 'qa/tests-*.js',
 				options: {
 					ui: 'tdd',
+          growl: true,
           timeout: 4000
 				},
 			}
@@ -35,6 +36,6 @@ module.exports = function(grunt) {
 
 
 	// register tasks
-	grunt.registerTask('default', ['cafemocha', 'jshint', 'exec']);
+	grunt.registerTask('default', ['cafemocha', 'jshint']);
 
 };
