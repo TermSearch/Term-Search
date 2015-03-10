@@ -17,7 +17,7 @@ block results
     .panel.panel-default
       .panel-heading
         .panel-title
-          | (#{termEntry.subjectField})                      
+          | #{termEntry.subjectField}                     
       .panel-body
         each term in termEntry.langSet
           p <b>#{term.lang.toUpperCase()}</b> #{term.termStr}                    

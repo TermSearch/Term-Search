@@ -3,16 +3,29 @@ var SubjectField = require('../models/subjectFieldModel'),
 	url = require('../lib/url');
 
 exports.home = function(req, res) {
-	res.render('index', {
-		totalTime: 0,
-		pageTestScript: '/qa/tests-home.js'
+	TermEntry.count({
+			'langSet': {
+				$elemMatch: {
+					lang: 'nl'
+				}
+			}
+		})
+	.exec()
+	.then(function(totalEntries){
+		res.render('index', {
+			totalEntries: (totalEntries / 1000).toPrecision(3),
+			pageTestScript: '/qa/tests-home.js'
+		});
+	})
+	.then(null, function(err) {
+		res.send(500, 'Er is iets mis met de database.');
+		res.send(err);
 	});
 };
 
 exports.subjectFieldList = function(req, res) {
-	res.render('subjectfields', {
-		subjectFields: SubjectField.getAll(),
-		totalTime: 0
+	res.render('allsubjectfields', {
+		subjectFields: SubjectField.getAll()
 	});
 };
 
@@ -81,6 +94,7 @@ exports.dutchGermanTerm = function(req, res, next) {
 				});
 
 				res.render('dutchgermanterm', {
+					deStr: termStr,
 					termEntries: termEntries
 				});
 

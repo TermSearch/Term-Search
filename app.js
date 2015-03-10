@@ -8,7 +8,7 @@ var app = express();
 
 app.set('port', process.env.PORT || 3000);
 
-mongoose.connect('mongodb://localhost/termworld');
+mongoose.connect('mongodb://localhost/termworld-2015');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(callback) {
@@ -24,10 +24,8 @@ app.use(compression());
 app.use(minify());
 app.locals.pretty = false; // Disable this when in production!!
 
-
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
-
 
 require('./routes/routes.js')(app);
 
