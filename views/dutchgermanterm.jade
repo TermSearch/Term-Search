@@ -17,7 +17,8 @@ block results
     .panel.panel-default
       .panel-heading
         .panel-title
-          | #{termEntry.subjectField}                     
+          each sf in termEntry.subjectFields
+            a(href='/duits-nederlands/'+sf.termUrl ) #{sf.termStr} |                  
       .panel-body
         each term in termEntry.langSet
           p <b>#{term.lang.toUpperCase()}</b> #{term.termStr}                    

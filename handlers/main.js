@@ -91,11 +91,15 @@ exports.dutchGermanTerm = function(req, res, next) {
 		.exec()
 		.then(function(termEntries) {
 			if (termEntries.length > 0) {
-				termEntries = termEntries.map(function(t) {
+				termEntries = termEntries.map(function(termEntry) {
+					// Convert subjectField numbers to array of strings
+					var subjectFieldStrs = SubjectField.getSubjectFieldStrs(termEntry.subjectField);
+					var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldStrs);
+					console.log(subjectFieldsWithURLs);
 					return {
-						id: t.id,
-						subjectField: SubjectField.getSubjectFieldStrs(t.subjectField),
-						langSet: t.langSet
+						id: termEntry.id,
+						subjectFields: subjectFieldsWithURLs,
+						langSet: termEntry.langSet
 					};
 				});
 

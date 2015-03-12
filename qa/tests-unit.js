@@ -8,7 +8,7 @@ var expect = require('chai').expect;
 //
 suite('Unit testing SubjectFieldModel', function() {
 	test('testing getSubjectFieldStrs(416005 416008)', function() {
-		expect(sf.getSubjectFieldStrs([416005, 416008]) === 'Organisation of elections, Voting method');
+		expect(sf.getSubjectFieldStrs([416005, 416008]) === ['Organisation of elections', 'Voting method']);
 	});
 });
 
@@ -22,7 +22,7 @@ suite('Unit testing url lib', function() {
 		expect(encodedArray.url === 'Arbeitsgruppe_"Nord%47Süd"');
 	});
 
-	test('decodeSlug on an encoded slug"', function() {
+	test('decodeSlug on an encoded slug', function() {
 		expect(url.decodeSlug('Arbeitsgruppe_"Nord%47Süd"') === 'Arbeitsgruppe "Nord/Süd"');
 	});
 });

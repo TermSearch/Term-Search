@@ -50,5 +50,5 @@ function getSubjectFieldStrs(nrsArr) {
 	nrsArr.forEach(function(nr) {
 		strArr.push(getSubjectFieldStr(nr));
 	});
-	return strArr.join(', '); // returns a comma seperated string
+	return strArr // returns an array of strings .join(', ');
 }
