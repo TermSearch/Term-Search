@@ -1,4 +1,4 @@
-var domainCodes = require('../../data/domaincodes.json');
+var domainCodes = require('../../json/domaincodes.json');
 
 // Public methods
 module.exports.getSubjectFieldStr = getSubjectFieldStr;
@@ -50,5 +50,5 @@ function getSubjectFieldStrs(nrsArr) {
 	nrsArr.forEach(function(nr) {
 		strArr.push(getSubjectFieldStr(nr));
 	});
-	return strArr // returns an array of strings .join(', ');
+	return strArr; // returns an array of strings
 }

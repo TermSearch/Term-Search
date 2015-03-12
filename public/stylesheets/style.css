@@ -1,7 +1,7 @@
-.pager{
-  /*background-color: green;*/
+.pager {
+  /*background-color: yellow;*/
   text-align: left;
-  margin: 0;
+  margin: 0px;  
 }
 
 header {
@@ -12,7 +12,6 @@ header {
 .logo {
   width: 40px;
 }
-
 footer {
   border-top: 1px dotted #ccc;
   padding: 5px 0 0 18px;

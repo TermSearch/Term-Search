@@ -18,7 +18,7 @@ var termEntrySchema = new Schema({
 			index: true,
 			text: true
 		}, // e.g. "vrijstelling"
-		termNote: String,
+		termNote: String, // eg. fullForm, 
 		relCode: Number
 	}]
 });

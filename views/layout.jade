@@ -26,11 +26,11 @@ html(lang='nl')
   body
     .container-fluid
       header.row
-        .col-xs-2.col-sm-1.col-md-1
+        .col-xs-2.col-sm-1.col-md-1.col-lg-1
           div#logo
             a(href="/")
               img(src='/img/logo-vangilst.png' class='logo' alt='Logo Van Gilst Übersetzungen')
-        .col-xs-10.col-sm-10.col-md-8         
+        .col-xs-10.col-sm-10.col-md-6.col-lg-5  
           .input-group
             input.form-control(type="search" disabled placeholder=deStr || "", style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap")
             span.input-group-btn
@@ -39,7 +39,7 @@ html(lang='nl')
       #results
         .row
           .col-sm-1.col-md-1
-          .col-xs-12.col-sm-10.col-md-8
+          .col-xs-12.col-sm-10.col-md-6.col-lg-5
             block breadcrumbs
 
             block results
@@ -52,7 +52,7 @@ html(lang='nl')
   
   // jQuery (necessary for Bootstrap's JavaScript plugins)  
   //- script(src='https://code.jquery.com/jquery-2.0.2.min.js')
-  script(src='/vendor/jquery.min.js')
+  //- script(src='/vendor/jquery.min.js')
   
   
   // Include all compiled plugins (below), or include individual files as needed

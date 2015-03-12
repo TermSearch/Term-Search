@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 		},
 		exec: {
 			linkchecker: {
-				cmd: 'linkchecker -r 1 http://localhost:3000'
+				cmd: 'linkchecker -r 2 http://localhost:3000'
 			}
 		}
 	});

@@ -8,7 +8,7 @@ var app = express();
 
 app.set('port', process.env.PORT || 3000);
 
-mongoose.connect('mongodb://localhost/termworld-2015');
+mongoose.connect('mongodb://localhost/termworld-2015-v2');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(callback) {

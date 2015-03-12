@@ -2,6 +2,7 @@ extends layout
 
 block title
   title Duits-Nederlandse vertaling van #{deStr}
+  meta(name='description', content='De Duits-Nederlandse vertaling van het Duitse begrip #{deStr} is "#{termEntries[0].nl[0].termStr}". Dit is gebaseerd op de terminologiedatabank van de Europese Unie (IATE).')
 
 block breadcrumbs
   ul.breadcrumb
@@ -17,18 +18,30 @@ block results
     .panel.panel-default
       .panel-heading
         .panel-title
-          ul.pager
-            each sf in termEntry.subjectFields
-              li
-                a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}                  
+          | #{termEntry.de[0].termStr}
       .panel-body
-        p Duitse begrip:
-        each term in termEntry.de
-          p.lead #{term.termStr}
-        p Nederlandse vertaling:  
-        each term in termEntry.nl
-          blockquote #{term.termStr}
-      .panel-footer
-        | ID: #{termEntry.id}
+        p De Duits-Nederlandse vertaling van het Duitse begrip "#{deStr}" is <mark>#{termEntry.nl[0].termStr}</mark>. Dit is gebaseerd op de terminologiedatabank van de Europese Unie (IATE) en geldt o.a. voor het vakgebied <i>#{termEntry.subjectFields[0].termStr}</i>.
+
+        p Andere mogelijke Nederlandse vertalingen zijn:
+        blockquote
+          each term in termEntry.nl
+            | #{term.termStr}<br/>
+        
+        if (termEntry.de.length > 1) 
+          p Duitse synoniemen van "#{deStr}" zijn o.a.: 
+            each term in termEntry.de
+              | <b>#{term.termStr}</b>, 
+            
+        | Identificatiecode in de IATE-database: #{termEntry.id}
         if ( termEntry.note )
           | . Opmerking: <i>#{termEntry.note}</i>
+              
+      .panel-footer
+        ul.pager
+          | Vakgebieden:
+          each sf in termEntry.subjectFields
+            if ( sf.termStr && sf.termStr != "Geen domein" )
+              li
+                a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}
+            else
+              | geen vermeldingen.
