@@ -90,27 +90,26 @@ exports.dutchGermanTerm = function(req, res, next) {
 		})
 		.exec()
 		.then(function(termEntries) {
-			if (termEntries.length > 0) {
-				termEntries = termEntries.map(function(termEntry) {
-					// Convert subjectField numbers to array of strings
-					var subjectFieldStrs = SubjectField.getSubjectFieldStrs(termEntry.subjectField);
-					var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldStrs);
-					console.log(subjectFieldsWithURLs);
-					return {
-						id: termEntry.id,
-						subjectFields: subjectFieldsWithURLs,
-						langSet: termEntry.langSet
-					};
-				});
+			termEntries = termEntries.map(function(termEntry) {
+				// Convert subjectField numbers to array of strings
+				var subjectFieldStrs = SubjectField.getSubjectFieldStrs(termEntry.subjectField);
+				// Generate URL for these strings
+				var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldStrs);
 
+				return {
+					id: termEntry.id,
+					subjectFields: subjectFieldsWithURLs,
+					de: termEntry.getTranslations('de'),
+					nl: termEntry.getTranslations('nl')
+				};
+			});
+
+			if (termEntries.length > 0) {
 				res.render('dutchgermanterm', {
 					deStr: termStr,
 					termEntries: termEntries
 				});
-
-			} else {
-				next();
-			}
+			} else next(); // not entries found, fallback to 404, not found
 
 		})
 		.then(null, function(err) {

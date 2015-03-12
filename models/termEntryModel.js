@@ -29,7 +29,6 @@ var termEntryModel = function() {
         });
     };
 
-
     return mongoose.model('TermEntry', termEntrySchema);
 
 };

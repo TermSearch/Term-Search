@@ -22,8 +22,12 @@ block results
               li
                 a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}                  
       .panel-body
-        each term in termEntry.langSet
-          p <b>#{term.lang.toUpperCase()}</b> #{term.termStr}                    
+        p Duitse begrip:
+        each term in termEntry.de
+          p.lead #{term.termStr}
+        p Nederlandse vertaling:  
+        each term in termEntry.nl
+          blockquote #{term.termStr}
       .panel-footer
         | ID: #{termEntry.id}
         if ( termEntry.note )
