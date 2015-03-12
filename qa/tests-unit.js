@@ -17,9 +17,9 @@ suite('Unit testing SubjectFieldModel', function() {
 //
 suite('Unit testing url lib', function() {
 	test('encodeSlugArr on an array of slugs', function() {
-    var encodedArray = url.encodeSlugArr(['Arbeitsgruppe "Nord/Süd"']);
+		var encodedArray = url.encodeSlugArr(['Arbeitsgruppe "Nord/Süd"']);
 		expect(encodedArray.termStr === 'Arbeitsgruppe "Nord/Süd"');
-    expect(encodedArray.url === 'Arbeitsgruppe_"Nord%47Süd"');
+		expect(encodedArray.url === 'Arbeitsgruppe_"Nord%47Süd"');
 	});
 
 	test('decodeSlug on an encoded slug"', function() {

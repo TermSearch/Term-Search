@@ -16,8 +16,8 @@ module.exports = function(grunt) {
 				src: 'qa/tests-*.js',
 				options: {
 					ui: 'tdd',
-          growl: true,
-          timeout: 4000
+					growl: true,
+					timeout: 4000
 				},
 			}
 		},
@@ -31,11 +31,11 @@ module.exports = function(grunt) {
 			linkchecker: {
 				cmd: 'linkchecker -r 1 http://localhost:3000'
 			}
-		},
+		}
 	});
-
 
 	// register tasks
 	grunt.registerTask('default', ['cafemocha', 'jshint']);
+	grunt.registerTask('links', ['exec']);
 
 };

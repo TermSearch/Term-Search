@@ -23,4 +23,15 @@ var termEntrySchema = new Schema({
 	}]
 });
 
+var domainCodeSchema = new Schema({
+	id: {
+		type: String, //should be number?
+		index: true
+	},
+	en: String,
+	nl: String,
+	de: String
+});
+
+module.exports.domainCodeSchema = domainCodeSchema;
 module.exports.termEntrySchema = termEntrySchema;
