@@ -17,8 +17,10 @@ block results
     .panel.panel-default
       .panel-heading
         .panel-title
-          each sf in termEntry.subjectFields
-            a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr} |                  
+          ul.pager
+            each sf in termEntry.subjectFields
+              li
+                a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}                  
       .panel-body
         each term in termEntry.langSet
           p <b>#{term.lang.toUpperCase()}</b> #{term.termStr}                    
