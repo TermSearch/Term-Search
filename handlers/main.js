@@ -35,7 +35,7 @@ exports.subjectFieldList = function(req, res) {
 	});
 };
 
-exports.subjectField = function(req, res, next){
+exports.subjectField = function(req, res, next) {
 	var sfStr = url.decodeSlug(req.params.vakgebied);
 	var sfNr = SubjectField.getSubjectFieldNr(sfStr);
 	TermEntry.find({
@@ -94,7 +94,7 @@ exports.dutchGermanTerm = function(req, res, next) {
 				termEntries = termEntries.map(function(t) {
 					return {
 						id: t.id,
-						subjectField: t.subjectField,
+						subjectField: SubjectField.getSubjectFieldStrs(t.subjectField),
 						langSet: t.langSet
 					};
 				});
