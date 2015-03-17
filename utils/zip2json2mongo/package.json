@@ -1,0 +1,16 @@
+{
+  "name": "zip2json2mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Koen van Gilst",
+  "license": "ISC",
+  "dependencies": {
+    "JSONStream": "^0.10.0",
+    "save-to-mongo": "0.0.2",
+    "unzip": "^0.1.11"
+  }
+}

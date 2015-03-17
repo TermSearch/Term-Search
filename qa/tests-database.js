@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 
 var assert = require('chai').assert;
 
-mongoose.connect('mongodb://localhost/termworld-2015');
+mongoose.connect('mongodb://localhost/termworld-2015-v3');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Connection error MongoDB:'));
 db.once('open', function(callback) {
