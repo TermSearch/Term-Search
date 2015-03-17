@@ -1,4 +1,4 @@
-var domainCodes = require('../../json/domaincodes.json');
+var domainCodes = require('../json/domaincodes.json');
 
 // Public methods
 module.exports.getSubjectFieldStr = getSubjectFieldStr;

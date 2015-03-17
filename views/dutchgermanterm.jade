@@ -20,7 +20,10 @@ block results
         .panel-title
           | #{termEntry.de[0].termStr}
       .panel-body
-        p De Duits-Nederlandse vertaling van het Duitse begrip "#{deStr}" is <mark>#{termEntry.nl[0].termStr}</mark>. Dit is gebaseerd op de terminologiedatabank van de Europese Unie (IATE) en geldt o.a. voor het vakgebied <i>#{termEntry.subjectFields[0].termStr}</i>.
+        p De Nederlandse vertaling van het Duitse begrip "#{deStr}" is <mark>#{termEntry.nl[0].termStr}</mark>. Dit is gebaseerd op de terminologiedatabank van de Europese Unie (IATE)
+          if (termEntry.subjectFields[0].termStr && termEntry.subjectFields[0].termStr != "Geen domein")
+            |  en geldt o.a. voor het vakgebied <i>#{termEntry.subjectFields[0].termStr}</i>
+          | .
 
         p Andere mogelijke Nederlandse vertalingen zijn:
         blockquote
@@ -38,7 +41,7 @@ block results
               
       .panel-footer
         ul.pager
-          | Vakgebieden:
+          | Vakgebieden: 
           each sf in termEntry.subjectFields
             if ( sf.termStr && sf.termStr != "Geen domein" )
               li

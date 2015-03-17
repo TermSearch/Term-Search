@@ -19,10 +19,10 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 // Attempts to speed things up
-app.set('view cache', false); // caching, turn off in development, turned on in production?
-// app.use(compression());
-// app.use(minify());
-app.locals.pretty = true; // Disable this when in production!!
+app.set('view cache', true); // caching, turn off in development, turned on in production?
+app.use(compression());
+app.use(minify());
+app.locals.pretty = false; // Disable this when in production!!
 
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));

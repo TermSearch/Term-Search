@@ -7,9 +7,7 @@ var termEntryModel = function() {
 
     termEntrySchema.index({ langSet: 'text' });
 
-    termEntrySchema.set('autoIndex', true); // set this to false in production
-
-
+    termEntrySchema.set('autoIndex', false); // set this to false in production
 
     // Returns an array of TERM OBJECTS for the specified language
     // e.g. getTranslations('de') returns all the german objects
