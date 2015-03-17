@@ -24,7 +24,7 @@ var saveToMongo = SaveToMongo({
   }
 });
 
-fs.createReadStream('../../json/IATE-NL.json.zip')
+fs.createReadStream(inputZipFile)
   .pipe(unzip.Parse())
   .on('entry', function (entry) {
     var fileName = entry.path;
