@@ -5,15 +5,13 @@ var termEntryModel = function() {
 
 	var termEntrySchema = Schemas.termEntrySchema;
 
-	termEntrySchema.index({
-		'langSet.termStr': 'text'
-	}, {
-		default_language: 'german'
-	});
-
-  mongoose.set('debug', true);
-
-	termEntrySchema.set('autoIndex', true); // set this to false in production
+	// If PORT varialbe is not set to production, assume development
+  if (process.env.PORT != "production") {
+		// activate debugging info for database
+		mongoose.set('debug', true);
+		// automatically check indexing status database at startup
+		termEntrySchema.set('autoIndex', true);
+	}
 
 	// Returns an array of TERM OBJECTS for the specified language
 	// e.g. getTranslations('de') returns all the german objects

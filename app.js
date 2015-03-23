@@ -1,8 +1,7 @@
 var express = require('express'),
 	morgan = require('morgan'),
 	mongoose = require('mongoose'),
-	compression = require('compression'),
-	minify = require('express-minify');
+	compression = require('compression');
 
 var app = express();
 
@@ -35,18 +34,30 @@ switch (app.get('env')) {
 		app.use(require('express-logger')({
 			path: __dirname + '/log/requests.log'
 		}));
-		// Minify Javascript files in public folder (works for css as well?)
-		// app.use(minify());
 		break;
 }
 
-
 require('./routes/routes.js')(app);
 
-app.listen(app.get('port'), function() {
-	console.log('Express started in ' +
-		app.get('env') + ' mode on http://localhost:' +
-		app.get('port') + '; press Ctrl-C to terminate.\n' +
-		'Status view cache: ' + app.get('view cache') +'.\n'
-	);
-});
+function startServer() {
+	http.createServer(app).listen(app.get('port'), function() {
+		console.log('Express started in ' + app.get('env') +
+			' mode on http://localhost:' + app.get('port') +
+			'; press Ctrl-C to terminate.');
+	});
+}
+if (require.main === module) {
+	// application run directly; start app server startServer();
+} else {
+	// application imported as a module via "require": export function // to create server
+	module.exports = startServer;
+}
+
+//
+// app.listen(app.get('port'), function() {
+// 	console.log('Express started in ' +
+// 		app.get('env') + ' mode on http://localhost:' +
+// 		app.get('port') + '; press Ctrl-C to terminate.\n' +
+// 		'Status view cache: ' + app.get('view cache') +'.\n'
+// 	);
+// });

@@ -18,20 +18,26 @@ var termEntrySchema = new Schema({
 			index: true,
 			text: true
 		}, // e.g. "vrijstelling"
-		termNote: String, // eg. fullForm, 
+		termNote: String, // eg. fullForm,
 		relCode: Number
 	}]
 });
 
-var domainCodeSchema = new Schema({
-	id: {
-		type: String, //should be number?
-		index: true
-	},
-	en: String,
-	nl: String,
-	de: String
+termEntrySchema.index({
+	'langSet.termStr': 'text'
+}, {
+	default_language: 'german'
 });
 
-module.exports.domainCodeSchema = domainCodeSchema;
+// var domainCodeSchema = new Schema({
+// 	id: {
+// 		type: String, //should be number?
+// 		index: true
+// 	},
+// 	en: String,
+// 	nl: String,
+// 	de: String
+// });
+
+// module.exports.domainCodeSchema = domainCodeSchema;
 module.exports.termEntrySchema = termEntrySchema;
