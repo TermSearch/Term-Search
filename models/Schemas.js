@@ -15,8 +15,7 @@ var termEntrySchema = new Schema({
 		}, // e.g. "nl"
 		termStr: {
 			type: String,
-			index: true,
-			text: true
+			index: true
 		}, // e.g. "vrijstelling"
 		termNote: String, // eg. fullForm,
 		relCode: Number
@@ -29,15 +28,4 @@ termEntrySchema.index({
 	default_language: 'german'
 });
 
-// var domainCodeSchema = new Schema({
-// 	id: {
-// 		type: String, //should be number?
-// 		index: true
-// 	},
-// 	en: String,
-// 	nl: String,
-// 	de: String
-// });
-
-// module.exports.domainCodeSchema = domainCodeSchema;
 module.exports.termEntrySchema = termEntrySchema;

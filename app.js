@@ -37,27 +37,28 @@ switch (app.get('env')) {
 		break;
 }
 
+app.use(function(req, res, next) {
+	var cluster = require('cluster');
+	if (cluster.isWorker) console.log('Worker %d received request',
+		cluster.worker.id);
+	next();
+});
+
 require('./routes/routes.js')(app);
 
 function startServer() {
-	http.createServer(app).listen(app.get('port'), function() {
+	app.listen(app.get('port'), function() {
 		console.log('Express started in ' + app.get('env') +
 			' mode on http://localhost:' + app.get('port') +
-			'; press Ctrl-C to terminate.');
+			'; press Ctrl-C to terminate. ' +
+			'Status view cache: ' + app.get('view cache') + '.\n'
+		);
 	});
 }
 if (require.main === module) {
 	// application run directly; start app server startServer();
+	startServer();
 } else {
 	// application imported as a module via "require": export function // to create server
 	module.exports = startServer;
 }
-
-//
-// app.listen(app.get('port'), function() {
-// 	console.log('Express started in ' +
-// 		app.get('env') + ' mode on http://localhost:' +
-// 		app.get('port') + '; press Ctrl-C to terminate.\n' +
-// 		'Status view cache: ' + app.get('view cache') +'.\n'
-// 	);
-// });
