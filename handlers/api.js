@@ -11,6 +11,7 @@ exports.getTermEntries = function(req, res) {
 			if (err) {
 				res.json(err);
 			} else {
+				res.setHeader('Content-Type', 'application/json');
 				res.json(termEntries.map(function(t) {
 					return {
 						id: t.id,
