@@ -4,7 +4,7 @@ var SubjectField = require('../models/subjectFieldModel'),
 
 exports.home = function(req, res) {
 
-	// // Too slow, disabled
+	// // Too slow, disabled, move to api someday
 	// TermEntry.count({
 	// 		'langSet': {
 	// 			$elemMatch: {
@@ -24,9 +24,7 @@ exports.home = function(req, res) {
 	// 	res.send(err);
 	// });
 
-	res.render('index', {
-		pageTestScript: '/qa/tests-home.js'
-	});
+	res.render('index');
 };
 
 exports.subjectFieldList = function(req, res) {

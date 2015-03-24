@@ -4,7 +4,7 @@ var main = require('../handlers/main'),
 module.exports = function(app) {
 
 	app.use(function(req, res, next) {
-		res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1';
+		res.locals.production = app.get('env') === 'production';
     next();
 	});
 

@@ -8,7 +8,7 @@ var termEntryModel = function() {
 	// If PORT varialbe is not set to production, assume development
   if (process.env.PORT != "production") {
 		// activate debugging info for database
-		mongoose.set('debug', true);
+		// mongoose.set('debug', true);
 		// automatically check indexing status database at startup
 		termEntrySchema.set('autoIndex', true);
 	}

@@ -12,20 +12,6 @@ block results
       | Gebaseerd op de officiële terminologielijst van de Europese Commissie (IATE).
       | De zoekfunctie is op dit moment nog niet online, maar daar wordt hard aan gewerkt.
       | In de tussentijd kunt u hier alvast een kijkje nemen:
-      
-      script.
-        fetch("/api?termstr=Anlage").then(function(res) {
-          
-          console.log(res.headers.get('Content-Type'))
-          console.log(res.headers.get('Date'))
-          console.log(res.status)
-          console.log(res.statusText)
-          return res.json()
-        }).then(function(json) {
-          console.log('parsed json', json[0].id)
-        }).catch(function(ex) {
-          console.log('parsing failed', ex)
-        })
         
       p
       p Voorbeelden van vakgebieden
