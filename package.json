@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/vnglst/term.world/issues"
   },
-  "homepage": "https://github.com/vnglst/term.world",
+  "homepage": "https://terms.vangilst.eu",
   "dependencies": {
     "compression": "^1.4.1",
     "express": "^4.12.3",
@@ -33,7 +33,6 @@
     "grunt-exec": "^0.4.6",
     "jquery": "^2.1.3",
     "loadtest": "^1.2.9",
-    "mocha": "^2.1.0",
-    "zombie": "^2.5.1"
+    "mocha": "^2.1.0"
   }
 }
