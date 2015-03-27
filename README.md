@@ -2,6 +2,8 @@
 
 # Roadmap
 
+Needs updating
+
 ## PHASE 1a
 Generate multipage website from short terminology list in JSON format.
 
