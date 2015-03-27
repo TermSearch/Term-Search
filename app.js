@@ -1,5 +1,3 @@
-require('pmx').init();
-
 var express = require('express'),
 	morgan = require('morgan'),
 	mongoose = require('mongoose'),

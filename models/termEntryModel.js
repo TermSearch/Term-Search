@@ -9,6 +9,7 @@ var termEntryModel = function() {
   if (process.env.PORT != "production") {
 		// activate debugging info for database
 		// mongoose.set('debug', true);
+
 		// automatically check indexing status database at startup
 		termEntrySchema.set('autoIndex', true);
 	}
