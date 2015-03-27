@@ -1,5 +1,9 @@
 # TERM.LAND
 
+# Start server
+
+NODE_ENV=production PORT=80 pm2 start /opt/term.world/server.js
+
 # Roadmap
 
 Needs updating
