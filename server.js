@@ -1,3 +1,5 @@
+require('pmx').init();
+
 var cluster = require('cluster');
 
 function startWorker() {
