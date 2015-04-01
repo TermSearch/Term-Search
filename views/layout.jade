@@ -1,11 +1,10 @@
 doctype
-html(lang='nl')
+html(lang='nl' ng-app)
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     //- Bootstrap -> Theme: bootswatch
     link(href='/stylesheets/bootstrap-bootswatch.min.css' rel='stylesheet')
-    //- link(href='/stylesheets/bootstrap-theme.min.css' rel='stylesheet')
     
     //- My stylesheet
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -29,7 +28,7 @@ html(lang='nl')
               img(src='/img/logo-vangilst.png' class='logo' alt='Logo Van Gilst Übersetzungen')
         .col-xs-10.col-sm-10.col-md-6.col-lg-5  
           .input-group
-            input.form-control(type="search" disabled placeholder=deStr || "", style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap")
+            input.form-control(type="search" ng-model="keyWord" placeholder=deStr || "", style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap")
             span.input-group-btn
               button.btn.btn-primary(type="button")
                 span.glyphicon.glyphicon-search(aria-hidden="true")
@@ -38,8 +37,8 @@ html(lang='nl')
           .col-sm-1.col-md-1
           .col-xs-12.col-sm-10.col-md-6.col-lg-5
             block breadcrumbs
-
             block results
+            p1 You searched for: {{keyWord}}
 
     footer
       :markdown
@@ -54,6 +53,8 @@ html(lang='nl')
   
   //- Include all compiled plugins (below), or include individual files as needed
   //- script(src='/vendor/bootstrap.min.js')
+  
+  script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js')
   
   //- activate analytics in production
   if (production)
