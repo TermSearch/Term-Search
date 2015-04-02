@@ -5,6 +5,7 @@ module.exports = function(app) {
 
 	app.use(function(req, res, next) {
 		res.locals.production = app.get('env') === 'production';
+		res.locals.development = app.get('env') === 'development';
     next();
 	});
 

@@ -3,27 +3,6 @@ var SubjectField = require('../models/subjectFieldModel'),
 	url = require('../lib/url');
 
 exports.home = function(req, res) {
-
-	// // Too slow, disabled, move to api someday
-	// TermEntry.count({
-	// 		'langSet': {
-	// 			$elemMatch: {
-	// 				lang: 'nl'
-	// 			}
-	// 		}
-	// 	})
-	// .exec()
-	// .then(function(totalEntries){
-	// 	res.render('index', {
-	// 		totalEntries: (totalEntries / 1000).toPrecision(3),
-	// 		pageTestScript: '/qa/tests-home.js'
-	// 	});
-	// })
-	// .then(null, function(err) {
-	// 	res.send(500, 'Er is iets mis met de database.');
-	// 	res.send(err);
-	// });
-
 	res.render('index');
 };
 
