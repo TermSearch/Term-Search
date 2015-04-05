@@ -13,6 +13,8 @@ module.exports = function(app) {
 
 	app.get('/api/', api.getTermEntries);
 
+	app.get('/colofon', main.colofon);
+
 	app.get('/duits-nederlands/vakgebied/', main.subjectFieldList);
 
 	app.get('/duits-nederlands/vakgebied/:vakgebied', main.subjectField);

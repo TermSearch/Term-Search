@@ -6,6 +6,10 @@ exports.home = function(req, res) {
 	res.render('index');
 };
 
+exports.colofon = function(req, res) {
+	res.render('colofon');
+};
+
 exports.subjectFieldList = function(req, res) {
 	res.render('allsubjectfields', {
 		subjectFields: SubjectField.getAll()
