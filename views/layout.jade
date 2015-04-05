@@ -33,6 +33,7 @@ html(lang='nl' ng-app='searchApp')
         .col-xs-10.col-sm-10.col-md-6.col-lg-5  
           .input-group
             input.form-control(type='search' ng-model='keyword' ng-change='searchResults.doSearch()' placeholder=deStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap')
+            // add disabled to disable search function
             span.input-group-btn
               button.btn.btn-primary(type="button")
                 span.glyphicon.glyphicon-search(aria-hidden="true")
