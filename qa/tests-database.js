@@ -1,10 +1,9 @@
 var TermEntry = require('../models/termEntryModel.js');
-// var DomainCode = require('../models/domainCodeModel.js');
 var mongoose = require('mongoose');
 
 var assert = require('chai').assert;
 
-mongoose.connect('mongodb://localhost/termworld-2015-v3');
+mongoose.connect('mongodb://localhost/termworld');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Connection error MongoDB:'));
 db.once('open', function(callback) {
