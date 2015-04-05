@@ -2,7 +2,9 @@
 
 # Start server
 
-NODE_ENV=production PORT=80 pm2 start /opt/term.world/server.js
+NODE_ENV=production PORT=80 node start /opt/term.world/server.js
+
+See ./utils/upstart-script for Upstart config file
 
 # Roadmap
 

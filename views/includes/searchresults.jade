@@ -1,0 +1,13 @@
+p Zoekresultaten voor: {{keyword}}
+.panel.panel-default(ng-repeat='result in searchResults.terms')
+  .panel-heading
+    .panel-title
+      ul.pager
+        li(ng-repeat='sf in result.subjectField')
+          a(href='#') {{sf}}
+  .panel-body
+    ul
+      li(ng-repeat='word in result.langSet')
+        | {{word.lang | uppercase}}: {{word.termStr}}
+  .panel-footer
+    a(href='#') Gedetailleerde informatie over {{result.id}}.

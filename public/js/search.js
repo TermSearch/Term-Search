@@ -34,9 +34,8 @@ angular.module('searchApp', [])
 		}];
 
 		searchResults.doSearch = function() {
-			$http.get('/api?termstr='+$scope.keyword).then(function(res) {
-				// console.log(res.data);
-				// console.log($scope.keyword);
+			var searchString = '\"' + $scope.keyword + '\"';
+			$http.get('/api?termstr='+searchString).then(function(res) {
 				searchResults.terms = res.data;
 			});
 		};

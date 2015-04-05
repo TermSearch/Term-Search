@@ -27,7 +27,7 @@ html(lang='nl' ng-app='searchApp')
     .container-fluid(ng-controller='SearchController as searchResults')
       header.row
         .col-xs-2.col-sm-1.col-md-1.col-lg-1
-          div#logo
+          #logo
             a(href="/")
               img(src='/img/logo-vangilst.png' class='logo' alt='Logo Van Gilst Übersetzungen')
         .col-xs-10.col-sm-10.col-md-6.col-lg-5  
@@ -40,16 +40,10 @@ html(lang='nl' ng-app='searchApp')
         .row
           .col-sm-1.col-md-1
           .col-xs-12.col-sm-10.col-md-6.col-lg-5
-            block breadcrumbs
-            div(ng-show='keyword')
-              p Zoekresultaten voor: {{keyword}}
-              ul
-                li(ng-repeat='result in searchResults.terms')
-                  | {{result.id}}
-                  ul
-                    li(ng-repeat='word in result.langSet')
-                      | {{word.lang | uppercase}}: {{word.termStr}}
-            div(ng-hide='keyword')
+            #search-results(ng-show='keyword')
+              include ./includes/searchresults.jade
+            #static-results(ng-hide='keyword')
+              block breadcrumbs
               block results
 
     footer
