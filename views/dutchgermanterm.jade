@@ -35,7 +35,8 @@ block results
             each term in termEntry.de
               | <b>#{term.termStr}</b>, 
             
-        | Identificatiecode in de IATE-database: #{termEntry.id}
+        | Identificatiecode in de IATE-database: 
+        a(href='http://iate.europa.eu/') #{termEntry.id}
         if ( termEntry.note )
           | . Opmerking: <i>#{termEntry.note}</i>
               

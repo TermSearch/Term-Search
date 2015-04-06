@@ -10,4 +10,6 @@ p Zoekresultaten voor: {{keyword}}
       li(ng-repeat='word in result.langSet')
         | {{word.lang | uppercase}}: {{word.termStr}}
   .panel-footer
-    a(href='#') Gedetailleerde informatie over {{result.id}}.
+    | Gedetailleerde informatie over 
+    a(href='http://iate.europa.eu/') {{result.id}}
+    | .
