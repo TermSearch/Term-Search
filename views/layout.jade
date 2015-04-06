@@ -50,8 +50,11 @@ html(lang='nl' ng-app='searchApp')
               block results
 
     footer
-      :markdown
-        © 2015 [Übersetzer Deutsch-Niederländisch](http://www.vangilst.de/de) | [Colofon](http://www.vangilst.de/nl/colofon) | Terminologie: IATE
+      .row
+        .col-sm-1.col-md-1
+        .col-xs-12.col-sm-10.col-md-6.col-lg-5
+          :markdown
+            © 2015 Koen van Gilst | [Übersetzer Deutsch-Niederländisch](http://www.vangilst.de/de) | [Colofon](/colofon) | Bron terminologie: [IATE](http://iate.europa.eu/) | 
         
   //- Enable jQuery + bootstrap.js if needed
   
