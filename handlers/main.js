@@ -61,6 +61,8 @@ exports.dutchGermanTerm = function(req, res, next) {
 	// convert url slug to term string format
 	// i.e. replace underscores with space etc.
 	var termStr = url.decodeSlug(req.params.term);
+
+	// should become an API call!!!!
 	TermEntry.find({
 			'langSet': {
 				$elemMatch: {

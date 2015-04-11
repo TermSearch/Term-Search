@@ -1,15 +1,25 @@
 p Zoekresultaten voor: {{keyword}}
 .panel.panel-default(ng-repeat='result in searchResults.terms')
-  .panel-heading
-    .panel-title
-      ul.pager
-        li(ng-repeat='sf in result.subjectField')
-          a(href='#') {{sf}}
   .panel-body
-    ul
-      li(ng-repeat='word in result.langSet')
-        | {{word.lang | uppercase}}: {{word.termStr}}
-  .panel-footer
-    | Gedetailleerde informatie over 
-    a(href='http://iate.europa.eu/') {{result.id}}
-    | .
+    dl.dl-horizontal
+      dt Domein(en)
+      dd
+        ul.list-unstyled
+          li(ng-repeat='sf in result.subjectFields')
+            a(href='{{sf.termUrl}}') {{sf.termStr}}
+      dt Duits
+      dd
+        ul.list-unstyled
+          li(ng-repeat='word in result.de | orderBy: "termStr.length"')
+            | {{word.termStr}}
+    
+      dt Nederlands
+      dd
+        ul.list-unstyled
+          li(ng-repeat='word in result.nl | orderBy: "termStr.length"')
+            | {{word.termStr}}
+      
+      dt ID-code
+      dd
+        //- a(href='/duits-nederlands/{{result.id}}')
+        | {{result.id}}

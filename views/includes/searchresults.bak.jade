@@ -1,0 +1,27 @@
+p Zoekresultaten voor: {{keyword}}  
+table.table.table-bordered(ng-repeat='result in searchResults.terms')
+  caption
+    | ID-code: 
+    a(href='/duits-nederlands/{{result.id}}') {{result.id}}
+
+  thead
+    tr
+      th Duits
+      th Nederlands
+      
+    
+  tfoot
+    tr
+      th(colspan = '2')
+        ul.pager
+          li(ng-repeat='sf in result.subjectFields') 
+            a(href='/duits-nederlands/vakgebied/{{sf.termUrl}}') {{sf.termStr}} 
+
+  tbody
+    tr
+      td
+        div(ng-repeat='word in result.de | orderBy: "termStr.length"')
+          | - {{word.termStr}} <br/>
+      td
+        div(ng-repeat='word in result.nl | orderBy: "termStr.length"')
+          | - {{word.termStr}} <br/>
