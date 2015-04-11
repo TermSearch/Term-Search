@@ -1,8 +1,3 @@
-.pager {
-  text-align: left;
-  margin: 0;
-}
-
 header {
   margin: 18px 0;
   padding: 0 0 20px 0;
@@ -11,8 +6,53 @@ header {
 .logo {
   width: 40px;
 }
-footer {
-  border-top: 1px dotted #ccc;
-  padding: 5px 0 0 18px;
+h1 {
+  color: rgb(68, 68, 68);
+  display: block;
+  font-family: 'open sans', arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+}
+.letter {
+  font-family: 'open sans', arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+}
+.panel-title {
+  color: rgb(68, 68, 68);
+  display: block;
+  font-family: 'open sans', arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23.4545440673828px;
+}
+h2, h3, h4, h5 {
+  color: rgb(68, 68, 68);
+  display: block;
+  font-family: 'open sans', arial, sans-serif;
   font-size: 13px;
+  font-weight: bold;
+  line-height: 18.2000007629395px;
+}
+p {
+  font-family: arial, sans-serif;
+  color: rgb(68, 68, 68);
+  font-size: 13px;
+  line-height: 18px;
+}
+.pager {
+  text-align: left;
+  margin: 0;
+}
+footer {
+  margin-top: 20px;
+  border-top: 1px dotted #ccc;
+  padding: 10px 0 0 0;
+  font-size: 13px;
+  /*background-color: yellow;*/
+}
+#results {
+  /*background-color: blue;*/
 }

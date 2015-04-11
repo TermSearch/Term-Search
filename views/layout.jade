@@ -3,8 +3,8 @@ html(lang='nl' ng-app='searchApp')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    //- Bootstrap -> Theme: bootswatch
-
+    
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900,400italic|Droid+Serif:400,700,400italic' media='screen' rel='stylesheet' type='text/css')
     
     if (development)
       link(href='/stylesheets/bootstrap.min.css' rel='stylesheet')
@@ -29,35 +29,33 @@ html(lang='nl' ng-app='searchApp')
     block title
       
   body
-    .container-fluid(ng-controller='SearchController as searchResults')
+    .container(ng-controller='SearchController as searchResults')
       header.row
         .col-xs-2.col-sm-1.col-md-1.col-lg-1
           #logo
             a(href="/")
               img(src='/img/logo-vangilst.png' class='logo' alt='Logo Van Gilst Übersetzungen')
-        .col-xs-10.col-sm-10.col-md-6.col-lg-5  
+        .col-xs-10.col-sm-9.col-md-7.col-lg-6  
           .input-group
             input.form-control(type='search' ng-model='keyword' ng-change='searchResults.doSearch()' placeholder=deStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap')
             // add disabled to disable search function
             span.input-group-btn
               button.btn.btn-primary(type="button")
                 span.glyphicon.glyphicon-search(aria-hidden="true")
-      #results
-        .row
-          .col-sm-1.col-md-1
-          .col-xs-12.col-sm-10.col-md-6.col-lg-5
-            #search-results(ng-show='keyword')
-              // if keyword supplied: show dynamic search results
-              include ./includes/searchresults.jade
-            #static-results(ng-hide='keyword')
-              // without keyword: show static content
-              block breadcrumbs
-              block results
-
-    footer
-      .row
+      #results.row
         .col-sm-1.col-md-1
-        .col-xs-12.col-sm-10.col-md-6.col-lg-5
+        .col-xs-12.col-sm-9.col-md-7.col-lg-6
+          #search-results(ng-show='keyword')
+            // if keyword supplied: show dynamic search results
+            include ./includes/searchresults.jade
+          #static-results(ng-hide='keyword')
+            // without keyword: show static content
+            block breadcrumbs
+            block results
+
+      footer.row
+        .col-sm-1.col-md-1
+        .col-xs-12.col-sm-9.col-md-7.col-lg-6
           :markdown
             © 2015 Koen van Gilst | [Colofon](/colofon) |
             [Übersetzer Deutsch-Niederländisch](http://www.vangilst.de/de) | [ Vakgebieden](/duits-nederlands/vakgebied/) 
