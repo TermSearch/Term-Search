@@ -12,7 +12,7 @@ exports.colofon = function(req, res) {
 };
 
 exports.subjectFieldList = function(req, res) {
-	res.render('allsubjectfields', {
+	res.render('all-subjectfields', {
 		subjectFields: SubjectField.getAll()
 	});
 };
@@ -48,7 +48,7 @@ exports.dutchGerman = function(req, res) {
 		.then(TermEntry.getGermanTranslations)
 		.then(url.encodeSlugArr)
 		.then(function(termArray) {
-			res.render('dutchgerman', {
+			res.render('dutch-german', {
 				termArray: termArray
 			});
 		})
@@ -74,7 +74,7 @@ exports.dutchGermanTerm = function(req, res, next) {
 		.then(adapter.convertTermEntries)
 		.then(function(termEntries) {
 			if (termEntries.length > 0) {
-				res.render('dutchgermanterm', {
+				res.render('dutch-german-term', {
 					deStr: termStr,
 					termEntries: termEntries
 				});
