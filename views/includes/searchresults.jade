@@ -11,19 +11,14 @@ p Zoekresultaten voor: {{keyword}}
         dt
           | {{word.lang | uppercase }}
         dd
-          ul.list-unstyled
-            li
-              | {{word.termStr}}
-    
-      
+          | {{word.termStr}}
+        
       div(ng-repeat='word in result.nl')
         dt
           | {{word.lang | uppercase }}
         dd
-          ul.list-unstyled
-            li
-              | {{word.termStr}}
-      
+          | {{word.termStr}}
+      br
       dt ID-code
       dd
         a(href='/duits-nederlands/id/{{result.id}}') {{result.id}}

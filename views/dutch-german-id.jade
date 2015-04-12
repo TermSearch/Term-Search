@@ -25,15 +25,11 @@ block results
                   a(href='/duits-nederlands/vakgebied/#{sf.termUrl}') #{sf.termStr}
           each word in termEntry.de
             dt #{word.lang.toUpperCase()}
-            dd
-              ul.list-unstyled
-                li #{word.termStr}
+            dd #{word.termStr}
           each word in termEntry.nl
             dt #{word.lang.toUpperCase()}
-            dd
-              ul.list-unstyled
-                li #{word.termStr}
-          dt ID-code
-          dd #{termEntry.id}
+            dd #{word.termStr}
+          br
           dt Bron
-          dd IATE
+          dd
+            a(href='http://iate.europa.eu/') IATE
