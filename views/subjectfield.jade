@@ -1,7 +1,8 @@
 extends layout
 
 block title
-  title Duitse terminologie op het gebied van #{sf} 
+  title Duitse terminologie op het gebied van #{sf}
+  meta(name='description', content='') 
 
 block breadcrumbs
   ul.breadcrumb
@@ -15,21 +16,14 @@ block breadcrumbs
       | #{sf}
 
 block results
-  .panel.panel-default
-    .panel-heading
-      .panel-title
-        | #{sf}                         
-    .panel-body
-      if (termArray.length === 0)
-        | Voor het vakgebied <mark>#{sf}</mark> zijn voor de talencombinatie Duits-Nederlands
-        | geen termen gevonden.
-      else  
-        | In de terminologische databank van de EU 
-        a(href='http://iate.europa.eu/') (IATE) 
-        | zijn voor het 
-        | vakgebied <mark>#{sf}</mark> de volgende Duitse termen met 
-        | een Nederlandse vertaling gevonden.
-        | Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
+  h1 #{sf}                         
+  p
+    if (termArray.length === 0)
+      | Voor het vakgebied <mark>#{sf}</mark> zijn voor de talencombinatie Duits-Nederlands geen termen gevonden.
+    else  
+      | In de terminologische databank van de EU 
+      a(href='http://iate.europa.eu/') (IATE) 
+      | zijn voor het vakgebied <mark>#{sf}</mark> de volgende Duitse termen met een Nederlandse vertaling gevonden. Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
       
   - alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
   each letter in alphabet

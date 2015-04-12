@@ -28,5 +28,10 @@ block results
             dd
               ul.list-unstyled
                 li #{word.termStr}
+          each word in termEntry.nl
+            dt #{word.lang.toUpperCase()}
+            dd
+              ul.list-unstyled
+                li #{word.termStr}
           dt ID-code
           dd #{termEntry.id}

@@ -2,13 +2,19 @@ extends layout
 
 block title
   title Colofon
+  meta(name='description', content='')
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li.active
+      | Colofon
 
 block results
-  //- .panel.panel-default
-  //-   .panel-heading
-  //-     .panel-title
+
   h1 Colofon                        
-    //- .panel-body
+
   h2 Deze website is ontwikkeld door: <br />
 
   p Koen van Gilst <br />
