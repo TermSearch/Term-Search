@@ -3,4816 +3,4128 @@
     "code": "0",
     "en": "NO SUBJECT DOMAIN",
     "nl": "Geen domein",
-    "de": "",
-    "": ""
+    "de": "Kein Fachgebiet"
   },
   {
     "code": "4",
     "en": "Politics",
     "nl": "Politiek",
-    "de": "POLITISCHES LEBEN",
-    "": ""
+    "de": "POLITISCHES LEBEN"
   },
   {
     "code": "8",
     "en": "INTERNATIONAL RELATIONS",
     "nl": "Internationale betrekkingen",
-    "de": "INTERNATIONALE BEZIEHUNGEN",
-    "": ""
+    "de": "INTERNATIONALE BEZIEHUNGEN"
   },
   {
     "code": "10",
     "en": "European Communities",
     "nl": "Europese Unie",
-    "de": "EUROPÄISCHE UNION",
-    "": ""
+    "de": "EUROPÄISCHE UNION"
   },
   {
     "code": "10",
     "en": "European Union",
     "nl": "Europese Unie",
-    "de": "EUROPÄISCHE UNION",
-    "": ""
+    "de": "EUROPÄISCHE UNION"
   },
   {
     "code": "12",
     "en": "LAW",
     "nl": "Recht",
-    "de": "RECHT",
-    "": ""
+    "de": "RECHT"
   },
   {
     "code": "16",
     "en": "Economy",
     "nl": "Economie",
-    "de": "WIRTSCHAFTSLEBEN",
-    "": ""
+    "de": "WIRTSCHAFTSLEBEN"
   },
   {
     "code": "20",
     "en": "TRADE",
     "nl": "Economie, verkeer en handelsverkeer",
-    "de": "WIRTSCHAFTS- UND HANDELSVERKEHR",
-    "": ""
+    "de": "WIRTSCHAFTS- UND HANDELSVERKEHR"
   },
   {
     "code": "24",
     "en": "FINANCE",
     "nl": "Financiën",
-    "de": "FINANZWESEN",
-    "": ""
+    "de": "FINANZWESEN"
   },
   {
     "code": "28",
     "en": "SOCIAL QUESTIONS",
     "nl": "Sociale vraagstukken",
-    "de": "SOZIALE FRAGEN",
-    "": ""
+    "de": "SOZIALE FRAGEN"
   },
   {
     "code": "32",
     "en": "EDUCATION AND COMMUNICATIONS",
     "nl": "Opvoeding, onderwijs en communicatie",
-    "de": "BILDUNG UND KOMMUNIKATION",
-    "": ""
+    "de": "BILDUNG UND KOMMUNIKATION"
   },
   {
     "code": "36",
     "en": "SCIENCE",
     "nl": "Wetenschappen",
-    "de": "WISSENSCHAFTEN",
-    "": ""
+    "de": "WISSENSCHAFTEN"
   },
   {
     "code": "40",
     "en": "BUSINESS AND COMPETITION",
     "nl": "Onderneming en concurrentie",
-    "de": "UNTERNEHMEN UND WETTBEWERB",
-    "": ""
+    "de": "UNTERNEHMEN UND WETTBEWERB"
   },
   {
     "code": "44",
     "en": "EMPLOYMENT AND WORKING CONDITIONS",
     "nl": "Werkgelegenheid en arbeid",
-    "de": "BESCHÄFTIGUNG UND ARBEIT",
-    "": ""
+    "de": "BESCHÄFTIGUNG UND ARBEIT"
   },
   {
     "code": "48",
     "en": "TRANSPORT",
     "nl": "Transport",
-    "de": "VERKEHR",
-    "": ""
+    "de": "VERKEHR"
   },
   {
     "code": "52",
     "en": "ENVIRONMENT",
     "nl": "Milieu",
-    "de": "UMWELT",
-    "": ""
+    "de": "UMWELT"
   },
   {
     "code": "56",
     "en": "AGRICULTURE,FORESTRY AND FISHERIES",
     "nl": "Landbouw, bosbouw en visserij",
-    "de": "LANDWIRTSCHAFT, FORSTWIRTSCHAFT UND FISCHEREIWESEN",
-    "": ""
+    "de": "LANDWIRTSCHAFT, FORSTWIRTSCHAFT UND FISCHEREIWESEN"
   },
   {
     "code": "60",
     "en": "Agri-foodstuffs",
     "nl": "Landbouwvoedingsmiddelen",
-    "de": "LANDWIRTSCHAFT UND ERNÄHRUNG",
-    "": ""
+    "de": "LANDWIRTSCHAFT UND ERNÄHRUNG"
   },
   {
     "code": "64",
     "en": "PRODUCTION, TECHNOLOGY AND RESEARCH",
     "nl": "Productie, technologie en onderzoek",
-    "de": "PRODUKTION, TECHNOLOGIE UND FORSCHUNG",
-    "": ""
+    "de": "PRODUKTION, TECHNOLOGIE UND FORSCHUNG"
   },
   {
     "code": "66",
     "en": "ENERGY",
     "nl": "Energie",
-    "de": "ENERGIE",
-    "": ""
+    "de": "ENERGIE"
   },
   {
     "code": "68",
     "en": "INDUSTRY",
     "nl": "Industrie",
-    "de": "INDUSTRIE",
-    "": ""
+    "de": "INDUSTRIE"
   },
   {
     "code": "72",
     "en": "GEOGRAPHY",
     "nl": "Geografie",
-    "de": "GEOGRAFIE",
-    "": ""
+    "de": "GEOGRAFIE"
   },
   {
     "code": "76",
     "en": "International organisation",
     "nl": "Internationale organisaties",
-    "de": "INTERNATIONALE ORGANISATION",
-    "": ""
+    "de": "INTERNATIONALE ORGANISATION"
   },
   {
     "code": "406",
     "en": "Political framework",
     "nl": "Politieke organisatie",
-    "de": "Politischer Rahmen",
-    "": ""
+    "de": "Politischer Rahmen"
   },
   {
     "code": "411",
     "en": "Political Parties",
     "nl": "Politieke partij",
-    "de": "Politische Partei",
-    "": ""
+    "de": "Politische Partei"
   },
   {
     "code": "416",
     "en": "Electoral procedure and voting",
     "nl": "Verkiezingsmethode en stemming",
-    "de": "Wahlverfahren",
-    "": ""
+    "de": "Wahlverfahren"
   },
   {
     "code": "421",
     "en": "Parliament",
     "nl": "Parlement",
-    "de": "Parlament",
-    "": ""
+    "de": "Parlament"
   },
   {
     "code": "426",
     "en": "Parliamentary proceedings",
     "nl": "Werkzaamheden van het parlement",
-    "de": "parlamentarische Arbeit",
-    "": ""
+    "de": "parlamentarische Arbeit"
   },
   {
     "code": "431",
     "en": "Politics and public safety",
     "nl": "Politiek en openbare veiligheid",
-    "de": "Politisches Leben und öffentliche Sicherheit",
-    "": ""
+    "de": "Politisches Leben und öffentliche Sicherheit"
   },
   {
     "code": "436",
     "en": "Executive power and public service",
     "nl": "Uitvoerende macht en overheidsadministratie",
-    "de": "exekutive Gewalt und öffentliche Verwaltung",
-    "": ""
+    "de": "exekutive Gewalt und öffentliche Verwaltung"
   },
   {
     "code": "806",
     "en": "International affairs",
     "nl": "Internationale politiek",
-    "de": "Internationale Politik",
-    "": ""
+    "de": "Internationale Politik"
   },
   {
     "code": "811",
     "en": "Cooperation policy",
     "nl": "Samenwerkingsbeleid",
-    "de": "Politik der Zusammenarbeit",
-    "": ""
+    "de": "Politik der Zusammenarbeit"
   },
   {
     "code": "816",
     "en": "International balance",
     "nl": "Internationaal evenwicht",
-    "de": "Internationales Gleichgewicht",
-    "": ""
+    "de": "Internationales Gleichgewicht"
   },
   {
     "code": "821",
     "en": "Defence",
     "nl": "Defensie",
-    "de": "Verteidigung",
-    "": ""
+    "de": "Verteidigung"
   },
   {
     "code": "1006",
     "en": "Community institutions and European civil service",
     "nl": "EU-instellingen en Europese overheid",
-    "de": "Institutionen der Europäischen Union und Europäischer Öffentlicher Dienst",
-    "": ""
+    "de": "Institutionen der Europäischen Union und Europäischer Öffentlicher Dienst"
   },
   {
     "code": "1006",
     "en": "EU institutions and European civil service",
     "nl": "EU-instellingen en Europese overheid",
-    "de": "Institutionen der Europäischen Union und Europäischer Öffentlicher Dienst",
-    "": ""
+    "de": "Institutionen der Europäischen Union und Europäischer Öffentlicher Dienst"
   },
   {
     "code": "1011",
     "en": "European Union law",
     "nl": "Recht van de Europese Unie",
-    "de": "Recht der Europäischen Union",
-    "": ""
+    "de": "Recht der Europäischen Union"
   },
   {
     "code": "1016",
     "en": "European construction",
     "nl": "Opbouw van Europa",
-    "de": "europäisches Einigungswerk",
-    "": ""
+    "de": "europäisches Einigungswerk"
   },
   {
     "code": "1021",
     "en": "Community finance",
     "nl": "Financiën van de EU",
-    "de": "Finanzen der Europäischen Union",
-    "": ""
+    "de": "Finanzen der Europäischen Union"
   },
   {
     "code": "1021",
     "en": "EU finance",
     "nl": "Financiën van de EU",
-    "de": "Finanzen der Europäischen Union",
-    "": ""
+    "de": "Finanzen der Europäischen Union"
   },
   {
     "code": "1206",
     "en": "Sources and branches of the law",
     "nl": "Rechtsbronnen en rechtstakken",
-    "de": "Rechtsquellen und Rechtsdisziplinen",
-    "": ""
+    "de": "Rechtsquellen und Rechtsdisziplinen"
   },
   {
     "code": "1211",
     "en": "Civil law",
     "nl": "Burgerlijk recht",
-    "de": "Bürgerliches Recht",
-    "": ""
+    "de": "Bürgerliches Recht"
   },
   {
     "code": "1216",
     "en": "Criminal law",
     "nl": "Strafrecht",
-    "de": "Strafrecht",
-    "": ""
+    "de": "Strafrecht"
   },
   {
     "code": "1221",
     "en": "Justice",
     "nl": "Rechtspraak",
-    "de": "Gerichtswesen",
-    "": ""
+    "de": "Gerichtswesen"
   },
   {
     "code": "1226",
     "en": "Organisation of the legal system",
     "nl": "Organisatie van de rechtspraak",
-    "de": "Gerichtsverfassung",
-    "": ""
+    "de": "Gerichtsverfassung"
   },
   {
     "code": "1231",
     "en": "International law",
     "nl": "Internationaal recht",
-    "de": "Internationales Recht",
-    "": ""
+    "de": "Internationales Recht"
   },
   {
     "code": "1236",
     "en": "Rights and freedoms",
     "nl": "Rechten en vrijheden",
-    "de": "Rechte und Freiheiten",
-    "": ""
+    "de": "Rechte und Freiheiten"
   },
   {
     "code": "1606",
     "en": "Economic policy",
     "nl": "Economisch beleid",
-    "de": "Wirtschaftspolitik",
-    "": ""
+    "de": "Wirtschaftspolitik"
   },
   {
     "code": "1611",
     "en": "Economic growth",
     "nl": "Economische groei",
-    "de": "Wirtschaftswachstum",
-    "": ""
+    "de": "Wirtschaftswachstum"
   },
   {
     "code": "1616",
     "en": "Regions and regional policy",
     "nl": "Regio en regionaal beleid",
-    "de": "Wirtschaftsraum und Regionalpolitik",
-    "": ""
+    "de": "Wirtschaftsraum und Regionalpolitik"
   },
   {
     "code": "1621",
     "en": "Economic structure",
     "nl": "Economische structuur",
-    "de": "Wirtschaftsstruktur",
-    "": ""
+    "de": "Wirtschaftsstruktur"
   },
   {
     "code": "1626",
     "en": "National accounts",
     "nl": "Nationale boekhouding",
-    "de": "Volkswirtschaftliche Gesamtrechnungen",
-    "": ""
+    "de": "Volkswirtschaftliche Gesamtrechnungen"
   },
   {
     "code": "1631",
     "en": "Economic analysis",
     "nl": "Economische analyse",
-    "de": "Wirtschaftsanalyse",
-    "": ""
+    "de": "Wirtschaftsanalyse"
   },
   {
     "code": "2006",
     "en": "Trade policy",
     "nl": "Handelsbeleid",
-    "de": "Handelspolitik",
-    "": ""
+    "de": "Handelspolitik"
   },
   {
     "code": "2011",
     "en": "Tariff policy",
     "nl": "Tariefbeleid",
-    "de": "Zolltarifpolitik",
-    "": ""
+    "de": "Zolltarifpolitik"
   },
   {
     "code": "2016",
     "en": "Trade",
     "nl": "Economisch verkeer",
-    "de": "Wirtschaftsverkehr",
-    "": ""
+    "de": "Wirtschaftsverkehr"
   },
   {
     "code": "2021",
     "en": "International trade",
     "nl": "Internationale handel",
-    "de": "Internationaler Handel",
-    "": ""
+    "de": "Internationaler Handel"
   },
   {
     "code": "2026",
     "en": "Consumption",
     "nl": "Consumptie",
-    "de": "Verbrauch",
-    "": ""
+    "de": "Verbrauch"
   },
   {
     "code": "2031",
     "en": "Marketing",
     "nl": "Commercialisering",
-    "de": "Vermarktung",
-    "": ""
+    "de": "Vermarktung"
   },
   {
     "code": "2036",
     "en": "Distributive trades",
     "nl": "Distributie",
-    "de": "Verteilung und Vertrieb",
-    "": ""
+    "de": "Verteilung und Vertrieb"
   },
   {
     "code": "2406",
     "en": "Monetary relations",
     "nl": "Monetaire betrekkingen",
-    "de": "Währungsbeziehungen",
-    "": ""
+    "de": "Währungsbeziehungen"
   },
   {
     "code": "2411",
     "en": "Monetary economics",
     "nl": "Monetaire economie",
-    "de": "Geldwirtschaft",
-    "": ""
+    "de": "Geldwirtschaft"
   },
   {
     "code": "2416",
     "en": "Financial institutions and credit",
     "nl": "Financiële instellingen en krediet",
-    "de": "Geld- und Kreditwesen",
-    "": ""
+    "de": "Geld- und Kreditwesen"
   },
   {
     "code": "2421",
     "en": "Free movement of capital",
     "nl": "Vrij verkeer van kapitaal",
-    "de": "Freier Kapitalverkehr",
-    "": ""
+    "de": "Freier Kapitalverkehr"
   },
   {
     "code": "2426",
     "en": "Financing and investment",
     "nl": "Investering en financiering",
-    "de": "Investition und Finanzierung",
-    "": ""
+    "de": "Investition und Finanzierung"
   },
   {
     "code": "2431",
     "en": "Insurance",
     "nl": "Verzekeringen",
-    "de": "Versicherungswesen",
-    "": ""
+    "de": "Versicherungswesen"
   },
   {
     "code": "2436",
     "en": "Public finance and budget policy",
     "nl": "Overheidsfinanciën en begrotingsbeleid",
-    "de": "Öffentliche Finanzen und Haushaltspolitik",
-    "": ""
+    "de": "Öffentliche Finanzen und Haushaltspolitik"
   },
   {
     "code": "2441",
     "en": "Budget",
     "nl": "Begroting",
-    "de": "Haushaltsplan",
-    "": ""
+    "de": "Haushaltsplan"
   },
   {
     "code": "2446",
     "en": "Taxation",
     "nl": "Belastingwezen",
-    "de": "Steuerwesen",
-    "": ""
+    "de": "Steuerwesen"
   },
   {
     "code": "2451",
     "en": "Prices",
     "nl": "Prijzen",
-    "de": "Preis",
-    "": ""
+    "de": "Preis"
   },
   {
     "code": "2806",
     "en": "Family",
     "nl": "Gezin",
-    "de": "Familie",
-    "": ""
+    "de": "Familie"
   },
   {
     "code": "2811",
     "en": "Migration",
     "nl": "Migraties",
-    "de": "Wanderungsbewegungen",
-    "": ""
+    "de": "Wanderungsbewegungen"
   },
   {
     "code": "2816",
     "en": "Demography and population",
     "nl": "Demografie en bevolking",
-    "de": "Demografie und Bevölkerung",
-    "": ""
+    "de": "Demografie und Bevölkerung"
   },
   {
     "code": "2821",
     "en": "Social framework",
     "nl": "Sociale omstandigheden",
-    "de": "Sozialer Rahmen",
-    "": ""
+    "de": "Sozialer Rahmen"
   },
   {
     "code": "2826",
     "en": "Social affairs",
     "nl": "Sociaal leven",
-    "de": "Leben in der Gesellschaft",
-    "": ""
+    "de": "Leben in der Gesellschaft"
   },
   {
     "code": "2831",
     "en": "Culture and religion",
     "nl": "Cultuur en godsdienst",
-    "de": "Kultur und Religion",
-    "": ""
+    "de": "Kultur und Religion"
   },
   {
     "code": "2836",
     "en": "Social protection",
     "nl": "Sociale bescherming",
-    "de": "Sozialer Schutz",
-    "": ""
+    "de": "Sozialer Schutz"
   },
   {
     "code": "2841",
     "en": "Health",
     "nl": "Gezondheid",
-    "de": "Gesundheit",
-    "": ""
+    "de": "Gesundheit"
   },
   {
     "code": "2846",
     "en": "Construction and town planning",
     "nl": "Stedenbouw",
-    "de": "Stadtplanung und Städtebau",
-    "": ""
+    "de": "Stadtplanung und Städtebau"
   },
   {
     "code": "3206",
     "en": "Education",
     "nl": "Opvoeding",
-    "de": "Bildung",
-    "": ""
+    "de": "Bildung"
   },
   {
     "code": "3211",
     "en": "Teaching",
     "nl": "Onderwijs",
-    "de": "Unterrichtswesen",
-    "": ""
+    "de": "Unterrichtswesen"
   },
   {
     "code": "3216",
     "en": "Organisation of teaching",
     "nl": "Organisatie van het onderwijs",
-    "de": "Organisation des Unterrichtswesens",
-    "": ""
+    "de": "Organisation des Unterrichtswesens"
   },
   {
     "code": "3221",
     "en": "Documentation",
     "nl": "Documentatie",
-    "de": "Dokumentation",
-    "": ""
+    "de": "Dokumentation"
   },
   {
     "code": "3226",
     "en": "Communications",
     "nl": "Communicatie",
-    "de": "Kommunikation",
-    "": ""
+    "de": "Kommunikation"
   },
   {
     "code": "3231",
     "en": "Information and information processing",
     "nl": "Informatie en informatieverwerking",
-    "de": "Information und Informationsverarbeitung",
-    "": ""
+    "de": "Information und Informationsverarbeitung"
   },
   {
     "code": "3236",
     "en": "Information technology and data processing",
     "nl": "Informatica en gegevensverwerking",
-    "de": "Informatik",
-    "": ""
+    "de": "Informatik"
   },
   {
     "code": "3606",
     "en": "Natural and applied sciences",
     "nl": "Natuur- en toegepaste wetenschappen",
-    "de": "Naturwissenschaften und angewandte Wissenschaften",
-    "": ""
+    "de": "Naturwissenschaften und angewandte Wissenschaften"
   },
   {
     "code": "3611",
     "en": "Humanities",
     "nl": "Menswetenschappen",
-    "de": "Geisteswissenschaften",
-    "": ""
+    "de": "Geisteswissenschaften"
   },
   {
     "code": "4006",
     "en": "Business organisation",
     "nl": "Bedrijfsorganisatie",
-    "de": "Unternehmensorganisation",
-    "": ""
+    "de": "Unternehmensorganisation"
   },
   {
     "code": "4011",
     "en": "Business classification",
     "nl": "Ondernemingen",
-    "de": "Unternehmensarten",
-    "": ""
+    "de": "Unternehmensarten"
   },
   {
     "code": "4016",
     "en": "Legal form of organisations",
     "nl": "Ondernemingsvorm",
-    "de": "Rechtsform einer Gesellschaft",
-    "": ""
+    "de": "Rechtsform einer Gesellschaft"
   },
   {
     "code": "4021",
     "en": "Management",
     "nl": "Administratief beheer",
-    "de": "Unternehmensverwaltung",
-    "": ""
+    "de": "Unternehmensverwaltung"
   },
   {
     "code": "4026",
     "en": "Accounting",
     "nl": "Financieel beheer",
-    "de": "Betriebliches Rechnungswesen",
-    "": ""
+    "de": "Betriebliches Rechnungswesen"
   },
   {
     "code": "4031",
     "en": "Competition",
     "nl": "Concurrentie",
-    "de": "Wettbewerb",
-    "": ""
+    "de": "Wettbewerb"
   },
   {
     "code": "4406",
     "en": "Employment",
     "nl": "Werkgelegenheid",
-    "de": "Beschäftigung",
-    "": ""
+    "de": "Beschäftigung"
   },
   {
     "code": "4411",
     "en": "Labour market",
     "nl": "Arbeidsmarkt",
-    "de": "Arbeitsmarkt",
-    "": ""
+    "de": "Arbeitsmarkt"
   },
   {
     "code": "4416",
     "en": "Organisation of work and working conditions",
     "nl": "Arbeidsomstandigheden en -organisatie",
-    "de": "Arbeitsbedingungen und Arbeitsorganisation",
-    "": ""
+    "de": "Arbeitsbedingungen und Arbeitsorganisation"
   },
   {
     "code": "4421",
     "en": "Personnel management and staff remuneration",
     "nl": "Personeelsbeheer en bezoldiging",
-    "de": "Verwaltung und Entlohnung des Personals",
-    "": ""
+    "de": "Verwaltung und Entlohnung des Personals"
   },
   {
     "code": "4426",
     "en": "Labour law and labour relations",
     "nl": "Arbeidsrecht en -betrekkingen",
-    "de": "Arbeitsrecht und Beziehungen zwischen den Sozialpartnern",
-    "": ""
+    "de": "Arbeitsrecht und Beziehungen zwischen den Sozialpartnern"
   },
   {
     "code": "4806",
     "en": "Transport policy",
     "nl": "Vervoerbeleid",
-    "de": "Verkehrspolitik",
-    "": ""
+    "de": "Verkehrspolitik"
   },
   {
     "code": "4811",
     "en": "Organisation of transport",
     "nl": "Organisatie van het vervoer",
-    "de": "Organisation des Verkehrs",
-    "": ""
+    "de": "Organisation des Verkehrs"
   },
   {
     "code": "4816",
     "en": "Land transport",
     "nl": "Vervoer over land",
-    "de": "Landverkehr",
-    "": ""
+    "de": "Landverkehr"
   },
   {
     "code": "4821",
     "en": "Maritime and inland waterway transport",
     "nl": "Vervoer over zee en over binnenwateren",
-    "de": "See- und Binnenschiffsverkehr",
-    "": ""
+    "de": "See- und Binnenschiffsverkehr"
   },
   {
     "code": "4826",
     "en": "Air and space transport",
     "nl": "Lucht- en ruimtevervoer",
-    "de": "Luftverkehr und Raumfahrt",
-    "": ""
+    "de": "Luftverkehr und Raumfahrt"
   },
   {
     "code": "5206",
     "en": "Environmental policy",
     "nl": "Milieubeleid",
-    "de": "Umweltpolitik",
-    "": ""
+    "de": "Umweltpolitik"
   },
   {
     "code": "5211",
     "en": "Natural environment",
     "nl": "Natuurlijk milieu",
-    "de": "Natürliche Umgebung",
-    "": ""
+    "de": "Natürliche Umgebung"
   },
   {
     "code": "5216",
     "en": "Deterioration of the environment",
     "nl": "Aantasting van het milieu",
-    "de": "Umweltschädigung",
-    "": ""
+    "de": "Umweltschädigung"
   },
   {
     "code": "5606",
     "en": "Agricultural policy",
     "nl": "Landbouwbeleid",
-    "de": "Agrarpolitik",
-    "": ""
+    "de": "Agrarpolitik"
   },
   {
     "code": "5611",
     "en": "Agricultural structures and production",
     "nl": "Landbouwproductie en -structuur",
-    "de": "Agrarproduktion und Agrarstrukturen",
-    "": ""
+    "de": "Agrarproduktion und Agrarstrukturen"
   },
   {
     "code": "5616",
     "en": "Farming systems",
     "nl": "Landbouwbedrijfssysteem",
-    "de": "Landwirtschaftliches Betriebssystem",
-    "": ""
+    "de": "Landwirtschaftliches Betriebssystem"
   },
   {
     "code": "5621",
     "en": "Cultivation of agricultural land",
     "nl": "Ontginning van de landbouwgrond",
-    "de": "Nutzung der landwirtschaftlichen Fläche",
-    "": ""
+    "de": "Nutzung der landwirtschaftlichen Fläche"
   },
   {
     "code": "5626",
     "en": "Means of agricultural production",
     "nl": "Landbouwproductiemiddel",
-    "de": "Landwirtschaftliches Betriebsmittel",
-    "": ""
+    "de": "Landwirtschaftliches Betriebsmittel"
   },
   {
     "code": "5631",
     "en": "Agricultural activity",
     "nl": "Landbouwactiviteit",
-    "de": "Landwirtschaftliche Erwerbstätigkeit",
-    "": ""
+    "de": "Landwirtschaftliche Erwerbstätigkeit"
   },
   {
     "code": "5636",
     "en": "Forestry",
     "nl": "Bos",
-    "de": "Wald",
-    "": ""
+    "de": "Wald"
   },
   {
     "code": "5641",
     "en": "Fisheries",
     "nl": "Visserij",
-    "de": "Fischerei",
-    "": ""
+    "de": "Fischerei"
   },
   {
     "code": "6006",
     "en": "Plant product",
     "nl": "Plantaardig product",
-    "de": "Pflanzliches Erzeugnis",
-    "": ""
+    "de": "Pflanzliches Erzeugnis"
   },
   {
     "code": "6011",
     "en": "Animal product",
     "nl": "Dierlijk product",
-    "de": "Tierisches Erzeugnis",
-    "": ""
+    "de": "Tierisches Erzeugnis"
   },
   {
     "code": "6016",
     "en": "Processed agricultural produce",
     "nl": "Verwerkt landbouwproduct",
-    "de": "Landwirtschaftliches Verarbeitungserzeugnis",
-    "": ""
+    "de": "Landwirtschaftliches Verarbeitungserzeugnis"
   },
   {
     "code": "6021",
     "en": "Beverages and sugar",
     "nl": "Dranken en suiker",
-    "de": "Getränk und Zucker",
-    "": ""
+    "de": "Getränk und Zucker"
   },
   {
     "code": "6026",
     "en": "Foodstuff",
     "nl": "Voedingsproducten",
-    "de": "Nahrungsmittel",
-    "": ""
+    "de": "Nahrungsmittel"
   },
   {
     "code": "6031",
     "en": "Agri-foodstuffs",
     "nl": "Agrovoeding",
-    "de": "Landwirtschafts- und Ernährungssektor",
-    "": ""
+    "de": "Landwirtschafts- und Ernährungssektor"
   },
   {
     "code": "6036",
     "en": "Food technology",
     "nl": "Levensmiddelentechnologie",
-    "de": "Lebensmitteltechnologie",
-    "": ""
+    "de": "Lebensmitteltechnologie"
   },
   {
     "code": "6406",
     "en": "Production",
     "nl": "Productie",
-    "de": "Produktion",
-    "": ""
+    "de": "Produktion"
   },
   {
     "code": "6411",
     "en": "Technology and technical regulations",
     "nl": "Technologie en technische voorschriften",
-    "de": "Technologie und technische Regelungen",
-    "": ""
+    "de": "Technologie und technische Regelungen"
   },
   {
     "code": "6416",
     "en": "Research and intellectual property",
     "nl": "Research en intellectuele eigendom",
-    "de": "Forschung und geistiges Eigentum",
-    "": ""
+    "de": "Forschung und geistiges Eigentum"
   },
   {
     "code": "6606",
     "en": "Energy policy",
     "nl": "Energiebeleid",
-    "de": "Energiepolitik",
-    "": ""
+    "de": "Energiepolitik"
   },
   {
     "code": "6611",
     "en": "Coal and mining industries",
     "nl": "Steenkool- en mijnindustrie",
-    "de": "Kohleindustrie und Bergbau",
-    "": ""
+    "de": "Kohleindustrie und Bergbau"
   },
   {
     "code": "6616",
     "en": "Oil industry",
     "nl": "Aardolie-industrie",
-    "de": "Erdölindustrie",
-    "": ""
+    "de": "Erdölindustrie"
   },
   {
     "code": "6621",
     "en": "Electrical and nuclear industries",
     "nl": "Nucleaire en elektrische industrieën",
-    "de": "Elektrizitäts- und Kernkraftindustrie",
-    "": ""
+    "de": "Elektrizitäts- und Kernkraftindustrie"
   },
   {
     "code": "6626",
     "en": "Soft energy",
     "nl": "Zachte energie",
-    "de": "Sanfte Energie",
-    "": ""
+    "de": "Sanfte Energie"
   },
   {
     "code": "6806",
     "en": "Industrial structures and policy",
     "nl": "Industriebeleid en -structuur",
-    "de": "Industriepolitik und Industriestruktur",
-    "": ""
+    "de": "Industriepolitik und Industriestruktur"
   },
   {
     "code": "6811",
     "en": "Chemistry",
     "nl": "Chemie",
-    "de": "Chemie",
-    "": ""
+    "de": "Chemie"
   },
   {
     "code": "6816",
     "en": "Iron, steel and other metal industries",
     "nl": "Metaal- en staalindustrie",
-    "de": "Metallindustrie, Eisen und Stahl",
-    "": ""
+    "de": "Metallindustrie, Eisen und Stahl"
   },
   {
     "code": "6821",
     "en": "Mechanical engineering",
     "nl": "Mechanische industrie",
-    "de": "Mechanische Industrie",
-    "": ""
+    "de": "Mechanische Industrie"
   },
   {
     "code": "6826",
     "en": "Electronics and electrical engineering",
     "nl": "Elektronica en elektrotechniek",
-    "de": "Elektronik und Elektrotechnik",
-    "": ""
+    "de": "Elektronik und Elektrotechnik"
   },
   {
     "code": "6831",
     "en": "Building and public works",
     "nl": "Bouwindustrie en openbare werken",
-    "de": "Bauindustrie und öffentliches Bauwesen",
-    "": ""
+    "de": "Bauindustrie und öffentliches Bauwesen"
   },
   {
     "code": "6836",
     "en": "Wood industry",
     "nl": "Houtindustrie",
-    "de": "Holzindustrie",
-    "": ""
+    "de": "Holzindustrie"
   },
   {
     "code": "6841",
     "en": "Leather and textile industries",
     "nl": "Lederverwerkende en textielindustrie",
-    "de": "Textil- und Lederindustrie",
-    "": ""
+    "de": "Textil- und Lederindustrie"
   },
   {
     "code": "6846",
     "en": "Miscellaneous industries",
     "nl": "Diverse industrieën",
-    "de": "Verschiedene Industriezweige",
-    "": ""
+    "de": "Verschiedene Industriezweige"
   },
   {
     "code": "7206",
     "en": "Europe",
     "nl": "Europa",
-    "de": "Europa",
-    "": ""
+    "de": "Europa"
   },
   {
     "code": "7211",
     "en": "Regions of EU Member States",
     "nl": "Regio's van de EU-lidstaten",
-    "de": "Regionen der Mitgliedstaaten der Europäischen Union",
-    "": ""
+    "de": "Regionen der Mitgliedstaaten der Europäischen Union"
   },
   {
     "code": "7216",
     "en": "America",
     "nl": "Amerika",
-    "de": "Amerika",
-    "": ""
+    "de": "Amerika"
   },
   {
     "code": "7221",
     "en": "Africa",
     "nl": "Afrika",
-    "de": "Afrika",
-    "": ""
+    "de": "Afrika"
   },
   {
     "code": "7226",
     "en": "Asia and Oceania",
     "nl": "Azië-Oceanië",
-    "de": "Asien-Ozeanien",
-    "": ""
+    "de": "Asien-Ozeanien"
   },
   {
     "code": "7231",
     "en": "Economic geography",
     "nl": "Economische geografie",
-    "de": "Wirtschaftsgeografie",
-    "": ""
+    "de": "Wirtschaftsgeografie"
   },
   {
     "code": "7236",
     "en": "Political geography",
     "nl": "Politieke geografie",
-    "de": "Politische Geografie",
-    "": ""
+    "de": "Politische Geografie"
   },
   {
     "code": "7241",
     "en": "Overseas countries and territories",
     "nl": "Landen en gebieden overzee",
-    "de": "Überseeische Länder und Gebiete",
-    "": ""
+    "de": "Überseeische Länder und Gebiete"
   },
   {
     "code": "7606",
     "en": "United Nations",
     "nl": "Verenigde Naties",
-    "de": "Vereinte Nationen",
-    "": ""
+    "de": "Vereinte Nationen"
   },
   {
     "code": "7611",
     "en": "European organisations",
     "nl": "Europese organisatie",
-    "de": "Europäische Organisation",
-    "": ""
+    "de": "Europäische Organisation"
   },
   {
     "code": "7616",
     "en": "Extra-European organisations",
     "nl": "Regionale organisaties buiten Europa",
-    "de": "Außereuropäische Organisation",
-    "": ""
+    "de": "Außereuropäische Organisation"
   },
   {
     "code": "7621",
     "en": "Intergovernmental organisations",
     "nl": "Wereldwijde organisaties",
-    "de": "Weltorganisationen",
-    "": ""
+    "de": "Weltorganisationen"
   },
   {
     "code": "7621",
     "en": "World organisations",
     "nl": "Wereldwijde organisaties",
-    "de": "Weltorganisationen",
-    "": ""
+    "de": "Weltorganisationen"
   },
   {
     "code": "7626",
     "en": "Non-governmental organisations",
     "nl": "Niet-gouvernementele organisaties",
-    "de": "Nichtregierungsorganisation",
-    "": ""
+    "de": "Nichtregierungsorganisation"
   },
   {
     "code": "406001",
     "en": "Political ideology",
     "nl": "Politieke ideologie",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "406002",
     "en": "Political institution",
     "nl": "Politieke instelling",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "406003",
     "en": "Political philosophy",
     "nl": "Politieke filosofie",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "406004",
     "en": "Political power",
     "nl": "Politieke macht",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "406005",
     "en": "Political system",
     "nl": "Politiek systeem",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "406006",
     "en": "State",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Staat",
+    "de": ""
   },
   {
     "code": "411001",
     "en": "Party organisation",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Partij-organisatie",
+    "de": ""
   },
   {
     "code": "411002",
     "en": "Political party",
     "nl": "Politieke partij",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "411003",
     "en": "Political tendency",
     "nl": "Politieke trend",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "416001",
     "en": "Election",
     "nl": "Verkiezing",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "416002",
     "en": "Electoral law",
     "nl": "Verkiezingsrecht",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "416003",
     "en": "Electoral system",
     "nl": "Verkiezingssysteem",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "416004",
     "en": "Majority voting",
     "nl": "Meerderheidsstemming",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "416005",
     "en": "Organisation of elections",
     "nl": "Organisatie van verkiezingen",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "416006",
     "en": "Parliamentary seat",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Parlementszetel",
+    "de": ""
   },
   {
     "code": "416007",
     "en": "Vote",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Stemming",
+    "de": ""
   },
   {
     "code": "416008",
     "en": "Voting method",
     "nl": "Verkiezingsmethode",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "421001",
     "en": "Composition of parliament",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Samenstelling parlement",
+    "de": ""
   },
   {
     "code": "421002",
     "en": "Interparliamentary relations",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Interparlementaire betrekkingen",
+    "de": ""
   },
   {
     "code": "421003",
     "en": "Member of Parliament",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Parlementslid",
+    "de": ""
   },
   {
     "code": "421004",
     "en": "Parliament",
     "nl": "Parlement",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "421005",
     "en": "Powers of parliament",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Bevoegdheden van het parlement",
+    "de": ""
   },
   {
     "code": "426001",
     "en": "Legislative procedure",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Wetgevende procedure",
+    "de": ""
   },
   {
     "code": "426002",
     "en": "Parliamentary procedure",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Parlementaire procedure",
+    "de": ""
   },
   {
     "code": "431001",
     "en": "Institutional activity",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Institutionele activiteit",
+    "de": ""
   },
   {
     "code": "431002",
     "en": "Politics",
     "nl": "Politiek",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "431003",
     "en": "Public opinion",
     "nl": "Publieke opinie",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "431004",
     "en": "Public safety",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Openbare veiligheid",
+    "de": ""
   },
   {
     "code": "431005",
     "en": "Trends of opinion",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Meningsvorming",
+    "de": ""
   },
   {
     "code": "436001",
     "en": "Administrative law",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Bestuursrecht",
+    "de": ""
   },
   {
     "code": "436002",
     "en": "Administrative structures",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Bestuurlijke structuren",
+    "de": ""
   },
   {
     "code": "436003",
     "en": "Executive body",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Uitvoerend orgaan",
+    "de": ""
   },
   {
     "code": "436004",
     "en": "Public administration",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Bestuurskunde",
+    "de": ""
   },
   {
     "code": "436005",
     "en": "Regional and local authorities",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Lokale en regionale overheden",
+    "de": ""
   },
   {
     "code": "806001",
     "en": "International affairs",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationale zaken ",
+    "de": ""
   },
   {
     "code": "806002",
     "en": "International agreement",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationale overeenkomst",
+    "de": ""
   },
   {
     "code": "806003",
     "en": "International instrument",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationaal instrument",
+    "de": ""
   },
   {
     "code": "806004",
     "en": "International organisation",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationale organisatie",
+    "de": ""
   },
   {
     "code": "806005",
     "en": "National independence",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Nationale onafhankelijkheid",
+    "de": ""
   },
   {
     "code": "811001",
     "en": "Aid policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "811002",
     "en": "Cooperation policy",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Samenwerkingsbeleid",
+    "de": ""
   },
   {
     "code": "811003",
     "en": "Humanitarian aid",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "816001",
     "en": "Foreign policy",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Buitenlands beleid",
+    "de": ""
   },
   {
     "code": "816002",
     "en": "International conflict",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationaal conflict",
+    "de": ""
   },
   {
     "code": "816003",
     "en": "International issue",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationale zaak",
+    "de": ""
   },
   {
     "code": "816004",
     "en": "International security",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Internationale veiligheid",
+    "de": ""
   },
   {
     "code": "816005",
     "en": "Peace",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Vrede",
+    "de": ""
   },
   {
     "code": "816006",
     "en": "War victim",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Oorlogsslachtoffer",
+    "de": ""
   },
   {
     "code": "821001",
     "en": "Armed forces",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Strijdkrachten",
+    "de": ""
   },
   {
     "code": "821002",
     "en": "Arms policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "821003",
     "en": "Defence policy",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Defensiebeleid",
+    "de": ""
   },
   {
     "code": "821004",
     "en": "Military equipment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1006001",
     "en": "Community body",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1006002",
     "en": "Community body (established by the Treaties)",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1006002",
     "en": "EU body",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "EU-orgaan",
+    "de": ""
   },
   {
     "code": "1006003",
     "en": "EU institution",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "EU-institutie",
+    "de": ""
   },
   {
     "code": "1006004",
     "en": "European civil service",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1006005",
     "en": "Institutional structure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1006006",
     "en": "Operation of the Institutions",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1006007",
     "en": "EU office or agency",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1011001",
     "en": "Community act",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1011001",
     "en": "EU act",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1011002",
     "en": "Community law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1011002",
     "en": "EU law",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "EU-wetgeving",
+    "de": ""
   },
   {
     "code": "1011003",
     "en": "Community legal system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1011003",
     "en": "EU legal system",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "EU-rechtssysteem",
+    "de": ""
   },
   {
     "code": "1011004",
     "en": "EC Treaty",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1011004",
     "en": "European treaties",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1016001",
     "en": "Deepening of the European Union",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1016002",
     "en": "Enlargement of the Union",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1016003",
     "en": "EU relations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1016004",
     "en": "European Union",
     "nl": "Europese Unie",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1016005",
     "en": "European Communities",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021001",
     "en": "Community budget",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021002",
     "en": "Community expenditure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021002",
     "en": "EU expenditure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021003",
     "en": "Community financing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021003",
     "en": "EU budget",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "EU-budget",
+    "de": ""
   },
   {
     "code": "1021004",
     "en": "Drawing up of the Community budget",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021004",
     "en": "Drawing up of the EU budget",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021005",
     "en": "Financing of the Community budget",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021005",
     "en": "Financing of the EU budget",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1021006",
     "en": "EU financing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1206001",
     "en": "Legal science",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Rechtswetenschappen",
+    "de": ""
   },
   {
     "code": "1206002",
     "en": "Source of law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1211001",
     "en": "Civil law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1211002",
     "en": "Ownership",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1216001",
     "en": "Criminal law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1216002",
     "en": "Criminal liability",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1216003",
     "en": "Law relating to prisons",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1216004",
     "en": "Offence",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1216005",
     "en": "Penalty",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1221001",
     "en": "Access to the courts",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1221002",
     "en": "Legal action",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1221003",
     "en": "Judicial proceedings",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1221004",
     "en": "Ruling",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1226001",
     "en": "Legal profession",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1226002",
     "en": "Legal system",
-    "nl": "",
-    "de": "",
-    "": ""
+    "nl": "Rechtssysteem",
+    "de": ""
   },
   {
     "code": "1231001",
     "en": "International economic law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1231002",
     "en": "International labour law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1231003",
     "en": "International law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1231004",
     "en": "Private international law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1231005",
     "en": "Public international law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236001",
     "en": "Anti-discriminatory measure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236002",
     "en": "Economic rights",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236003",
     "en": "Human rights",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236004",
     "en": "Political rights",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236005",
     "en": "Rights of the individual",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236006",
     "en": "Social rights",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1236007",
     "en": "Citizen's duties",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1606001",
     "en": "Economic planning",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1606002",
     "en": "Economic policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1606003",
     "en": "Economic support",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1611001",
     "en": "Economic conditions",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1611002",
     "en": "Economic cycle",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1611003",
     "en": "Economic development",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1616001",
     "en": "Economic region",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1616002",
     "en": "European Region",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1616003",
     "en": "Regional policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1621001",
     "en": "Economic sector",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1621002",
     "en": "Economic system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1621003",
     "en": "Economy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1626001",
     "en": "Accounting system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1626002",
     "en": "Income",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1626003",
     "en": "National accounts",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1631001",
     "en": "Economic analysis",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1631002",
     "en": "Economic forecasting",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "1631003",
     "en": "Statistics",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2006001",
     "en": "Commercial law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2006002",
     "en": "Common commercial policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2006003",
     "en": "Export policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2006004",
     "en": "Import policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2006005",
     "en": "Market",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2006006",
     "en": "Public contract",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2011001",
     "en": "Common tariff policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2011002",
     "en": "Community customs procedure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2011002",
     "en": "EU customs procedure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2011003",
     "en": "Customs regulations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2011004",
     "en": "Customs tariff",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2011005",
     "en": "Tariff policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2016001",
     "en": "Supply",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2016002",
     "en": "Supply and demand",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2016003",
     "en": "Trading operation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2021001",
     "en": "International trade",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2021002",
     "en": "Trade relations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2021003",
     "en": "Trade restriction",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2026001",
     "en": "Consumer",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2026002",
     "en": "Consumption",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2026003",
     "en": "Goods and services",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2031001",
     "en": "Commercial transaction",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2031002",
     "en": "Marketing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2031003",
     "en": "Preparation for market",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2036001",
     "en": "Distributive trades",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2036002",
     "en": "Storage",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2406001",
     "en": "Balance of payments",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2406002",
     "en": "European Monetary System",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2406003",
     "en": "International finance",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2406004",
     "en": "Monetary relations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2411001",
     "en": "Exchange policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2411002",
     "en": "Monetary policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2411003",
     "en": "Money market",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2416001",
     "en": "Banking",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2416002",
     "en": "Credit",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2416003",
     "en": "Credit policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2416004",
     "en": "Financial institution",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2421001",
     "en": "Financial market",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2421002",
     "en": "Free movement of capital",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2426001",
     "en": "Financing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2426002",
     "en": "Investment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2431001",
     "en": "Insurance",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2436001",
     "en": "Budget policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2436002",
     "en": "Public debt",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2436003",
     "en": "Public finance",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2441001",
     "en": "Budget financing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2441002",
     "en": "Budgetary expenditure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2441003",
     "en": "Budgetary procedure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2441004",
     "en": "Implementation of the budget",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2446001",
     "en": "Fiscal policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2446002",
     "en": "Tax",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2446003",
     "en": "Tax on capital",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2446004",
     "en": "Tax on consumption",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2446005",
     "en": "Tax on income",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2446006",
     "en": "Tax system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2451001",
     "en": "Farm prices",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2451002",
     "en": "Market prices",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2451003",
     "en": "Price fluctuation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2451004",
     "en": "Prices",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2451005",
     "en": "Prices policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2806001",
     "en": "Artificial reproductive techniques",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2806002",
     "en": "Family",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2806003",
     "en": "Family law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2806004",
     "en": "Family planning",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2806005",
     "en": "Marital status",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2811001",
     "en": "Internal migration",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2811002",
     "en": "Migration",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2816001",
     "en": "Composition of the population",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2816002",
     "en": "Demography",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2816003",
     "en": "Geographical distribution of the population",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2816004",
     "en": "Population dynamics",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2821001",
     "en": "Social analysis",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2821002",
     "en": "Social situation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2821003",
     "en": "Social structure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2821004",
     "en": "Sociocultural group",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2826001",
     "en": "Leisure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2826002",
     "en": "Social life",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2826003",
     "en": "Social policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2826004",
     "en": "Social problem",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2831001",
     "en": "Arts",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2831002",
     "en": "Cultural policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2831003",
     "en": "Culture",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2831004",
     "en": "Religion",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2836001",
     "en": "Leave on social grounds",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2836002",
     "en": "Social security",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2836003",
     "en": "Welfare",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2841001",
     "en": "Health care profession",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2841002",
     "en": "Health policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2841003",
     "en": "Illness",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2841004",
     "en": "Medical science",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2841005",
     "en": "Nutrition",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2841006",
     "en": "Pharmaceutical industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846001",
     "en": "Built-up area",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846002",
     "en": "Construction policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846003",
     "en": "Habitat",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846004",
     "en": "Housing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846005",
     "en": "Housing policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846006",
     "en": "Property leasing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "2846007",
     "en": "Town planning",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3206001",
     "en": "Education policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3206002",
     "en": "Teaching method",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3206003",
     "en": "Education",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3211001",
     "en": "Educational institution",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3211002",
     "en": "General education",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3211003",
     "en": "Level of education",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3211004",
     "en": "Teaching",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3211005",
     "en": "Vocational education",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3216001",
     "en": "Organisation of teaching",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3216002",
     "en": "School life",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3216003",
     "en": "Schoolwork",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3216004",
     "en": "Teaching materials",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3221001",
     "en": "Document",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3221002",
     "en": "Documentation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3221003",
     "en": "Information service",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3226001",
     "en": "Audiovisual equipment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3226002",
     "en": "Communications industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3226003",
     "en": "Communications policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3226004",
     "en": "Communications systems",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3226005",
     "en": "Means of communication",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3231001",
     "en": "Information",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3231002",
     "en": "Information policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3231003",
     "en": "Information processing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3236001",
     "en": "Computer system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3236002",
     "en": "Computer systems",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3236003",
     "en": "Data-processing law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3236004",
     "en": "Dataprocessing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3236005",
     "en": "Information technology industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3606001",
     "en": "Applied sciences",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3606002",
     "en": "Earth sciences",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3606003",
     "en": "Life sciences",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3606004",
     "en": "Physical sciences",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3606005",
     "en": "Space science",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3611001",
     "en": "Behavioural sciences",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "3611002",
     "en": "Social sciences",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4006001",
     "en": "Administrative personnel",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4006002",
     "en": "Business activity",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4006003",
     "en": "Business policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4006004",
     "en": "Company law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4006005",
     "en": "Company structure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4006006",
     "en": "Economic concentration",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4011001",
     "en": "Branch of activity",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4011002",
     "en": "Size of business",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4011003",
     "en": "Type of business",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4016001",
     "en": "Organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4021001",
     "en": "Financial management",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4021002",
     "en": "Management",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4021003",
     "en": "Management techniques",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4026001",
     "en": "Accounting",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4026002",
     "en": "Management accounting",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4031001",
     "en": "Competition law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4031002",
     "en": "Competition policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4031003",
     "en": "Restriction on competition",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4031004",
     "en": "Restrictive trade practice",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4406001",
     "en": "Employment policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4406002",
     "en": "Employment structure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4406003",
     "en": "Termination of employment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4406004",
     "en": "Unemployment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4406005",
     "en": "Vocational training",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4411001",
     "en": "Labour force",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4411002",
     "en": "Labour market",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4411003",
     "en": "Occupational status",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4411004",
     "en": "Socioprofessional category",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4416001",
     "en": "Organisation of work",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4416002",
     "en": "Work",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4416003",
     "en": "Working conditions",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4421001",
     "en": "Pay policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4421002",
     "en": "Personnel administration",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4421003",
     "en": "Remuneration of work",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4426001",
     "en": "Labour law",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4426002",
     "en": "Labour relations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4426003",
     "en": "Organisation of professions",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4806001",
     "en": "Traffic regulations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4806002",
     "en": "Transport policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4806003",
     "en": "Transport price",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4806004",
     "en": "Transport regulations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4811001",
     "en": "Destination of transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4811002",
     "en": "Means of transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4811003",
     "en": "Mode of transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4811004",
     "en": "Organisation of transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4816001",
     "en": "Land transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4821001",
     "en": "Inland waterway transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4821002",
     "en": "Maritime transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4821003",
     "en": "Ports policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4826001",
     "en": "Air transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "4826002",
     "en": "Space transport",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5206001",
     "en": "Environmental policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5206002",
     "en": "Environmental protection",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5206003",
     "en": "Pollution control measures",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5206004",
     "en": "Waste management",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5206005",
     "en": "Water management",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5206006",
     "en": "Climate change policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5211001",
     "en": "Climate",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5211002",
     "en": "Geophysical environment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5211003",
     "en": "Natural resources",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5211004",
     "en": "Physical environment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5211005",
     "en": "Wildlife",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5216001",
     "en": "Degradation of the environment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5216002",
     "en": "Nuisance",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5216003",
     "en": "Pollution",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5216004",
     "en": "Waste",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5606001",
     "en": "Common agricultural policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5606002",
     "en": "Agricultural policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5611001",
     "en": "Agricultural production policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5611002",
     "en": "Policy on agricultural structures",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5611003",
     "en": "Regulation of agricultural production",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5616001",
     "en": "Agricultural holding",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5616002",
     "en": "Agricultural performance",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5616003",
     "en": "Agricultural real estate",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5616004",
     "en": "Farming system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5616005",
     "en": "Type of tenure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5616006",
     "en": "Working population engaged in agriculture",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5621001",
     "en": "Cultivation system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5621002",
     "en": "Cultivation techniques",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5621003",
     "en": "Land use",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5626001",
     "en": "Livestock",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5626002",
     "en": "Means of agricultural production",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5631001",
     "en": "Agricultural product",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5631002",
     "en": "Animal health",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5631003",
     "en": "Animal nutrition",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5631004",
     "en": "Animal production",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5631005",
     "en": "Crop production",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5631006",
     "en": "Livestock farming",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5636001",
     "en": "Forest",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5636002",
     "en": "Forestry economics",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5636003",
     "en": "Forestry policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5641001",
     "en": "Aquaculture",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5641002",
     "en": "Fisheries policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5641003",
     "en": "Fisheries structure",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5641004",
     "en": "Fishery resources",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5641005",
     "en": "Fishing grounds",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "5641006",
     "en": "Fishing industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006001",
     "en": "Cereals",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006002",
     "en": "Fodder plant",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006003",
     "en": "Fruit",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006004",
     "en": "Industrial plant",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006005",
     "en": "Oleaginous plant",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006006",
     "en": "Root crop",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006007",
     "en": "Textile plant",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006008",
     "en": "Tropical plant",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6006009",
     "en": "Vegetable",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6011001",
     "en": "Animal product",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6016001",
     "en": "Essential oil",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6016002",
     "en": "Fats",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6016003",
     "en": "Milk product",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6016004",
     "en": "Protein products",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6021001",
     "en": "Beverage",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6021002",
     "en": "Sugar",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6026001",
     "en": "Foodstuff",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6026002",
     "en": "Processed food product",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6026003",
     "en": "Processed foodstuff",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6031001",
     "en": "Agri-foodstuffs",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6031002",
     "en": "Food industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6036001",
     "en": "Food additive",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6036002",
     "en": "Food technology",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6406001",
     "en": "Production policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6406002",
     "en": "Production",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6411001",
     "en": "Advanced materials",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6411002",
     "en": "Industrial manufacturing",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6411003",
     "en": "Materials technology",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6411004",
     "en": "Technical regulations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6411005",
     "en": "Technology",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6411006",
     "en": "Biotechnology",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6416001",
     "en": "Intellectual property",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6416002",
     "en": "Research",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6416003",
     "en": "Research policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6416004",
     "en": "Space policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6606001",
     "en": "Energy industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6606002",
     "en": "Energy policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6611001",
     "en": "Coal industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6611002",
     "en": "Mining industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6611003",
     "en": "Mining product",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6616001",
     "en": "Hydrocarbon",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6616002",
     "en": "Oil industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6616003",
     "en": "Petrochemicals",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6621001",
     "en": "Electrical industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6621002",
     "en": "Nuclear energy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6621003",
     "en": "Nuclear industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6621004",
     "en": "Nuclear power station",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6626001",
     "en": "Soft energy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6806001",
     "en": "Industrial policy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6806002",
     "en": "Industrial production",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6806003",
     "en": "Industrial structures",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6806004",
     "en": "Technical profession",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6811001",
     "en": "Chemical compound",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6811002",
     "en": "Chemical element",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6811003",
     "en": "Chemical industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6811004",
     "en": "Special chemicals",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6816001",
     "en": "Iron and steel industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6816002",
     "en": "Metallurgical industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6816003",
     "en": "Metals",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6821001",
     "en": "Machinery",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6821002",
     "en": "Mechanical engineering",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6821003",
     "en": "Mechanical equipment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6821004",
     "en": "Precision engineering",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6821005",
     "en": "Pressure equipment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6821006",
     "en": "Thermal equipment",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6826001",
     "en": "Electrical engineering",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6826002",
     "en": "Electronics industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6831001",
     "en": "Building industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6831002",
     "en": "Building services",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6831003",
     "en": "Public works",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6836001",
     "en": "Wood industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6841001",
     "en": "Leather industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6841002",
     "en": "Textile industry",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6846001",
     "en": "Ceramics",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "6846002",
     "en": "Miscellaneous industries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7206001",
     "en": "Eastern Europe",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7206002",
     "en": "Europe",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7206003",
     "en": "Former USSR",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7206004",
     "en": "Northern Europe",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7206005",
     "en": "Southern Europe",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7206006",
     "en": "Western Europe",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211001",
     "en": "Regions and communities of Belgium",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211002",
     "en": "Regions of Austria",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211003",
     "en": "Regions of Denmark",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211004",
     "en": "Regions of Finland",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211005",
     "en": "Regions of France",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211006",
     "en": "Regions of Germany",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211007",
     "en": "Regions of Greece",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211008",
     "en": "Regions of Ireland",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211009",
     "en": "Regions of Italy",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211010",
     "en": "Regions of Portugal",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211011",
     "en": "Regions of Spain",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211012",
     "en": "Regions of Sweden",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211013",
     "en": "Regions of the Netherlands",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211014",
     "en": "Regions of the United Kingdom",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211015",
     "en": "Regions of Estonia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211016",
     "en": "Regions of Hungary",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211017",
     "en": "Regions of Latvia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211018",
     "en": "Regions of Lithuania",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211019",
     "en": "Regions of Poland",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211020",
     "en": "Regions of Slovakia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211021",
     "en": "Regions of Slovenia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7211022",
     "en": "Regions of the Czech Republic",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7216001",
     "en": "America",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7216002",
     "en": "Caribbean Islands",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7216003",
     "en": "Latin America",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7216004",
     "en": "North America",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7221001",
     "en": "Africa",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7221002",
     "en": "Central Africa",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7221003",
     "en": "East Africa",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7221004",
     "en": "North Africa",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7221005",
     "en": "Southern Africa",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7221006",
     "en": "West Africa",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226001",
     "en": "Asia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226002",
     "en": "Central Asia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226003",
     "en": "Far East",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226004",
     "en": "Middle East",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226005",
     "en": "Oceania",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226006",
     "en": "South Asia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7226007",
     "en": "South-East Asia",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231001",
     "en": "AAMS countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231002",
     "en": "ACP countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231003",
     "en": "Andean Group countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231004",
     "en": "APEC countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231005",
     "en": "Arab Common Market countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231006",
     "en": "Asean countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231007",
     "en": "Benelux countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231008",
     "en": "CACM countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231009",
     "en": "CAEEU countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231010",
     "en": "Caricom countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231011",
     "en": "CACM countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231012",
     "en": "CEAO countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231013",
     "en": "CMEA countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231014",
     "en": "EFTA countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231015",
     "en": "EU country",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231016",
     "en": "LAES countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231017",
     "en": "Lafta countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231018",
     "en": "Mercosur countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231019",
     "en": "NAFTA countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231020",
     "en": "OCAS countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231021",
     "en": "OECD countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231022",
     "en": "OPEC countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231023",
     "en": "Third countries in the Mediterranean",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231024",
     "en": "Visegrad countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7231025",
     "en": "WAEMU countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236001",
     "en": "Anzus countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236002",
     "en": "Arab League countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236003",
     "en": "CIS countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236004",
     "en": "Council of Europe countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236005",
     "en": "Former socialist countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236006",
     "en": "GCC countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236007",
     "en": "NATO countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236008",
     "en": "Nordic Council countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236009",
     "en": "OAS countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236010",
     "en": "United Arab Emirates countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236011",
     "en": "Warsaw Pact countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7236012",
     "en": "WEU countries",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7241001",
     "en": "French overseas department and region",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7241001",
     "en": "French Overseas Departments",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7241002",
     "en": "French overseas collectivity",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7241002",
     "en": "French Overseas Territories",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7241003",
     "en": "Netherlands OCT",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7241004",
     "en": "United Kingdom OCT",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7606001",
     "en": "UN specialist institution",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7606002",
     "en": "United Nations system",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7606003",
     "en": "UNO",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7611001",
     "en": "European organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7616001",
     "en": "African organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7616002",
     "en": "Afro-Asian organisations",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7616003",
     "en": "American organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7616004",
     "en": "Arab organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7616005",
     "en": "Asian organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7616006",
     "en": "Latin American organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7621001",
     "en": "Intergovernmental organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7621001",
     "en": "World organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   },
   {
     "code": "7626001",
     "en": "Non-governmental organisation",
     "nl": "",
-    "de": "",
-    "": ""
+    "de": ""
   }
 ]
