@@ -23,6 +23,8 @@ module.exports = function(app) {
 
 	app.get('/duits-nederlands/:term', main.dutchGermanTerm);
 
+	app.get('/duits-nederlands/id/:id', main.dutchGermanId);
+
 	// Handle 404
 	app.use(main.notFound);
 
