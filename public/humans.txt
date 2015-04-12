@@ -1,0 +1,14 @@
+/* TEAM */
+Development: Koen van Gilst
+Contact: terms [at] vangilst.eu
+Twitter: @vnglst
+From: Utrecht, The Netherlands
+
+/* THANKS */
+
+/* SITE */
+Last update: 2015/04/12
+Language: Dutch
+Doctype: HTML5
+Components: Node, Express, Jade, AngularJS
+IDE: Atom
