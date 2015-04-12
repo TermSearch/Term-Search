@@ -7,19 +7,22 @@ p Zoekresultaten voor: {{keyword}}
         ul.list-unstyled
           li(ng-repeat='sf in result.subjectFields')
             a(href='/duits-nederlands/vakgebied/{{sf.termUrl}}') {{sf.termStr}}
-      dt(ng-repeat='word in result.de | orderBy: "termStr.length"')
-        | {{word.lang | uppercase }}
-      dd
-        ul.list-unstyled
-          li(ng-repeat='word in result.de | orderBy: "termStr.length"')
-            | {{word.termStr}}
+      div(ng-repeat='word in result.de')
+        dt
+          | {{word.lang | uppercase }}
+        dd
+          ul.list-unstyled
+            li
+              | {{word.termStr}}
     
-      dt(ng-repeat='word in result.nl | orderBy: "termStr.length"')
-        | {{word.lang | uppercase }}
-      dd
-        ul.list-unstyled
-          li(ng-repeat='word in result.nl | orderBy: "termStr.length"')
-            | {{word.termStr}}
+      
+      div(ng-repeat='word in result.nl')
+        dt
+          | {{word.lang | uppercase }}
+        dd
+          ul.list-unstyled
+            li
+              | {{word.termStr}}
       
       dt ID-code
       dd
