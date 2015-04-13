@@ -2,7 +2,10 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 var termEntrySchema = new Schema({
-	id: String, // eg. IATE....
+	id: {
+		type: String, // eg. IATE....
+		index: true
+	},
 	subjectField: {
 		type: [Number],
 		index: true
