@@ -1,5 +1,7 @@
 var mongoose = require('mongoose'),
-	Schemas = require('./Schemas.js');
+	Schemas = require('./Schemas.js'),
+	SubjectField = require('../models/subjectFieldModel'),
+	url = require('../lib/url');
 
 var termEntryModel = function() {
 
@@ -33,6 +35,25 @@ var termEntryModel = function() {
 
 		return germanTerms.map(function(term) {
 			return term.termStr;
+		});
+	};
+
+	// returns an array of objects
+	// with separate arrays for Dutch and German terms
+	// for each term entry id
+	// subjectfields are also converted to strings + urls
+	termEntrySchema.statics.separateLanguages = function(termEntries) {
+		return termEntries.map(function(termEntry) {
+			// Convert subjectField numbers to array of strings
+			var subjectFieldStrs = SubjectField.getSubjectFieldStrs(termEntry.subjectField);
+			// Generate URL for these strings
+			var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldStrs);
+			return {
+				id: termEntry.id,
+				subjectFields: subjectFieldsWithURLs,
+				de: termEntry.getTranslations('de'),
+				nl: termEntry.getTranslations('nl')
+			};
 		});
 	};
 

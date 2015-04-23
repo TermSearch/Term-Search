@@ -1,7 +1,6 @@
 var SubjectField = require('../models/subjectFieldModel'),
 	TermEntry = require('../models/termEntryModel'),
-	url = require('../lib/url'),
-	adapter = require('../lib/adapter');
+	url = require('../lib/url');
 
 exports.home = function(req, res) {
 	res.render('index');
@@ -71,7 +70,7 @@ exports.dutchGermanTerm = function(req, res, next) {
 			}
 		})
 		.exec()
-		.then(adapter.convertTermEntries)
+		.then(TermEntry.separateLanguages)
 		.then(function(termEntries) {
 			if (termEntries.length > 0) {
 				res.render('dutch-german-term', {
