@@ -48,7 +48,8 @@ function getSubjectFieldNr(subjectFieldStr) {
 function getSubjectFieldStrs(nrsArr) {
 	var strArr = [];
 	nrsArr.forEach(function(nr) {
-		strArr.push(getSubjectFieldStr(nr));
+    // Remove '00' for "No domain"
+    if (nr != '00') strArr.push(getSubjectFieldStr(nr));
 	});
 	return strArr; // returns an array of strings
 }

@@ -18,6 +18,13 @@ module.exports = function(grunt) {
 					ui: 'tdd',
 					timeout: 4000
 				},
+			},
+			units: {
+				src: 'qa/tests-unit.js',
+				options: {
+					ui: 'tdd',
+					timeout: 4000
+				},
 			}
 		},
 		jshint: {
@@ -37,5 +44,6 @@ module.exports = function(grunt) {
 	// register tasks
 	grunt.registerTask('default', ['cafemocha', 'jshint']);
 	grunt.registerTask('links', ['exec']);
+	grunt.registerTask('units', ['cafemocha:units']);
 
 };

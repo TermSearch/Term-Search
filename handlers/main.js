@@ -84,12 +84,41 @@ exports.dutchGermanTerm = function(req, res, next) {
 		});
 };
 
+
+exports.dutchGermanTermNew = function(req, res, next) {
+	// convert url slug to term string format
+	// i.e. replace underscores with space etc.
+	var termStr = url.decodeSlug(req.params.term);
+	TermEntry.find({
+			'langSet': {
+				$elemMatch: {
+					lang: 'de',
+					termStr: termStr
+				}
+			}
+		})
+		.exec()
+		.then(TermEntry.getDictionaryEntries)
+		.then(function(translations) {
+			if (translations.length > 0) {
+				res.render('dutch-german-term-new', {
+					termStr: termStr,
+					translations: translations
+				});
+			} else next(); // not entries found, fallback to 404, not found
+		})
+		.then(null, function(err) {
+			next(err);
+		});
+};
+
+
 exports.dutchGermanId = function(req, res, next) {
 	TermEntry.find({
 			'id': req.params.id
 		})
 		.exec()
-		.then(adapter.convertTermEntries)
+		.then(TermEntry.separateLanguages)
 		.then(function(termEntries) {
 			if (termEntries.length > 0) {
 				res.render('dutch-german-id', {

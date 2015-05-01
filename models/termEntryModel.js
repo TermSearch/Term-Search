@@ -8,7 +8,7 @@ var termEntryModel = function() {
 	var termEntrySchema = Schemas.termEntrySchema;
 
 	// If PORT varialbe is not set to production, assume development
-  if (process.env.PORT != "production") {
+	if (process.env.PORT != "production") {
 		// activate debugging info for database
 		// mongoose.set('debug', true);
 
@@ -57,8 +57,24 @@ var termEntryModel = function() {
 		});
 	};
 
-	return mongoose.model('TermEntry', termEntrySchema);
+	// returns a dictionary entry
+	// with an array of Dutch translations
+	// complete with id + subjectfields for each translations
+	// subjectfields are also converted to strings + urls
+	termEntrySchema.statics.getDictionaryEntries = function(termEntries) {
+		var arr = termEntrySchema.statics.separateLanguages(termEntries);
+		return arr.map(function(termEntry) {
+			return {
+				id: termEntry.id,
+				subjectFields: termEntry.subjectFields,
+				termStrArr: termEntry.nl.map(function(e) {
+					return e.termStr;
+				})
+			};
+		});
+	};
 
+	return mongoose.model('TermEntry', termEntrySchema);
 };
 
 module.exports = new termEntryModel();
