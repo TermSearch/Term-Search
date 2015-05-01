@@ -56,3 +56,27 @@ footer {
 #results {
   /*background-color: blue;*/
 }
+
+/* Terminology View */
+
+/* Makes number of ol bold */
+.dictionaryList {
+  font-weight: bold;
+  padding-left: 1.5em;
+}
+
+/*Removes boldness from all ol content*/
+.dictionaryList .notBold {
+  font-weight:normal;
+}
+
+/*Puts some space between entries*/
+.dictionaryList > li {
+  margin-bottom: 1em;
+}
+
+.dictionaryList ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+}

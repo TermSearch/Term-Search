@@ -20,30 +20,28 @@ block results
   //-   a(href='#')
   //-     | Alle details weergeven 
   //-     span.glyphicon.glyphicon-play(aria-hidden="true")
-  ol(style="padding-left: 1.5em;")     
+  ol.dictionaryList     
     each translation in translations
-      li(style="margin-bottom: 1em;")
-        if ( translation.subjectFields.length > 0 )
-          each sf, index in translation.subjectFields
-            i
-              a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}
-              if (index < translation.subjectFields.length - 1)
-                | , 
-        //- | &nbsp[
-        //- a(href='/duits-nederlands/id/'+translation.id) >>
-        //- | ]
-        if ( translation.termStrArr.length > 1)
-          ul(style="list-style: none; padding:0; margin:0;")
-            each termStr in translation.termStrArr
-              li 
-                a(href='/duits-nederlands/id/'+translation.id) 
-                  span.glyphicon.glyphicon-play(aria-hidden="true") 
-                |  #{termStr}
-        else
-          br
-          a(href='/duits-nederlands/id/'+translation.id) 
-            span.glyphicon.glyphicon-play(aria-hidden="true") 
-          |  #{translation.termStrArr[0]} 
+      li
+        .notBold
+          if ( translation.subjectFields.length > 0 )
+            each sf, index in translation.subjectFields
+              i
+                a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}
+                if (index < translation.subjectFields.length - 1)
+                    | , 
+          if ( translation.termStrArr.length > 1)
+            ul
+              each termStr in translation.termStrArr
+                li 
+                  a(href='/duits-nederlands/id/'+translation.id) 
+                    span.glyphicon.glyphicon-play 
+                  |  #{termStr}
+          else
+            br
+            a(href='/duits-nederlands/id/'+translation.id) 
+              span.glyphicon.glyphicon-play 
+            |  #{translation.termStrArr[0]} 
           
   
   hr
