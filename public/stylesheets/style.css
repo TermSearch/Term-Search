@@ -80,3 +80,8 @@ footer {
   padding:0;
   margin:0;
 }
+
+/*This hides any Angular Tags from Indexing Bots and clients with Javascript disabled*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
