@@ -72,7 +72,6 @@ exports.dutchGermanTerm = function(req, res, next) {
 		.exec()
 		.then(TermEntry.getDictionaryEntries)
 		.then(function(translations) {
-			console.log(translations)
 			if (translations.length > 0) {
 				res.render('dutch-german-term', {
 					termStr: termStr,
