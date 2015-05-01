@@ -70,38 +70,10 @@ exports.dutchGermanTerm = function(req, res, next) {
 			}
 		})
 		.exec()
-		.then(TermEntry.separateLanguages)
-		.then(function(termEntries) {
-			if (termEntries.length > 0) {
-				res.render('dutch-german-term', {
-					deStr: termStr,
-					termEntries: termEntries
-				});
-			} else next(); // not entries found, fallback to 404, not found
-		})
-		.then(null, function(err) {
-			next(err);
-		});
-};
-
-
-exports.dutchGermanTermNew = function(req, res, next) {
-	// convert url slug to term string format
-	// i.e. replace underscores with space etc.
-	var termStr = url.decodeSlug(req.params.term);
-	TermEntry.find({
-			'langSet': {
-				$elemMatch: {
-					lang: 'de',
-					termStr: termStr
-				}
-			}
-		})
-		.exec()
 		.then(TermEntry.getDictionaryEntries)
 		.then(function(translations) {
 			if (translations.length > 0) {
-				res.render('dutch-german-term-new', {
+				res.render('dutch-german-term', {
 					termStr: termStr,
 					translations: translations
 				});

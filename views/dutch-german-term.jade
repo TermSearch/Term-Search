@@ -1,8 +1,8 @@
 extends layout
 
 block title
-  title Duits-Nederlandse vertaling van #{deStr}
-  meta(name='description', content='De Duits-Nederlandse vertaling van het Duitse begrip #{deStr} is "#{termEntries[0].nl[0].termStr}". Dit is gebaseerd op de terminologiedatabank van de Europese Unie (IATE).')
+  title Duits Nederlandse vertaling van #{termStr}
+  meta(name='description', content='De Duits-Nederlandse vertaling van het Duitse woord #{termStr} is "#{translations[0].termStrArr[0]}". Deze vertaling is gebaseerd op gegevens verstrekt door de EU.')
 
 block breadcrumbs
   ul.breadcrumb
@@ -11,40 +11,50 @@ block breadcrumbs
     li
       a(href="/duits-nederlands") Duits-Nederlands
     li.active
-      | #{deStr}
+      | #{termStr}
 
 block results
-  each termEntry in termEntries
-    .panel.panel-default
-      .panel-heading
-        .panel-title
-          | #{termEntry.de[0].termStr}
-      .panel-body
-        p De Nederlandse vertaling van het Duitse begrip "#{deStr}" is <mark>#{termEntry.nl[0].termStr}</mark>. Dit is gebaseerd op de terminologiedatabank van de Europese Unie (IATE)
-          if (termEntry.subjectFields[0].termStr && termEntry.subjectFields[0].termStr != "Geen domein")
-            |  en geldt o.a. voor het vakgebied <i>#{termEntry.subjectFields[0].termStr}</i>
-          | .
-
-        p Andere mogelijke Nederlandse vertalingen zijn:
-        blockquote
-          each term in termEntry.nl
-            | #{term.termStr}<br/>
-        
-        if (termEntry.de.length > 1) 
-          p Duitse synoniemen van "#{deStr}" zijn o.a.: 
-            each term in termEntry.de
-              | <b>#{term.termStr}</b>, 
-            
-        | Identificatiecode in de IATE-database: 
-        a(href='/duits-nederlands/id/#{termEntry.id}') #{termEntry.id}
-        if ( termEntry.note )
-          | . Opmerking: <i>#{termEntry.note}</i>
-              
-      .panel-footer
-        ul.pager
-          each sf in termEntry.subjectFields
-            if ( sf.termStr && sf.termStr != "Geen domein" )
-              li
+  h1 #{termStr}
+          
+  //- p.text-right  
+  //-   a(href='#')
+  //-     | Alle details weergeven 
+  //-     span.glyphicon.glyphicon-play(aria-hidden="true")
+  ol.dictionaryList     
+    each translation in translations
+      li
+        .notBold
+          if ( translation.subjectFields.length > 0 )
+            each sf, index in translation.subjectFields
+              i
                 a(href='/duits-nederlands/vakgebied/'+sf.termUrl ) #{sf.termStr}
-            else
-              | geen vermeldingen.
+                if (index < translation.subjectFields.length - 1)
+                    | , 
+          if ( translation.termStrArr.length > 1)
+            ul
+              each termStr in translation.termStrArr
+                li 
+                  a(href='/duits-nederlands/id/'+translation.id) 
+                    span.glyphicon.glyphicon-play 
+                  |  #{termStr}
+          else
+            br
+            a(href='/duits-nederlands/id/'+translation.id) 
+              span.glyphicon.glyphicon-play 
+            |  #{translation.termStrArr[0]} 
+          
+  
+  hr
+  h2 Duits Nederlandse vertaling van #{termStr}
+  p De Nederlandse vertaling van het Duitse woord "#{termStr}" is <mark>#{translations[0].termStrArr[0]}</mark>. Deze vertaling is gebaseerd op gegevens verstrekt door de EU
+    if (translations[0].subjectFields[0].termStr && translations[0].subjectFields[0].termStr != "Geen domein")
+      |  en geldt o.a. voor het vakgebied <i>#{translations[0].subjectFields[0].termStr}</i>
+    | . Kijk voor meer informatie op 
+    a(href="http://iate.europa.eu/") de website van IATE
+    | .
+
+  //- hr
+  //- p De volgende 10 Duitse woorden met Nederlandse vertalingen in de database zijn:
+  //- 
+  //- hr
+  //- p De vorige 10 Duitse woorden met Nederlandse vertalingen in de database zijn:
