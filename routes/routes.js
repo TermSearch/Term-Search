@@ -15,6 +15,8 @@ module.exports = function(app) {
 
 	app.get('/colofon', main.colofon);
 
+	app.get('/woordenboeken', main.woordenboeken);
+
 	app.get('/duits-nederlands/vakgebied/', main.subjectFieldList);
 
 	app.get('/duits-nederlands/vakgebied/:vakgebied', main.subjectField);

@@ -10,6 +10,10 @@ exports.colofon = function(req, res) {
 	res.render('colofon');
 };
 
+exports.woordenboeken = function(req, res) {
+	res.render('woordenboeken');
+};
+
 exports.subjectFieldList = function(req, res) {
 	res.render('all-subjectfields', {
 		subjectFields: SubjectField.getAll()
