@@ -5,7 +5,7 @@ block title
   meta(name='description', content='Zoekmachine voor de database met daarin de officiële terminologielijst van de EU.')
 
 block landingpage
-  .landingPage(ng-hide='keyword', ng-cloak, ng-init='showLandingPage=true')
+  .landingPage(ng-hide='keyword || !showLandingPage', ng-cloak, ng-init='showLandingPage=true')
     .headerLP
       .logoLP
         a(href="/")
@@ -17,7 +17,10 @@ block landingpage
             button.btn.btn-primary(type="button")
               span.glyphicon.glyphicon-search(aria-hidden="true")
     .footerLP
-      include ./includes/footertext.jade    
+      include ./includes/footertext.jade
+      
+block results
+  .emptyResults
 
 
             

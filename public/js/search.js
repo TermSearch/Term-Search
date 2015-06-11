@@ -18,7 +18,7 @@ angular.module('searchApp', [])
 			_scope.$watch(_attr.focusOn, function(_focusVal) {
 				$timeout(function() {
 					if (_focusVal) _element[0].focus();
-						else _element[0].blur();
+						// else _element[0].blur();
 				}, 0);
 			});
 		}
@@ -62,12 +62,14 @@ angular.module('searchApp', [])
 	}];
 
 	searchResults.doSearch = function() {
-		if ($scope.keyword) $scope.showLandingPage = false;
-			else $scope.showLandingPage = true;
-		var searchString = '\"' + $scope.keyword + '\"';
-		$http.get('/api?termstr=' + searchString).then(function(res) {
-			searchResults.terms = res.data;
-		});
+		if ($scope.keyword) {
+			$scope.showLandingPage = false; // hide landingpage with centered search field
+			var searchString = '\"' + $scope.keyword + '\"';
+			$http.get('/api?termstr=' + searchString).then(function(res) {
+				searchResults.terms = res.data;
+			});
+		}
+
 	};
 
 });
