@@ -32,44 +32,35 @@ html(lang='nl' ng-app='searchApp')
     block title
       
   body
-    .container(ng-controller='SearchController as searchResults')
-      header.row
-        .col-xs-2.col-sm-1.col-md-1.col-lg-1
-          #logo
-            a(href="/")
-              img(src='/img/logo-vangilst.png' class='logo' alt='Logo Van Gilst Übersetzungen')
-        .col-xs-10.col-sm-9.col-md-7.col-lg-6  
-          .input-group
-            input.form-control(type='search' ng-model='keyword' ng-change='searchResults.doSearch()' placeholder=deStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap')
-            // add disabled to disable search function
-            span.input-group-btn
-              button.btn.btn-primary(type="button")
-                span.glyphicon.glyphicon-search(aria-hidden="true")
-      #results.row
-        .col-xs-12.col-sm-10.col-md-8.col-lg-7
-          #search-results(ng-show='keyword', ng-cloak)
-            // if keyword supplied: show dynamic search results
-            include ./includes/searchresults.jade
-          #static-results(ng-hide='keyword')
-            // without keyword: show static content
-            block breadcrumbs
-            block results
-
-      footer.row
-        .col-xs-12.col-sm-10.col-md-8.col-lg-7
-          :markdown
-            © 2015 Koen van Gilst,
-            [Übersetzer Niederländisch](http://www.vangilst.de/) | [ Vakgebieden](/duits-nederlands/vakgebied/) | [Woordenboeken](/woordenboeken) | [Colofon](/colofon)
+    .container(ng-controller='SearchController as searchResults' ng-init='showLandingPage=false')
+      block landingpage
         
-    //- Enable jQuery + bootstrap.js if needed
-    
-    //- jQuery (necessary for Bootstrap's JavaScript plugins)  
-    //- script(src='https://code.jquery.com/jquery-2.0.2.min.js')
-    //- script(src='/vendor/jquery.min.js')
-    
-    //- Include all compiled plugins (below), or include individual files as needed
-    //- script(src='/vendor/bootstrap.min.js')
-  
+      .showResults(ng-hide='showLandingPage', ng-cloak)
+        header.row
+          .col-xs-2.col-sm-1.col-md-1.col-lg-1
+            #logo
+              a(href="/")
+                img(src='/img/logo-vangilst.png' class='logo' alt='Logo Van Gilst Übersetzungen')
+          .col-xs-10.col-sm-9.col-md-7.col-lg-6  
+            .input-group
+              input.form-control(type='search' ng-model='keyword' ng-change='searchResults.doSearch()' placeholder=deStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap' focus-on='!!keyword')
+              span.input-group-btn
+                button.btn.btn-primary(type="button")
+                  span.glyphicon.glyphicon-search(aria-hidden="true")
+        #results.row
+          .col-xs-12.col-sm-10.col-md-8.col-lg-7
+            #search-results(ng-show='keyword', ng-cloak)
+              // if keyword supplied: show dynamic search results
+              include ./includes/searchresults.jade
+            #static-results(ng-hide='keyword')
+              // without keyword: show static content
+              block breadcrumbs
+              block results
+        
+        footer.row
+          .col-xs-12.col-sm-10.col-md-8.col-lg-7
+            include ./includes/footertext.jade      
+
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js')
     script(src='/js/search.js')
 

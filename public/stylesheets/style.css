@@ -26,7 +26,7 @@ h1 {
   font-family: 'open sans', arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
-  line-height: 23.4545440673828px;
+  line-height: 23px;
 }
 h2, h3, h4, h5 {
   color: rgb(68, 68, 68);
@@ -34,17 +34,13 @@ h2, h3, h4, h5 {
   font-family: 'open sans', arial, sans-serif;
   font-size: 13px;
   font-weight: bold;
-  line-height: 18.2000007629395px;
+  line-height: 18px;
 }
 p {
   font-family: arial, sans-serif;
   color: rgb(68, 68, 68);
   font-size: 13px;
   line-height: 18px;
-}
-.pager {
-  text-align: left;
-  margin: 0;
 }
 footer {
   margin-top: 20px;
@@ -53,35 +49,103 @@ footer {
   font-size: 13px;
   /*background-color: yellow;*/
 }
-#results {
-  /*background-color: blue;*/
-}
 
 /* Terminology View */
 
+
 /* Makes number of ol bold */
+
 .dictionaryList {
   font-weight: bold;
   padding-left: 1.5em;
 }
 
 /*Removes boldness from all ol content*/
+
 .dictionaryList .notBold {
-  font-weight:normal;
+  font-weight: normal;
 }
 
 /*Puts some space between entries*/
+
 .dictionaryList > li {
   margin-bottom: 1em;
 }
-
 .dictionaryList ul {
   list-style: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 /*This hides any Angular Tags from Indexing Bots and clients with Javascript disabled*/
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+/* Centering search input field for landingpage */
+
+
+/* Mobile first: default values for screen smaller than 768px */
+
+.headerLP {
+  width: 95%;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -o-transform: translate(-50%, -50%);
+  /* Opera 9 */
+  -moz-transform: translate(-50%, -50%);
+  /* Firefox */
+  -webkit-transform: translate(-50%, -50%);
+  /* Safari */
+  transform: translate(-50%, -50%);
+}
+.logoLP {
+  text-align: center;
+  height: 140px;
+}
+.logoImageLP {
+  width: 80px;
+}
+.searchLP {
+  margin-left: 0;
+}
+.footerLP {
+  width: 95%;
+  text-align: center;
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -100%);
+  /* IE 9 */
+  -o-transform: translate(-50%, -100%);
+  /* Opera 9 */
+  -moz-transform: translate(-50%, -100%);
+  /* Firefox */
+  -webkit-transform: translate(-50%, -100%);
+  /* Safari */
+  transform: translate(-50%, -100%);
+}
+
+/* For screens larger than 768px put logo next to input field */
+
+@media (min-width: 768px) {
+  .headerLP {
+    width: 600px;
+    top: 50%;
+  }
+  .logoLP {
+    float: left;
+    text-align: left;
+    height: 100%;
+  }
+  .searchLP {
+    margin-left: 50px;
+  }
+  .logoImageLP {
+    width: 40px;
+  }
 }

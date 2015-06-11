@@ -4,19 +4,20 @@ block title
   title Nederlands Duitse terminologie
   meta(name='description', content='Zoekmachine voor de database met daarin de officiële terminologielijst van de EU.')
 
-block results
-  h1 Nederlands Duitse terminologie                        
-  p Gebaseerd op de officiële terminologielijst van de Europese Commissie (IATE).
-  
-  h2 Links voor Google:
-  ul
-    li
-      a(href="/duits-nederlands/vakgebied/") Alle vakgebieden
-    li
-      a(href="/duits-nederlands/") Lijst met 1000 Duitse woorden
-  p
-  p Op dit moment bevat de database 514.000 ingangen voor Nederlands.
-      
+block landingpage
+  .landingPage(ng-hide='keyword', ng-cloak, ng-init='showLandingPage=true')
+    .headerLP
+      .logoLP
+        a(href="/")
+          img(src='/img/logo-vangilst.png' class='logoImageLP' alt='Logo Van Gilst Übersetzungen')
+      .searchLP
+        .input-group
+          input.form-control(type='search' ng-model='keyword' ng-change='searchResults.doSearch()' focus-on='!keyword')
+          span.input-group-btn
+            button.btn.btn-primary(type="button")
+              span.glyphicon.glyphicon-search(aria-hidden="true")
+    .footerLP
+      include ./includes/footertext.jade    
 
 
             
