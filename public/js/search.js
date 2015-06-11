@@ -62,7 +62,8 @@ angular.module('searchApp', [])
 	}];
 
 	searchResults.doSearch = function() {
-		$scope.showLandingPage = false;
+		if ($scope.keyword) $scope.showLandingPage = false;
+			else $scope.showLandingPage = true;
 		var searchString = '\"' + $scope.keyword + '\"';
 		$http.get('/api?termstr=' + searchString).then(function(res) {
 			searchResults.terms = res.data;

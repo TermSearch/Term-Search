@@ -35,7 +35,7 @@ html(lang='nl' ng-app='searchApp')
     .container(ng-controller='SearchController as searchResults' ng-init='showLandingPage=false')
       block landingpage
         
-      .showResults(ng-hide='showLandingPage || !keyword', ng-cloak)
+      .showResults(ng-hide='showLandingPage', ng-cloak)
         header.row
           .col-xs-2.col-sm-1.col-md-1.col-lg-1
             #logo
