@@ -17,9 +17,15 @@ angular.module('searchApp', [])
 		link: function(_scope, _element, _attr) {
 			_scope.$watch(_attr.focusOn, function(_focusVal) {
 				$timeout(function() {
-					if (_focusVal) _element[0].focus();
-						// else _element[0].blur();
-				}, 0);
+					if (_focusVal) {
+						_element[0].focus();
+						// Creates a selection of zero characters at the end of the value
+						// This will result in moving cursor to the end of the value
+						// Necessary hack for browsers Firefox & Explorer
+						// Default behavior in Safari & Chrome
+						_element[0].selectionStart = _element[0].selectionEnd = _element[0].value.length;
+					}
+				});
 			});
 		}
 	};
