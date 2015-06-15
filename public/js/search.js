@@ -5,8 +5,6 @@ angular.module('searchApp', [])
 	function moveCursorToEnd(el) {
 		// Creates a selection of zero characters at the end of the value
 		// This will result in moving cursor to the end of the value
-		// Necessary hack for browsers Firefox & Explorer
-		// Default behavior in Safari & Chrome
 		if (el.value) {
 			el.selectionStart = el.selectionEnd = el.value.length;
 		}
@@ -21,7 +19,8 @@ angular.module('searchApp', [])
 					if (_focusVal) {
 						// focus element
 						_element[0].focus();
-						// movue cursor to end of input (for Firefox & Explorer)
+						// Necessary hack for browsers Firefox & Explorer
+						// Default behavior in Safari & Chrome
 						moveCursorToEnd(_element[0]);
 					}
 				});
