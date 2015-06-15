@@ -1,16 +1,5 @@
 angular.module('searchApp', [])
 
-// .directive('autoFocus', function($timeout) {
-// 	return {
-// 		restrict: 'AC',
-// 		link: function(_scope, _element) {
-// 			$timeout(function() {
-// 				_element[0].focus();
-// 			}, 0);
-// 		}
-// 	};
-// })
-
 .directive('focusOn', function($timeout) {
 	return {
 		restrict: 'A',
@@ -35,7 +24,6 @@ angular.module('searchApp', [])
 
 .controller('SearchController', function($http, $scope) {
 	var searchResults = this;
-	// var hideDefaultText = false;
 	searchResults.terms = [];
 	searchResults.doSearch = function() {
 		if ($scope.keyword) {
