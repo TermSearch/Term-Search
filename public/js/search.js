@@ -1,15 +1,15 @@
 angular.module('searchApp', [])
 
-.directive('autoFocus', function($timeout) {
-	return {
-		restrict: 'AC',
-		link: function(_scope, _element) {
-			$timeout(function() {
-				_element[0].focus();
-			}, 0);
-		}
-	};
-})
+// .directive('autoFocus', function($timeout) {
+// 	return {
+// 		restrict: 'AC',
+// 		link: function(_scope, _element) {
+// 			$timeout(function() {
+// 				_element[0].focus();
+// 			}, 0);
+// 		}
+// 	};
+// })
 
 .directive('focusOn', function($timeout) {
 	return {
@@ -23,7 +23,9 @@ angular.module('searchApp', [])
 						// This will result in moving cursor to the end of the value
 						// Necessary hack for browsers Firefox & Explorer
 						// Default behavior in Safari & Chrome
-						_element[0].selectionStart = _element[0].selectionEnd = _element[0].value.length;
+						if(_element[0].value) {
+							_element[0].selectionStart = _element[0].selectionEnd = _element[0].value.length;
+						}
 					}
 				});
 			});
@@ -32,41 +34,9 @@ angular.module('searchApp', [])
 })
 
 .controller('SearchController', function($http, $scope) {
-
 	var searchResults = this;
-	var hideDefaultText = false;
-
-	// default values, example JSON from API
-	searchResults.terms = [{
-		"id": "IATE-1162091",
-		"subjectField": [10],
-		"langSet": [{
-			"lang": "de",
-			"termStr": "Kontrolle dem Umweltsicherheit der Produkte",
-			"termNote": "fullForm",
-			"relCode": 3
-		}, {
-			"lang": "nl",
-			"termStr": "milieucontrole op produkten",
-			"termNote": "fullForm",
-			"relCode": 3
-		}]
-	}, {
-		"id": "IATE-46475",
-		"subjectField": [52],
-		"langSet": [{
-			"lang": "de",
-			"termStr": "Umweltsicherheit",
-			"termNote": "fullForm",
-			"relCode": 3
-		}, {
-			"lang": "nl",
-			"termStr": "milieuveiligheid",
-			"termNote": "fullForm",
-			"relCode": 3
-		}]
-	}];
-
+	// var hideDefaultText = false;
+	searchResults.terms = [];
 	searchResults.doSearch = function() {
 		if ($scope.keyword) {
 			$scope.showLandingPage = false; // hide landingpage with centered search field
@@ -75,7 +45,5 @@ angular.module('searchApp', [])
 				searchResults.terms = res.data;
 			});
 		}
-
 	};
-
 });
