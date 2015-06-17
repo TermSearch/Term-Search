@@ -37,12 +37,20 @@ angular.module('searchApp', [])
 	};
 })
 
-.controller('SearchController', function($http, $scope) {
+.controller('SearchController', function($http, $scope, $window) {
 	var searchResults = this;
 	searchResults.terms = [];
+
+	$scope.go = function(path) {
+		$window.location.href = path;
+		console.log($window.location);
+	};
+
 	searchResults.doSearch = function() {
 		// hide landingpage with centered search field
 		if ($scope.keyword) $scope.showLandingPage = false;
+
+		// only search for keywords longer than 1 character
 		if ($scope.keyword.length > 1) {
 			var searchString = '\"' + $scope.keyword + '\"';
 			$http.get('/api?termstr=' + searchString).then(function(res) {
