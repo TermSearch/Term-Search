@@ -10,14 +10,14 @@ p Zoekresultaten voor: {{keyword}}
       div(ng-repeat='word in result.de')
         dt
           | {{word.lang | uppercase }}
-        dd
-          | {{word.termStr}}
+        dd(ng-bind-html='word.termStr | highlight:keyword')
+          | {{word.termStr | highlight:keyword}}
         
       div(ng-repeat='word in result.nl')
         dt
           | {{word.lang | uppercase }}
-        dd
-          | {{word.termStr}}
+        dd(ng-bind-html='word.termStr | highlight:keyword')
+          | {{word.termStr | highlight:keyword}}
       br
       dt ID-code
       dd
