@@ -1,26 +1,42 @@
-p(ng-show='searchResults.terms.length > 0') Zoekresultaten voor: 
+p(ng-show='searchResults.terms.length > 0') Zoekopdracht volledige tekst op: 
   span.highlighted {{keyword}}
-p(ng-show='searchResults.terms.length === 0') Geen resultaten gevonden voor: {{keyword}}
-.panel.panel-default(ng-repeat='result in searchResults.terms')
-  .panel-body
-    dl.dl-horizontal
-      dt Domein(en)
-      dd
-        ul.list-unstyled
-          li(ng-repeat='sf in result.subjectFields')
-            a(href='/duits-nederlands/vakgebied/{{sf.termUrl}}') {{sf.termStr}}
-      div(ng-repeat='word in result.de')
-        dt
-          | {{word.lang | uppercase }}
-        dd(ng-bind-html='word.termStr | highlight:keyword')
-          | {{word.termStr | highlight:keyword}}
-        
-      div(ng-repeat='word in result.nl')
-        dt
-          | {{word.lang | uppercase }}
-        dd(ng-bind-html='word.termStr | highlight:keyword')
-          | {{word.termStr | highlight:keyword}}
-      br
-      dt ID-code
-      dd
-        a(href='/duits-nederlands/id/{{result.id}}') {{result.id}}
+p(ng-show='searchResults.terms.length === 0') Geen resultaten zoekopdracht volledige tekst op: {{keyword}}
+
+table.table.table-hover
+  thead
+    tr
+      th Duits
+      th Nederlands
+  tbody
+    tr(ng-repeat='result in searchResults.terms' ng-click='go("/duits-nederlands/id/"+result.id)')
+      td
+        ul.termsList
+          li(ng-repeat ='word in result.de', ng-bind-html='word.termStr | highlight:keyword')
+      td
+        ul.termsList
+          li(ng-repeat ='word in result.nl', ng-bind-html='word.termStr | highlight:keyword')
+
+      
+//- .panel.panel-default(ng-repeat='result in searchResults.terms')
+//-   .panel-body
+//-     dl.dl-horizontal
+//-       dt Domein(en)
+//-       dd
+//-         ul.list-unstyled
+//-           li(ng-repeat='sf in result.subjectFields')
+//-             a(href='/duits-nederlands/vakgebied/{{sf.termUrl}}') {{sf.termStr}}
+//-       div(ng-repeat='word in result.de')
+//-         dt
+//-           | {{word.lang | uppercase }}
+//-         dd(ng-bind-html='word.termStr | highlight:keyword')
+//-           | {{word.termStr | highlight:keyword}}
+//-         
+//-       div(ng-repeat='word in result.nl')
+//-         dt
+//-           | {{word.lang | uppercase }}
+//-         dd(ng-bind-html='word.termStr | highlight:keyword')
+//-           | {{word.termStr | highlight:keyword}}
+//-       br
+//-       dt ID-code
+//-       dd
+//-         a(href='/duits-nederlands/id/{{result.id}}') {{result.id}}
