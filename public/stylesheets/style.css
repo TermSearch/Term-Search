@@ -56,8 +56,15 @@ footer {
   height: 500px;
 }
 
-/* Terminology View */
 
+/* Terminology View Dymanic */
+
+.termsList {
+  padding-left: 1.3em;
+  margin: 0;
+}
+
+/* Terminology View Static*/
 
 /* Makes number of ol bold */
 
