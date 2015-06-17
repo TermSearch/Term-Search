@@ -1,4 +1,5 @@
-p Zoekresultaten voor: {{keyword}}
+p(ng-show='searchResults.terms.length > 0') Zoekresultaten voor: {{keyword}}
+p(ng-show='searchResults.terms.length === 0') Geen resultaten gevonden voor: {{keyword}}
 .panel.panel-default(ng-repeat='result in searchResults.terms')
   .panel-body
     dl.dl-horizontal
