@@ -32,7 +32,7 @@ angular.module('searchApp', [])
 .filter('highlight', function($sce) {
 	return function(text, phrase) {
 		if (phrase) text = text.replace(new RegExp('(' + phrase + ')', 'gi'),
-		'<span class="highlighted">$1</span>');
+			'<span class="highlighted">$1</span>');
 		return $sce.trustAsHtml(text);
 	};
 })
@@ -41,12 +41,15 @@ angular.module('searchApp', [])
 	var searchResults = this;
 	searchResults.terms = [];
 	searchResults.doSearch = function() {
-		if ($scope.keyword) {
-			$scope.showLandingPage = false; // hide landingpage with centered search field
+		// hide landingpage with centered search field
+		if ($scope.keyword) $scope.showLandingPage = false;
+		if ($scope.keyword.length > 1) {
 			var searchString = '\"' + $scope.keyword + '\"';
 			$http.get('/api?termstr=' + searchString).then(function(res) {
 				searchResults.terms = res.data;
 			});
+		} else {
+			searchResults.terms = [];
 		}
 	};
 });
