@@ -1,8 +1,8 @@
-p(ng-show='searchResults.terms.length > 0') Zoekopdracht volledige tekst op: 
+p(ng-show='searchResults.terms.length > 0') Resultaten zoekopdracht in volledige tekst voor: 
   span.highlighted {{keyword}}
-p(ng-show='searchResults.terms.length === 0') Geen resultaten zoekopdracht volledige tekst op: {{keyword}}
+p(ng-show='searchResults.terms.length === 0') Geen resultaten voor de zoekopdracht in volledige tekst voor: {{keyword}}
 
-table.table.table-hover
+table.table.table-hover(ng-show='searchResults.terms.length > 0')
   thead
     tr
       th Duits
@@ -16,7 +16,6 @@ table.table.table-hover
         ul.termsList
           li(ng-repeat ='word in result.nl', ng-bind-html='word.termStr | highlight:keyword')
 
-      
 //- .panel.panel-default(ng-repeat='result in searchResults.terms')
 //-   .panel-body
 //-     dl.dl-horizontal
