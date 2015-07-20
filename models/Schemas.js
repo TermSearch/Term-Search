@@ -1,5 +1,6 @@
-var mongoose = require('mongoose'),
-	Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var	Schema = mongoose.Schema;
+var mongoosePaginate = require('mongoose-paginate');
 
 var termEntrySchema = new Schema({
 	id: {
@@ -30,5 +31,7 @@ termEntrySchema.index({
 }, {
 	default_language: 'german'
 });
+
+termEntrySchema.plugin(mongoosePaginate);
 
 module.exports.termEntrySchema = termEntrySchema;
