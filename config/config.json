@@ -1,0 +1,8 @@
+{
+	"db": {
+		"url": "mongodb://localhost/termworld"
+	},
+	"app": {
+		"defaultPort": 3000
+	}
+}

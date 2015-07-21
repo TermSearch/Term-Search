@@ -1,29 +1,26 @@
 var domainCodes = require('../json/domaincodes.json');
 
 // Public methods
-module.exports.getSubjectFieldStr = getSubjectFieldStr;
+module.exports.toStr = toStr;
 module.exports.getAll = getAll;
-module.exports.getSubjectFieldNr = getSubjectFieldNr;
-module.exports.getSubjectFieldStrs = getSubjectFieldStrs;
+module.exports.toNr = toNr;
+module.exports.toStrArr = toStrArr;
 
 // Returns an array of all subject field strings
 function getAll() {
-
   var descrArr = domainCodes.map( function(domaincode) {
     return domaincode.nl || domaincode.en;
   });
-
   // Helper function to filter out only unique strings
 	function onlyUnique(value, index, self) {
 		return self.indexOf(value) === index;
 	}
   var uniqueDescrArr = descrArr.filter( onlyUnique );
-
 	return uniqueDescrArr;
 }
 
 // Converts 123 to "Employments Policy"
-function getSubjectFieldStr(subjectFieldNr) {
+function toStr(subjectFieldNr) {
 	var subjectFieldStr = "";
 	domainCodes.forEach(function(obj) {
 		if (parseInt(obj.code, 10) === subjectFieldNr) {
@@ -34,7 +31,7 @@ function getSubjectFieldStr(subjectFieldNr) {
 }
 
 // Converts "Employments Policy" to 123
-function getSubjectFieldNr(subjectFieldStr) {
+function toNr(subjectFieldStr) {
 	var subjectFieldNr;
 	domainCodes.forEach(function(obj) {
 		if (obj.nl === subjectFieldStr || obj.en === subjectFieldStr) {
@@ -45,11 +42,11 @@ function getSubjectFieldNr(subjectFieldStr) {
 }
 
 // Converts [416005, 416008] to "Organisation of elections, Voting method"
-function getSubjectFieldStrs(nrsArr) {
+function toStrArr(nrsArr) {
 	var strArr = [];
 	nrsArr.forEach(function(nr) {
     // Remove '00' for "No domain"
-    if (nr != '00') strArr.push(getSubjectFieldStr(nr));
+    if (nr != '00') strArr.push(toStr(nr));
 	});
 	return strArr; // returns an array of strings
 }

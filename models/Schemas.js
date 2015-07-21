@@ -34,4 +34,27 @@ termEntrySchema.index({
 
 termEntrySchema.plugin(mongoosePaginate);
 
+var dictEntrySchema = new Schema({
+	id: {
+		type: String, // eg. IATE....
+		index: true
+	},
+	subjectFields: {
+		type: [Number],
+		index: true
+	}, // e.g. [123, 345]
+	note: String, // e.g. pharmaceutical product
+	de: {
+		type: String,
+		index: true
+	},
+	nl: {
+		type: [String],
+		index: true
+	}
+});
+
+dictEntrySchema.plugin(mongoosePaginate);
+
 module.exports.termEntrySchema = termEntrySchema;
+module.exports.dictEntrySchema = dictEntrySchema;

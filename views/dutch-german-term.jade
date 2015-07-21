@@ -47,7 +47,7 @@ block results
   hr
   h2 Duits Nederlandse vertaling van #{termStr}
   p De Nederlandse vertaling van het Duitse woord "#{termStr}" is <mark>#{translations[0].termStrArr[0]}</mark>. Deze vertaling is gebaseerd op gegevens verstrekt door de EU
-    if (translations[0].subjectFields.lenght > 0 && translations[0].subjectFields[0].termStr != "Geen domein")
+    if (translations[0].subjectFields.length > 0 && translations[0].subjectFields[0].termStr != "Geen domein")
         | en geldt o.a. voor het vakgebied <i>#{translations[0].subjectFields[0].termStr}</i>
     | . Kijk voor meer informatie op 
     a(href="http://iate.europa.eu/") de website van IATE

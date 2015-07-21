@@ -1,5 +1,6 @@
 var SubjectField = require('../models/subjectFieldModel'),
 	TermEntry = require('../models/termEntryModel'),
+	DictEntry = require('../models/dictEntryModel'),
 	url = require('../lib/url');
 
 exports.home = function(req, res) {
@@ -22,7 +23,7 @@ exports.subjectFieldList = function(req, res) {
 
 exports.subjectField = function(req, res, next) {
 	var sfStr = url.decodeSlug(req.params.vakgebied);
-	var sfNr = SubjectField.getSubjectFieldNr(sfStr);
+	var sfNr = SubjectField.toNr(sfStr);
 	TermEntry.find({
 			subjectField: {
 				$all: [sfNr]
@@ -81,13 +82,12 @@ exports.dutchGermanTerm = function(req, res, next) {
 					termStr: termStr,
 					translations: translations
 				});
-			} else next(); // not entries found, fallback to 404, not found
+			} else next(); // no entries found, fallback to 404, not found
 		})
 		.then(null, function(err) {
 			next(err);
 		});
 };
-
 
 exports.dutchGermanId = function(req, res, next) {
 	TermEntry.find({

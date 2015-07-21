@@ -45,7 +45,7 @@ var termEntryModel = function() {
 	termEntrySchema.statics.separateLanguages = function(termEntries) {
 		return termEntries.map(function(termEntry) {
 			// Convert subjectField numbers to array of strings
-			var subjectFieldStrs = SubjectField.getSubjectFieldStrs(termEntry.subjectField);
+			var subjectFieldStrs = SubjectField.toStrArr(termEntry.subjectField);
 			// Generate URL for these strings
 			var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldStrs);
 			return {

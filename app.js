@@ -1,12 +1,12 @@
-var express = require('express'),
-	morgan = require('morgan'),
-	mongoose = require('mongoose'),
-	compression = require('compression'),
-	app = express();
+var express = require('express');
+var	morgan = require('morgan');
+var	mongoose = require('mongoose');
+var	compression = require('compression');
+var	app = express();
+var config = require('./config/config.json');
 
-app.set('port', process.env.PORT || 3000);
-
-mongoose.connect('mongodb://localhost/termworld');
+app.set('port', process.env.PORT || config.app.defaultPort);
+mongoose.connect(config.db.url);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {

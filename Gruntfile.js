@@ -1,11 +1,11 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
 	// load plugins
 	[
 		'grunt-cafe-mocha',
 		'grunt-contrib-jshint',
 		'grunt-exec'
-	].forEach(function(task) {
+	].forEach(function (task) {
 		grunt.loadNpmTasks(task);
 	});
 
@@ -25,7 +25,14 @@ module.exports = function(grunt) {
 					ui: 'tdd',
 					timeout: 4000
 				},
-			}
+			},
+			database: {
+				src: 'qa/tests-database-*.js',
+				options: {
+					ui: 'tdd',
+					timeout: 4000
+				},
+			},
 		},
 		jshint: {
 			app: ['app.js', 'public/js/**/*.js',
@@ -42,8 +49,9 @@ module.exports = function(grunt) {
 	});
 
 	// register tasks
-	grunt.registerTask('default', ['cafemocha', 'jshint']);
+	grunt.registerTask('default', ['cafemocha:all', 'jshint']);
 	grunt.registerTask('links', ['exec']);
 	grunt.registerTask('units', ['cafemocha:units']);
+	grunt.registerTask('database', ['cafemocha:database']);
 
 };

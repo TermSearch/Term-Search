@@ -8,8 +8,8 @@ var expect = require('chai').expect;
 // subjectFieldModel
 //
 suite('Unit testing SubjectFieldModel', function() {
-	test('testing getSubjectFieldStrs(416005 416008)', function() {
-		expect(sf.getSubjectFieldStrs([416005, 416008]) === ['Organisation of elections', 'Voting method']);
+	test('testing toStrArr(416005 416008)', function() {
+		expect(sf.toStrArr([416005, 416008]) === ['Organisation of elections', 'Voting method']);
 	});
 });
 
