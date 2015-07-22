@@ -9,7 +9,7 @@ var dictEntryModel = function () {
 	// If PORT varialbe is not set to production, assume development
 	if (process.env.PORT != 'production') {
 		// activate debugging info for database
-		// mongoose.set('debug', true);
+		mongoose.set('debug', true);
 		// automatically check indexing status database at startup
 		dictEntrySchema.set('autoIndex', true);
 	}
@@ -28,12 +28,14 @@ var dictEntryModel = function () {
 				return dictEntries.map(function (dictEntry) {
 					// resolve [12, 44] to ["example subjectField", "second ..."]
 					var subjectFieldsAsStrings = SubjectField.toStrArr(dictEntry.subjectFields);
+					// convert ["str", "str"] to [{ str, url}, {str, url}]
+					var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldsAsStrings);
 					return {
 						id: dictEntry.id,
 						de: dictEntry.de,
 						nl: dictEntry.nl,
 						note: dictEntry.note || '',
-						subjectFields: subjectFieldsAsStrings
+						subjectFields: subjectFieldsWithURLs
 					};
 				});
 			});

@@ -22,11 +22,11 @@ exports.subjectFieldList = function(req, res) {
 };
 
 exports.subjectField = function(req, res, next) {
-	var sfStr = url.decodeSlug(req.params.vakgebied);
-	var sfNr = SubjectField.toNr(sfStr);
+	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
+	var subjectFieldNr = SubjectField.toNr(subjectFieldStr);
 	TermEntry.find({
 			subjectField: {
-				$all: [sfNr]
+				$all: [subjectFieldNr]
 			}
 		})
 		.limit(1000)
@@ -35,7 +35,7 @@ exports.subjectField = function(req, res, next) {
 		.then(url.encodeSlugArr)
 		.then(function(termArray) {
 			res.render('subjectfield', {
-				sf: sfStr,
+				sf: subjectFieldStr,
 				termArray: termArray
 			});
 		})
@@ -62,25 +62,19 @@ exports.dutchGerman = function(req, res) {
 		});
 };
 
-exports.dutchGermanTerm = function(req, res, next) {
+// Reads the requested term from the url in the request parameters
+// Converts this url to a normal string (without underscores etc.)
+// Searches the database for this string
+exports.de_nl_translation = function(req, res, next) {
 	// convert url slug to term string format
 	// i.e. replace underscores with space etc.
-	var termStr = url.decodeSlug(req.params.term);
-	TermEntry.find({
-			'langSet': {
-				$elemMatch: {
-					lang: 'de',
-					termStr: termStr
-				}
-			}
-		})
-		.exec()
-		.then(TermEntry.getDictionaryEntries)
-		.then(function(translations) {
-			if (translations.length > 0) {
-				res.render('dutch-german-term', {
-					termStr: termStr,
-					translations: translations
+	var germanStr = url.decodeSlug(req.params.term);
+	DictEntry.findTranslation(germanStr)
+		.then(function(dictEntries) {
+			if (dictEntries) {
+				res.render('de-nl-translation', {
+					germanStr: germanStr,
+					dictEntries: dictEntries
 				});
 			} else next(); // no entries found, fallback to 404, not found
 		})
@@ -88,6 +82,33 @@ exports.dutchGermanTerm = function(req, res, next) {
 			next(err);
 		});
 };
+
+// exports.dutchGermanTerm = function(req, res, next) {
+// 	// convert url slug to term string format
+// 	// i.e. replace underscores with space etc.
+// 	var termStr = url.decodeSlug(req.params.term);
+// 	TermEntry.find({
+// 			'langSet': {
+// 				$elemMatch: {
+// 					lang: 'de',
+// 					termStr: termStr
+// 				}
+// 			}
+// 		})
+// 		.exec()
+// 		.then(TermEntry.getDictionaryEntries)
+// 		.then(function(translations) {
+// 			if (translations.length > 0) {
+// 				res.render('dutch-german-term', {
+// 					termStr: termStr,
+// 					translations: translations
+// 				});
+// 			} else next(); // no entries found, fallback to 404, not found
+// 		})
+// 		.then(null, function(err) {
+// 			next(err);
+// 		});
+// };
 
 exports.dutchGermanId = function(req, res, next) {
 	TermEntry.find({

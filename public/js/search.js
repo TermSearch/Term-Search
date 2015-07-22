@@ -53,7 +53,7 @@ angular.module('searchApp', [])
 		// only search for keywords longer than 1 character
 		if ($scope.keyword.length > 1) {
 			var searchString = '\"' + $scope.keyword + '\"';
-			$http.get('/api?termstr=' + searchString).then(function(res) {
+			$http.get('/api?termStr=' + searchString).then(function(res) {
 				searchResults.terms = res.data;
 			});
 		} else {

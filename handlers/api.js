@@ -5,7 +5,7 @@ var TermEntry = require('../models/termEntryModel'),
 exports.getTermEntries = function (req, res) {
 	TermEntry.find({
 			$text: {
-				$search: req.query.termstr
+				$search: req.query.termStr
 			}
 		})
 		.limit(20)

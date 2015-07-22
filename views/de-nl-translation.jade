@@ -1,0 +1,56 @@
+extends layout
+
+block title
+  title Duits Nederlandse vertaling van #{germanStr}
+  meta(name='description', content='De Duits-Nederlandse vertaling van het Duitse woord #{germanStr} is "#{dictEntries[0].nl[0]". Deze vertaling is gebaseerd op gegevens verstrekt door de EU.')
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li
+      a(href="/duits-nederlands") Duits-Nederlands
+    li.active
+      | #{germanStr}
+
+block results
+  h1 #{germanStr}
+
+  ol.dictionaryList     
+    each dictEntry in dictEntries
+      li
+        .notBold
+          if ( dictEntry.subjectFields.length > 0 )
+            each subjectField, index in dictEntry.subjectFields
+              i
+                a(href='/duits-nederlands/vakgebied/' + subjectField.termUrl ) #{subjectField.germanStr}
+                if (index < dictEntry.subjectFields.length - 1)
+                    | , 
+            br
+          if ( dictEntry.nl.length > 1)
+            ul
+              each translation in dictEntry.nl
+                li 
+                  a(href='/duits-nederlands/id/'+dictEntry.id) 
+                    span.glyphicon.glyphicon-play 
+                  |  #{translation}
+          else
+            a(href='/duits-nederlands/id/'+dictEntry.id) 
+              span.glyphicon.glyphicon-play 
+            |  #{dictEntry.nl[0]} 
+          
+  
+  hr
+  h2 Duits Nederlandse vertaling van #{germanStr}
+  p De Nederlandse vertaling van het Duitse woord "#{germanStr}" is <mark>#{dictEntries[0].nl[0]}</mark>. Deze vertaling is gebaseerd op gegevens verstrekt door de EU 
+    if (dictEntries[0].subjectFields.length > 0 && dictEntries[0].subjectFields[0].germanStr != "Geen domein")
+        | en geldt o.a. voor het vakgebied <i>#{dictEntries[0].subjectFields[0].germanStr}</i>
+    | . Kijk voor meer informatie op 
+    a(href="http://iate.europa.eu/") de website van IATE
+    | .
+
+  //- hr
+  //- p De volgende 10 Duitse woorden met Nederlandse vertalingen in de database zijn:
+  //- 
+  //- hr
+  //- p De vorige 10 Duitse woorden met Nederlandse vertalingen in de database zijn:

@@ -23,7 +23,7 @@ module.exports = function(app) {
 
 	app.get('/duits-nederlands/', main.dutchGerman);
 
-	app.get('/duits-nederlands/:term', main.dutchGermanTerm);
+	app.get('/duits-nederlands/:term', main.de_nl_translation);
 
 	app.get('/duits-nederlands/id/:id', main.dutchGermanId);
 
