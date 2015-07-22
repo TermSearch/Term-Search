@@ -8,12 +8,20 @@ block breadcrumbs
   ul.breadcrumb
     li
       a(href="/") Home
+    li
+      a(href="/duits-nederlands") Duits-Nederlands
     li.active
-      | Duits-Nederlands
+      | Pagina #{requestedPage}
 
 block results
-  h1 De eerste 100 Duitse termen in de database                       
+  h1 Pagina #{requestedPage} met honderd Duitse termen                       
   p In de terminologische databank van de EU (IATE) zijn de volgende Duitse termen met een Nederlandse vertaling gevonden. Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
+  
+  ul.pager
+    li.previous
+      a(href="../pagina/" + (requestedPage - 1))← Vorige pagina
+    li.next
+      a(href="../pagina/" + (requestedPage + 1)) Volgende pagina →
     
   - alphabet = " 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
   each letter in alphabet
@@ -27,4 +35,4 @@ block results
         .panel-body
             ul
               each dictEntry in loopArray
-                li: a(href='/duits-nederlands/' ) #{dictEntry.de}
+                li: a(href='/duits-nederlands/' + dictEntry.deUrl ) #{dictEntry.de}

@@ -11,9 +11,11 @@ var resolveSubjectFields = function (dictEntries) {
 		var subjectFieldsAsStrings = SubjectField.toStrArr(dictEntry.subjectFields);
 		// convert ["str", "str"] to [{ str, url}, {str, url}]
 		var subjectFieldsWithURLs = url.encodeSlugArr(subjectFieldsAsStrings);
+		var deUrl = url.encodeSlug(dictEntry.de);
 		return {
 			id: dictEntry.id,
 			de: dictEntry.de,
+			deUrl: deUrl,
 			nl: dictEntry.nl,
 			note: dictEntry.note || '',
 			subjectFields: subjectFieldsWithURLs

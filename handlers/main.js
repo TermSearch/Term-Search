@@ -57,6 +57,7 @@ exports.showPage = function (req, res, next) {
 		.then(function (dictEntries) {
 			if (dictEntries) {
 				res.render('show-page', {
+					requestedPage: requestedPage,
 					dictEntries: dictEntries
 				});
 			} else next(); // no more pages found, fallback to 404, not found
@@ -70,10 +71,10 @@ exports.showPage = function (req, res, next) {
 // and renders them to the page /duits-nederlands/
 exports.showPagesOverview = function (req, res, next) {
 	DictEntry.getTotalPages()
-		.then(function ( totalPages ) {
-				res.render('show-pages-overview', {
-					totalPages: totalPages
-				});
+		.then(function (totalPages) {
+			res.render('show-pages-overview', {
+				totalPages: totalPages
+			});
 		})
 		.then(null, function (err) {
 			next(err);
