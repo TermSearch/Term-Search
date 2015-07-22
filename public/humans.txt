@@ -5,7 +5,7 @@ Twitter: @vnglst
 From: Utrecht, The Netherlands
 
 /* THANKS */
-Terminology: EU
+Terminology: EU, Microsoft
 
 /* SITE */
 Last update: 2015/04/12
