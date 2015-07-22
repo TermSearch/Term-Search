@@ -53,7 +53,7 @@ exports.subjectField = function (req, res, next) {
 exports.showPage = function (req, res, next) {
 	var requestedPage = parseInt(req.params.pageNumber, 10);
 	if (isNaN(requestedPage)) next();
-	DictEntry.getPage(requestedPage)
+		else DictEntry.getPage(requestedPage)
 		.then(function (dictEntries) {
 			if (dictEntries) {
 				res.render('show-page', {

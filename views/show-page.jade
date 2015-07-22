@@ -35,4 +35,6 @@ block results
         .panel-body
             ul
               each dictEntry in loopArray
-                li: a(href='/duits-nederlands/' + dictEntry.deUrl ) #{dictEntry.de}
+                li
+                  a(href='/duits-nederlands/' + dictEntry.deUrl) 
+                  | #{dictEntry.de}
