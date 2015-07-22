@@ -23,7 +23,7 @@ block results
           if ( dictEntry.subjectFields.length > 0 )
             each subjectField, index in dictEntry.subjectFields
               i
-                a(href='/duits-nederlands/vakgebied/' + subjectField.termUrl ) #{subjectField.germanStr}
+                a(href='/duits-nederlands/vakgebied/' + subjectField.termUrl ) #{subjectField.termStr}
                 if (index < dictEntry.subjectFields.length - 1)
                     | , 
             br

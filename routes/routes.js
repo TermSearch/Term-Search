@@ -17,11 +17,13 @@ module.exports = function(app) {
 
 	app.get('/woordenboeken', main.woordenboeken);
 
-	app.get('/duits-nederlands/vakgebied/', main.subjectFieldList);
+	app.get('/duits-nederlands/vakgebied/', main.allSubjectFields);
 
 	app.get('/duits-nederlands/vakgebied/:vakgebied', main.subjectField);
 
-	app.get('/duits-nederlands/', main.dutchGerman);
+	app.get('/duits-nederlands/', main.showPagesOverview);
+
+	app.get('/duits-nederlands/pagina/:pageNumber', main.showPage);
 
 	app.get('/duits-nederlands/:term', main.de_nl_translation);
 

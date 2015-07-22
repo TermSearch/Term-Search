@@ -6,6 +6,7 @@ var	app = express();
 var config = require('./config/config.json');
 
 app.set('port', process.env.PORT || config.app.defaultPort);
+
 mongoose.connect(config.db.url);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

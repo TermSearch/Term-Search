@@ -32,6 +32,18 @@ suite('Database tests dictEntryModel:', function () {
 		});
 	});
 
+	describe('find 4000th page of 100 mongodb term entries', function () {
+		it('should return 100 dictEntries', function (done) {
+			DictEntry.paginate({}, {
+				page: 4000,
+				limit: 100
+			}, function (error, dictEntries, pageCount, itemCount) {
+				expect(dictEntries).to.be.a('array');
+				done();
+			});
+		});
+	});
+
 	// run this at the end of all tests
 	after(function (done) {
 		mongoose.disconnect();

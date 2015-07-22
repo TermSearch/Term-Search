@@ -27,8 +27,8 @@ block results
           .letter #{letter}                        
       .panel-body
         ul
-          - var loopArray
-          - loopArray = subjectFields.filter( function (str) { return (str.toUpperCase())[0] === letter } )
-          each sf in loopArray
-            li: a(href='/duits-nederlands/vakgebied/'+sf.split(' ').join('_') ) #{sf}
+          - var tempArray
+          - tempArray = subjectFields.filter( function (str) { return (str.toUpperCase())[0] === letter } )
+          each subjectField in tempArray
+            li: a(href='/duits-nederlands/vakgebied/'+subjectField.split(' ').join('_') ) #{subjectField}
                 
