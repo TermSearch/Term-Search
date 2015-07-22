@@ -5,6 +5,7 @@ Twitter: @vnglst
 From: Utrecht, The Netherlands
 
 /* THANKS */
+Terminology: EU
 
 /* SITE */
 Last update: 2015/04/12
