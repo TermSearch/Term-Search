@@ -34,7 +34,7 @@ var dictEntryModel = function () {
 		dictEntrySchema.set('autoIndex', true);
 	}
 
-	//
+	// Finds the first 10 pages of a string sourceWord
 	dictEntrySchema.statics.findTranslation = function (sourceWord) {
 		return this.find({
 				'de': sourceWord
@@ -47,7 +47,8 @@ var dictEntryModel = function () {
 			});
 	};
 
-	//
+	// Returns the dictEntries for the requested page number
+	// Returns a promise with dictEntries as a parameter in the callback
 	dictEntrySchema.statics.getPage = function (number) {
 		var resultsPerPage = 100;
 		var pageNumber = number;
@@ -62,7 +63,7 @@ var dictEntryModel = function () {
 			});
 	};
 
-	//
+	// Returns the total number of pages
 	dictEntrySchema.statics.getTotalPages = function () {
 		var resultsPerPage = 100;
 		return this.count({})

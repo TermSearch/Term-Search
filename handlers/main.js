@@ -4,7 +4,7 @@ var SubjectField = require('../models/subjectFieldModel'),
 	url = require('../lib/url');
 
 exports.home = function (req, res) {
-	res.render('index');
+	res.render('home');
 };
 
 exports.colofon = function (req, res) {
@@ -16,15 +16,15 @@ exports.woordenboeken = function (req, res) {
 };
 
 // Renders a list of all subjectFields to page /duits-nederlands/vakgebied/
-exports.allSubjectFields = function (req, res) {
-	res.render('all-subjectfields', {
+exports.de_nl_vakgebied_alle = function (req, res) {
+	res.render('de-nl-vakgebied-alle', {
 		subjectFields: SubjectField.getAll()
 	});
 };
 
 // Finds the first 1000 terms for a certain subjectField
 // And renders them to the page /duits-nederlands/vakgebied/xxx
-exports.subjectField = function (req, res, next) {
+exports.de_nl_vakgebied = function (req, res, next) {
 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
 	var subjectFieldNr = SubjectField.toNr(subjectFieldStr);
 	TermEntry.find({
@@ -37,7 +37,7 @@ exports.subjectField = function (req, res, next) {
 		.then(TermEntry.getGermanTranslations)
 		.then(url.encodeSlugArr)
 		.then(function (termArray) {
-			res.render('subjectfield', {
+			res.render('de_nl_vakgebied', {
 				sf: subjectFieldStr,
 				termArray: termArray
 			});
@@ -50,13 +50,13 @@ exports.subjectField = function (req, res, next) {
 
 // Finds the first 1000 german terms in the database
 // and renders them to the page /duits-nederlands/
-exports.showPage = function (req, res, next) {
+exports.de_nl_page = function (req, res, next) {
 	var requestedPage = parseInt(req.params.pageNumber, 10);
 	if (isNaN(requestedPage)) next();
 		else DictEntry.getPage(requestedPage)
 		.then(function (dictEntries) {
 			if (dictEntries) {
-				res.render('show-page', {
+				res.render('de-nl-page', {
 					requestedPage: requestedPage,
 					dictEntries: dictEntries
 				});
@@ -69,10 +69,10 @@ exports.showPage = function (req, res, next) {
 
 // Finds the first 1000 german terms in the database
 // and renders them to the page /duits-nederlands/
-exports.showPagesOverview = function (req, res, next) {
+exports.de_nl_alle = function (req, res, next) {
 	DictEntry.getTotalPages()
 		.then(function (totalPages) {
-			res.render('show-pages-overview', {
+			res.render('de-nl-alle', {
 				totalPages: totalPages
 			});
 		})
@@ -90,19 +90,20 @@ exports.de_nl_translation = function (req, res, next) {
 	var germanStr = url.decodeSlug(req.params.term);
 	DictEntry.findTranslation(germanStr)
 		.then(function (dictEntries) {
+			// if dictEntries found, render jade file
 			if (dictEntries) {
 				res.render('de-nl-translation', {
 					germanStr: germanStr,
 					dictEntries: dictEntries
 				});
-			} else next(); // no entries found, fallback to 404, not found
+			} else next(); // else no entries found, fallback to 404, not found
 		})
 		.then(null, function (err) {
 			next(err);
 		});
 };
 
-exports.dutchGermanId = function (req, res, next) {
+exports.de_nl_id = function (req, res, next) {
 	TermEntry.find({
 			'id': req.params.id
 		})
@@ -110,7 +111,7 @@ exports.dutchGermanId = function (req, res, next) {
 		.then(TermEntry.separateLanguages)
 		.then(function (termEntries) {
 			if (termEntries.length > 0) {
-				res.render('dutch-german-id', {
+				res.render('de_nl_id', {
 					termEntry: termEntries[0] // id's are unique, so only 1 termEntry in array
 				});
 			} else next(); // no entry found, fallback to 404, not found

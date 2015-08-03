@@ -9,25 +9,23 @@ module.exports = function(app) {
     next();
 	});
 
+	// Homepage
 	app.get('/', main.home);
 
+	// API
 	app.get('/api/', api.getTermEntries);
 
+	// Footer links
 	app.get('/colofon', main.colofon);
-
 	app.get('/woordenboeken', main.woordenboeken);
 
-	app.get('/duits-nederlands/vakgebied/', main.allSubjectFields);
-
-	app.get('/duits-nederlands/vakgebied/:vakgebied', main.subjectField);
-
-	app.get('/duits-nederlands/', main.showPagesOverview);
-
-	app.get('/duits-nederlands/pagina/:pageNumber', main.showPage);
-
+	// German to Dutch related
+	app.get('/duits-nederlands/vakgebied/', main.de_nl_vakgebied_alle);
+	app.get('/duits-nederlands/vakgebied/:vakgebied', main.de_nl_vakgebied);
+	app.get('/duits-nederlands/', main.de_nl_alle);
+	app.get('/duits-nederlands/pagina/:pageNumber', main.de_nl_page);
 	app.get('/duits-nederlands/:term', main.de_nl_translation);
-
-	app.get('/duits-nederlands/id/:id', main.dutchGermanId);
+	app.get('/duits-nederlands/id/:id', main.de_nl_id);
 
 	// Handle 404
 	app.use(main.notFound);
