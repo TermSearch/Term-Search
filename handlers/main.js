@@ -18,46 +18,63 @@ exports.woordenboeken = function (req, res) {
 // Renders a list of all subjectFields to page /duits-nederlands/vakgebied/
 exports.de_nl_vakgebied_alle = function (req, res) {
 	res.render('de-nl-vakgebied-alle', {
-		subjectFields: SubjectField.getAll()
+		subjectFields: DictEntry.getAllSubjectFields()
 	});
 };
 
 // Finds the first 1000 terms for a certain subjectField
 // And renders them to the page /duits-nederlands/vakgebied/xxx
+
 exports.de_nl_vakgebied = function (req, res, next) {
 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
-	var subjectFieldNr = SubjectField.toNr(subjectFieldStr);
-	TermEntry.find({
-			subjectField: {
-				$all: [subjectFieldNr]
-			}
-		})
-		.limit(1000)
-		.exec()
-		.then(TermEntry.getGermanTranslations)
-		.then(url.encodeSlugArr)
-		.then(function (termArray) {
-			res.render('de_nl_vakgebied', {
-				sf: subjectFieldStr,
-				termArray: termArray
-			});
+	DictEntry.findBySubjectField(subjectFieldStr)
+		.then(function (dictEntries) {
+			if (dictEntries) {
+				res.render('de-nl-vakgebied', {
+					dictEntries: dictEntries,
+					subjectFieldStr: subjectFieldStr
+				});
+			} else next(); // no more pages found, fallback to 404, not found
 		})
 		.then(null, function (err) {
-			res.send(500, 'Er is iets mis met de database.');
-			res.send(err);
+			next(err);
 		});
 };
+
+// exports.de_nl_vakgebied = function (req, res, next) {
+// 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
+// 	var subjectFieldNr = SubjectField.toNr(subjectFieldStr);
+// 	TermEntry.find({
+// 			subjectField: {
+// 				$all: [subjectFieldNr]
+// 			}
+// 		})
+// 		.limit(1000)
+// 		.exec()
+// 		.then(TermEntry.getGermanTranslations)
+// 		.then(url.encodeSlugArr)
+// 		.then(function (termArray) {
+// 			res.render('de-nl-vakgebied', {
+// 				sf: subjectFieldStr,
+// 				termArray: termArray
+// 			});
+// 		})
+// 		.then(null, function (err) {
+// 			res.send(500, 'Er is iets mis met de database.');
+// 			res.send(err);
+// 		});
+// };
 
 // Finds the first 1000 german terms in the database
 // and renders them to the page /duits-nederlands/
 exports.de_nl_page = function (req, res, next) {
-	var requestedPage = parseInt(req.params.pageNumber, 10);
-	if (isNaN(requestedPage)) next();
-		else DictEntry.getPage(requestedPage)
+	var requestedPageNr = parseInt(req.params.pageNumber, 10);
+	if (isNaN(requestedPageNr)) next();
+	else DictEntry.getPage(requestedPageNr)
 		.then(function (dictEntries) {
 			if (dictEntries) {
 				res.render('de-nl-page', {
-					requestedPage: requestedPage,
+					requestedPageNr: requestedPageNr,
 					dictEntries: dictEntries
 				});
 			} else next(); // no more pages found, fallback to 404, not found
@@ -111,7 +128,7 @@ exports.de_nl_id = function (req, res, next) {
 		.then(TermEntry.separateLanguages)
 		.then(function (termEntries) {
 			if (termEntries.length > 0) {
-				res.render('de_nl_id', {
+				res.render('de-nl-id', {
 					termEntry: termEntries[0] // id's are unique, so only 1 termEntry in array
 				});
 			} else next(); // no entry found, fallback to 404, not found

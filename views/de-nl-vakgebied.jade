@@ -1,7 +1,7 @@
 extends layout
 
 block title
-  title Duitse terminologie op het gebied van #{sf}
+  title Duitse terminologie op het gebied van #{subjectFieldStr}
   meta(name='description', content='') 
 
 block breadcrumbs
@@ -13,28 +13,17 @@ block breadcrumbs
     li
       a(href="/duits-nederlands/vakgebied") Vakgebieden
     li.active
-      | #{sf}
+      | #{subjectFieldStr}
 
 block results
-  h1 #{sf}                         
+  h1 #{subjectFieldStr}                         
   p
-    if (termArray.length === 0)
-      | Voor het vakgebied <mark>#{sf}</mark> zijn voor de talencombinatie Duits-Nederlands geen termen gevonden.
+    if (dictEntries.length === 0)
+      | Voor het vakgebied <mark>#{subjectFieldStr}</mark> zijn voor de talencombinatie Duits-Nederlands geen termen gevonden.
     else  
       | In de terminologische databank van de EU 
       a(href='http://iate.europa.eu/') (IATE) 
-      | zijn voor het vakgebied <mark>#{sf}</mark> de volgende Duitse termen met een Nederlandse vertaling gevonden. Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
-      
-  - alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
-  each letter in alphabet
-    - var loopArray
-    - loopArray = termArray.filter( function (term) { return term.termStr[0] === letter } )
-    if (loopArray.length > 0)
-      .panel.panel-default
-        .panel-heading
-          h1.panel-title
-              | #{letter}                        
-        .panel-body
-            ul
-              each term in loopArray
-                li: a(href='/duits-nederlands/'+term.termUrl ) #{term.termStr}                
+      | zijn voor het vakgebied <mark>#{subjectFieldStr}</mark> de volgende Duitse termen met een Nederlandse vertaling gevonden. Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
+
+  include ./includes/de-nl-in-panels.jade
+          

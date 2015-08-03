@@ -1,0 +1,14 @@
+- alphabet = " 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+each letter in alphabet
+  - var loopArray
+  - loopArray = dictEntries.filter( function (dictEntry) { return dictEntry.de[0].toUpperCase() === letter })
+  if (loopArray.length > 0)
+    .panel.panel-default
+      .panel-heading
+        h1.panel-title
+            | #{letter}                        
+      .panel-body
+          ul
+            each dictEntry in loopArray
+              li
+                a(href='/duits-nederlands/' + dictEntry.deUrl) #{dictEntry.de}  

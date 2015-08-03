@@ -34,7 +34,28 @@ var dictEntryModel = function () {
 		dictEntrySchema.set('autoIndex', true);
 	}
 
-	// Finds the first 10 pages of a string sourceWord
+	// Returns an array of all subjectFields
+	dictEntrySchema.statics.getAllSubjectFields = function () {
+		return SubjectField.getAll();
+	};
+
+	// Finds the first 1000 dictEntries of a subjectFieldStr e.g. "Recht"
+	dictEntrySchema.statics.findBySubjectField = function (subjectFieldStr) {
+		var subjectFieldNr = SubjectField.toNr(subjectFieldStr);
+		return this.find({
+				subjectFields: {
+					$all: [subjectFieldNr]
+				}
+			})
+			.limit(1000)
+			.exec()
+			.then(resolveSubjectFields)
+			.then(function (dictEntries) {
+				return dictEntries;
+			});
+	};
+
+	// Finds the first 10 dictEntries of a string sourceWord e.g. "Anlage"
 	dictEntrySchema.statics.findTranslation = function (sourceWord) {
 		return this.find({
 				'de': sourceWord
@@ -48,7 +69,7 @@ var dictEntryModel = function () {
 	};
 
 	// Returns the dictEntries for the requested page number
-	// Returns a promise with dictEntries as a parameter in the callback
+	// Returns a promise with dictEntries in the callback
 	dictEntrySchema.statics.getPage = function (number) {
 		var resultsPerPage = 100;
 		var pageNumber = number;
@@ -68,8 +89,8 @@ var dictEntryModel = function () {
 		var resultsPerPage = 100;
 		return this.count({})
 			.exec()
-			.then(function ( count ) {
-				return Math.floor( count / resultsPerPage);
+			.then(function (count) {
+				return Math.floor(count / resultsPerPage);
 			});
 	};
 
