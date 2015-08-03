@@ -1,7 +1,6 @@
-var SubjectField = require('../models/subjectFieldModel'),
-	TermEntry = require('../models/termEntryModel'),
-	DictEntry = require('../models/dictEntryModel'),
-	url = require('../lib/url');
+var TermEntry = require('../models/termEntryModel');
+var	DictEntry = require('../models/dictEntryModel');
+var url = require('../lib/url');
 
 exports.home = function (req, res) {
 	res.render('home');
@@ -40,30 +39,6 @@ exports.de_nl_vakgebied = function (req, res, next) {
 			next(err);
 		});
 };
-
-// exports.de_nl_vakgebied = function (req, res, next) {
-// 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
-// 	var subjectFieldNr = SubjectField.toNr(subjectFieldStr);
-// 	TermEntry.find({
-// 			subjectField: {
-// 				$all: [subjectFieldNr]
-// 			}
-// 		})
-// 		.limit(1000)
-// 		.exec()
-// 		.then(TermEntry.getGermanTranslations)
-// 		.then(url.encodeSlugArr)
-// 		.then(function (termArray) {
-// 			res.render('de-nl-vakgebied', {
-// 				sf: subjectFieldStr,
-// 				termArray: termArray
-// 			});
-// 		})
-// 		.then(null, function (err) {
-// 			res.send(500, 'Er is iets mis met de database.');
-// 			res.send(err);
-// 		});
-// };
 
 // Finds the first 1000 german terms in the database
 // and renders them to the page /duits-nederlands/
@@ -120,6 +95,11 @@ exports.de_nl_translation = function (req, res, next) {
 		});
 };
 
+//
+// TODO: This has to be refactored > find function should be static methode of TermEntry
+// TODO: Also: create and use new database collection for termEntries
+// TODO: URL of termEntries should become: /id/IATE-2314
+//
 exports.de_nl_id = function (req, res, next) {
 	TermEntry.find({
 			'id': req.params.id

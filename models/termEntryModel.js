@@ -1,7 +1,7 @@
-var mongoose = require('mongoose'),
-	Schemas = require('./Schemas.js'),
-	SubjectField = require('../models/subjectFieldModel'),
-	url = require('../lib/url');
+var mongoose = require('mongoose');
+var	Schemas = require('./Schemas.js');
+var SubjectField = require('../models/subjectFieldModel');
+var	url = require('../lib/url');
 
 var termEntryModel = function() {
 
@@ -11,7 +11,6 @@ var termEntryModel = function() {
 	if (process.env.PORT != "production") {
 		// activate debugging info for database
 		// mongoose.set('debug', true);
-
 		// automatically check indexing status database at startup
 		termEntrySchema.set('autoIndex', true);
 	}
@@ -21,20 +20,6 @@ var termEntryModel = function() {
 	termEntrySchema.methods.getTranslations = function(language) {
 		return this.langSet.filter(function(term) {
 			return term.lang === language;
-		});
-	};
-
-	// Returns an array of German STRINGS for all termEntries in the array
-	// e.g. getTranslations(termEntries) returns all the German strings
-	termEntrySchema.statics.getGermanTranslations = function(termEntries) {
-		var germanTerms = [];
-		termEntries.forEach(function(termEntry) {
-			var translations = termEntry.getTranslations('de');
-			germanTerms = germanTerms.concat(translations);
-		});
-
-		return germanTerms.map(function(term) {
-			return term.termStr;
 		});
 	};
 
@@ -53,23 +38,6 @@ var termEntryModel = function() {
 				subjectFields: subjectFieldsWithURLs,
 				de: termEntry.getTranslations('de'),
 				nl: termEntry.getTranslations('nl')
-			};
-		});
-	};
-
-	// returns a dictionary entry
-	// with an array of Dutch translations
-	// complete with id + subjectfields for each translations
-	// subjectfields are also converted to strings + urls
-	termEntrySchema.statics.getDictionaryEntries = function(termEntries) {
-		var arr = termEntrySchema.statics.separateLanguages(termEntries);
-		return arr.map(function(termEntry) {
-			return {
-				id: termEntry.id,
-				subjectFields: termEntry.subjectFields,
-				termStrArr: termEntry.nl.map(function(e) {
-					return e.termStr;
-				})
 			};
 		});
 	};

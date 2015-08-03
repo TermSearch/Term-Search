@@ -89,29 +89,4 @@ suite('Unit testing termEntryModel', function() {
 		expect(output === TermEntry.separateLanguages(input));
 	});
 
-	test('Testing function getGermanTranslations', function() {
-		var output = ['lebensmittelecht'];
-		expect(output === TermEntry.getGermanTranslations(input));
-	});
-
-	test('Testing function getDictionaryEntry', function() {
-
-		var output = [{
-			"id": "IATE-1068280",
-			"subjectFields": [{
-				"termStr": "Landbouw, bosbouw en visserij",
-				"termUrl": "Landbouw,_bosbouw_en_visserij"
-			}],
-			"termStrArr": ["geschikt voor levensmiddelen", "nog een vertaling"]
-		}];
-
-		// myOutput = TermEntry.getDictionaryEntries(input);
-		// console.log(JSON.stringify(myOutput, null, 4));
-		expect(output === TermEntry.getDictionaryEntries(input));
-	});
-
-
-
-
-
 });
