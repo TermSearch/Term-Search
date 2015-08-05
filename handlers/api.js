@@ -1,22 +1,15 @@
-var TermEntry = require('../models/termEntryModel'),
-	SubjectField = require('../models/subjectFieldModel'),
-	url = require('../lib/url');
+var DictEntry = require('../models/dictEntryModel');
 
-exports.getTermEntries = function (req, res) {
-	TermEntry.find({
-			$text: {
-				$search: req.query.termStr
-			}
-		})
-		.limit(20)
-		.exec()
-		.then(TermEntry.separateLanguages)
-		.then(function (err, termEntries) {
-			if (err) {
-				res.json(err);
-			} else {
+exports.getTranslations = function (req, res) {
+	DictEntry.findTranslation(req.query.termStr)
+		.then(function (dictEntries) {
+			// if dictEntries found, render jade file
+			if (dictEntries) {
 				res.setHeader('Content-Type', 'application/json');
-				res.json(termEntries);
-			}
+				res.json(dictEntries);
+			} else next(); // else no entries found
+		})
+		.then(null, function (err) {
+			res.json(err);
 		});
 };

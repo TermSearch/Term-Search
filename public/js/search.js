@@ -1,6 +1,6 @@
-angular.module('searchApp', [])
+angular.module('searchApp', ['ngRoute'])
 
-.directive('focusOn', function($timeout) {
+.directive('focusOn', function ($timeout) {
 
 	function moveCursorToEnd(el) {
 		// Creates a selection of zero characters at the end of the value
@@ -12,9 +12,9 @@ angular.module('searchApp', [])
 
 	return {
 		restrict: 'A',
-		link: function(_scope, _element, _attr) {
-			_scope.$watch(_attr.focusOn, function(_focusVal) {
-				$timeout(function() {
+		link: function (_scope, _element, _attr) {
+			_scope.$watch(_attr.focusOn, function (_focusVal) {
+				$timeout(function () {
 					// if the _focusVal is switched to true
 					if (_focusVal) {
 						// focus element
@@ -29,35 +29,36 @@ angular.module('searchApp', [])
 	};
 })
 
-.filter('highlight', function($sce) {
-	return function(text, phrase) {
+.filter('highlight', function ($sce) {
+	return function (text, phrase) {
 		if (phrase) text = text.replace(new RegExp('(' + phrase + ')', 'gi'),
 			'<span class="highlighted">$1</span>');
 		return $sce.trustAsHtml(text);
 	};
 })
 
-.controller('SearchController', function($http, $scope, $window) {
+.controller('SearchController', function ($http, $scope, $window) {
 	var searchResults = this;
-	searchResults.terms = [];
+	searchResults.dictEntries = [];
 
-	$scope.go = function(path) {
+	$scope.go = function (path) {
 		$window.location.href = path;
 		console.log($window.location);
 	};
 
-	searchResults.doSearch = function() {
+	searchResults.doSearch = function () {
 		// hide landingpage with centered search field
 		if ($scope.keyword) $scope.showLandingPage = false;
 
 		// only search for keywords longer than 1 character
 		if ($scope.keyword.length > 1) {
-			var searchString = '\"' + $scope.keyword + '\"';
-			$http.get('/api?termStr=' + searchString).then(function(res) {
-				searchResults.terms = res.data;
-			});
+			$http.get('/api?termStr=' + $scope.keyword)
+				.then(function (res) {
+					if (res.data.length > 0) $scope.go('/duits-nederlands/'+$scope.keyword);
+					searchResults.dictEntries = res.data;
+				});
 		} else {
-			searchResults.terms = [];
+			searchResults.dictEntries = [];
 		}
 	};
 });

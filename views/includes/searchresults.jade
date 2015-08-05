@@ -1,17 +1,31 @@
-p(ng-show='searchResults.terms.length > 0') Resultaten zoekopdracht in volledige tekst voor: 
+p(ng-show='searchResults.dictEntries') Resultaten zoekopdracht in volledige tekst voor: 
   span.highlighted {{keyword}}
-p(ng-show='searchResults.terms.length === 0') Geen resultaten voor de zoekopdracht in volledige tekst voor: {{keyword}}
+p(ng-show='!searchResults.dictEntries') Geen resultaten voor de zoekopdracht in volledige tekst voor: {{keyword}}
 
-table.table.table-hover(ng-show='searchResults.terms.length > 0')
-  thead
-    tr
-      th Duits
-      th Nederlands
-  tbody
-    tr(ng-repeat='result in searchResults.terms' ng-click='go("/duits-nederlands/id/"+result.id)')
-      td
-        ul.termsList
-          li(ng-repeat ='word in result.de', ng-bind-html='word.termStr | highlight:keyword')
-      td
-        ul.termsList
-          li(ng-repeat ='word in result.nl', ng-bind-html='word.termStr | highlight:keyword')
+ol.dictionaryList     
+  li(ng-repeat='dictEntry in searchResults.dictEntries')
+    span(ng-if='dictEntry.subjectFields.length > 0')
+      span(ng-repeat='subjectField in dictEntry.subjectFields')
+        i
+          a(href='#') {{subjectField.termStr}}
+    a(href='/duits-nederlands/id/') {{dictEntry.nl}}
+
+
+        //- if ( dictEntry.subjectFields.length > 0 )
+        //-   each subjectField, index in dictEntry.subjectFields
+        //-     i
+        //-       a(href='/duits-nederlands/vakgebied/' + subjectField.termUrl ) #{subjectField.termStr}
+        //-       if (index < dictEntry.subjectFields.length - 1)
+        //-           | , 
+        //-   br
+        //- if ( dictEntry.nl.length > 1)
+        //-   ul
+        //-     each translation in dictEntry.nl
+        //-       li 
+        //-         a(href='/duits-nederlands/id/'+dictEntry.id) 
+        //-           span.glyphicon.glyphicon-play 
+        //-         |  #{translation}
+        //- else
+        //-   a(href='/duits-nederlands/id/'+dictEntry.id) 
+        //-     span.glyphicon.glyphicon-play 
+        //-   |  #{dictEntry.nl[0]} 

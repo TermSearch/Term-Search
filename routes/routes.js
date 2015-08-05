@@ -13,7 +13,7 @@ module.exports = function(app) {
 	app.get('/', main.home);
 
 	// API
-	app.get('/api/', api.getTermEntries);
+	app.get('/api/', api.getTranslations);
 
 	// Footer links
 	app.get('/colofon', main.colofon);
