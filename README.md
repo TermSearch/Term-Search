@@ -1,4 +1,4 @@
-# Term Tyrion (working title)
+# Terminologica (working title)
 
 ## Description
 
