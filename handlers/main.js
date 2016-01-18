@@ -96,7 +96,7 @@ exports.de_nl_translation = function (req, res, next) {
 };
 
 //
-// TODO: This has to be refactored > find function should be static methode of TermEntry
+// TODO: This has to be refactored > find function should be static method of TermEntry
 // TODO: Also: create and use new database collection for termEntries
 // TODO: URL of termEntries should become: /id/IATE-2314
 //
