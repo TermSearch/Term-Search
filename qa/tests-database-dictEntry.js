@@ -38,7 +38,8 @@ suite('Database tests dictEntryModel:', function () {
 				page: 4000,
 				limit: 100
 			}, function (error, dictEntries, pageCount, itemCount) {
-				expect(dictEntries).to.be.a('array');
+				// console.log(dictEntries);
+				expect(dictEntries).to.be.a('object');
 				done();
 			});
 		});
