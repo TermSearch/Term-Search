@@ -43,22 +43,16 @@ angular.module('searchApp', ['ngRoute'])
 
 	$scope.go = function (path) {
 		$window.location.href = path;
-		console.log($window.location);
 	};
 
 	searchResults.doSearch = function () {
 		// hide landingpage with centered search field
 		if ($scope.keyword) $scope.showLandingPage = false;
 
-		// only search for keywords longer than 1 character
-		if ($scope.keyword.length > 1) {
-			$http.get('/api?termStr=' + $scope.keyword)
-				.then(function (res) {
+		$http.get('/api?termStr=' + $scope.keyword)
+			.then(function (res) {
 					if (res.data.length > 0) $scope.go('/duits-nederlands/'+$scope.keyword);
 					searchResults.dictEntries = res.data;
 				});
-		} else {
-			searchResults.dictEntries = [];
-		}
 	};
 });
