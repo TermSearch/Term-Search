@@ -51,10 +51,10 @@ html(lang='nl' ng-app='searchApp')
                     span.glyphicon.glyphicon-search(aria-hidden='true')
         #results.row
           .col-xs-12.col-sm-10.col-md-8.col-lg-7
-            #search-results(ng-show='keyword', ng-cloak)
+            //- #search-results(ng-show='keyword', ng-cloak)
               // if keyword supplied: show dynamic search results
-              include ./includes/searchresults.jade
-            #static-results(ng-hide='keyword')
+              //- include ./includes/searchresults.jade
+            #static-results()
               // without keyword: show static content
               block breadcrumbs
               block results
