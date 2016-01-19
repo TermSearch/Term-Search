@@ -1,5 +1,5 @@
 {
-  "name": "term.world",
+  "name": "Terminologica",
   "version": "0.0.2",
   "description": "Terminology Search Engine",
   "main": "server.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vnglst/term.world"
+    "url": "https://github.com/vnglst/Terminologica"
   },
   "author": "Koen van Gilst",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vnglst/term.world/issues"
+    "url": "https://github.com/vnglst/Terminologica/issues"
   },
-  "homepage": "https://terms.vangilst.eu",
+  "homepage": "https://terminologica.eu",
   "dependencies": {
     "compression": "^1.4.1",
     "express": "^4.12.3",

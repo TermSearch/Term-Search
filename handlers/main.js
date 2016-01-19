@@ -84,7 +84,6 @@ exports.de_nl_translation = function (req, res, next) {
 		.then(function (dictEntries) {
 			// if dictEntries found, render jade file
 			if (dictEntries) {
-				console.log(dictEntries)
 				res.render('de-nl-translation', {
 					germanStr: germanStr,
 					dictEntries: dictEntries
