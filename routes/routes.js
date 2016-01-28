@@ -1,5 +1,12 @@
-var main = require('../handlers/main'),
-	api = require('../handlers/api');
+var main = require('../handlers/main');
+var api = require('../handlers/api');
+var	search = require('../handlers/search');
+var bodyParser = require('body-parser')
+
+// create application/json parser
+var jsonParser = bodyParser.json()
+// create application/x-www-form-urlencoded parser
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 module.exports = function(app) {
 
@@ -14,6 +21,9 @@ module.exports = function(app) {
 
 	// API
 	app.get('/api/', api.getTranslations);
+
+	// Search page
+	app.post('/search', urlencodedParser, search.query);
 
 	// Footer links
 	app.get('/colofon', main.colofon);

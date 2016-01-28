@@ -17,8 +17,9 @@
   },
   "homepage": "https://terminologica.eu",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "compression": "^1.4.1",
-    "express": "*",
+    "express": "^4.13.3",
     "express-logger": "0.0.3",
     "jade": "^1.9.2",
     "jstransformer-markdown": "^1.1.0",
