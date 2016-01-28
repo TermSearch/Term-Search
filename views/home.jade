@@ -4,22 +4,6 @@ block title
   title Nederlands Duitse terminologie
   meta(name='description', content='Zoekmachine voor de database met daarin de officiële terminologielijst van de EU.')
 
-block landingpage
-  .landingPage(ng-hide='!showLandingPage', ng-cloak, ng-init='showLandingPage=true')
-    .headerLP
-      .logoLP
-        a(href="/")
-          img(src='/img/logo-vangilst.png' class='logoImageLP' alt='Logo Van Gilst Übersetzungen')
-      .searchLP
-        form(ng-submit='searchResults.doSearch()')
-          .input-group
-            input.form-control(type='search' ng-model='keyword' focus-on='!keyword')
-            span.input-group-btn
-              button.btn.btn-primary(type='submit')
-                span.glyphicon.glyphicon-search(aria-hidden="true")
-    .footerLP
-      include ./includes/footertext.jade
-      
 block results
   .emptyResults
 

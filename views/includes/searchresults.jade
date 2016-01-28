@@ -9,23 +9,3 @@ ol.dictionaryList
         i
           a(href='#') {{subjectField.termStr}}
     a(href='/duits-nederlands/id/') {{dictEntry.nl}}
-
-
-        //- if ( dictEntry.subjectFields.length > 0 )
-        //-   each subjectField, index in dictEntry.subjectFields
-        //-     i
-        //-       a(href='/duits-nederlands/vakgebied/' + subjectField.termUrl ) #{subjectField.termStr}
-        //-       if (index < dictEntry.subjectFields.length - 1)
-        //-           | , 
-        //-   br
-        //- if ( dictEntry.nl.length > 1)
-        //-   ul
-        //-     each translation in dictEntry.nl
-        //-       li 
-        //-         a(href='/duits-nederlands/id/'+dictEntry.id) 
-        //-           span.glyphicon.glyphicon-play 
-        //-         |  #{translation}
-        //- else
-        //-   a(href='/duits-nederlands/id/'+dictEntry.id) 
-        //-     span.glyphicon.glyphicon-play 
-        //-   |  #{dictEntry.nl[0]} 
