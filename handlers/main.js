@@ -88,7 +88,11 @@ exports.de_nl_translation = function (req, res, next) {
 					germanStr: germanStr,
 					dictEntries: dictEntries
 				});
-			} else next(); // else no entries found, fallback to 404, not found
+			} else {
+				res.render('de-nl-notfound', {
+					germanStr: germanStr
+				});
+			}
 		})
 		.then(null, function (err) {
 			next(err);
