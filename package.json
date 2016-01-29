@@ -4,7 +4,9 @@
   "description": "Terminology Search Engine",
   "main": "server.js",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "start": "nodemon",
+    "deploy": "git push live"
   },
   "repository": {
     "type": "git",
