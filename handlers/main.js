@@ -35,9 +35,8 @@ exports.de_nl_vakgebied = function (req, res, next) {
 				});
 			} else next(); // no more pages found, fallback to 404, not found
 		})
-		.then(null, function (err) {
-			next(err);
-		});
+		// Pass error on to next()
+		.then(null, next);
 };
 
 // Finds the first 1000 german terms in the database
@@ -54,9 +53,8 @@ exports.de_nl_page = function (req, res, next) {
 				});
 			} else next(); // no more pages found, fallback to 404, not found
 		})
-		.then(null, function (err) {
-			next(err);
-		});
+		// Pass error on to next()
+		.then(null, next);
 };
 
 // Finds the first 1000 german terms in the database
@@ -68,9 +66,8 @@ exports.de_nl_alle = function (req, res, next) {
 				totalPages: totalPages
 			});
 		})
-		.then(null, function (err) {
-			next(err);
-		});
+		// Pass error on to next()
+		.then(null, next);
 };
 
 // Reads the requested term from the url in the request parameters
@@ -94,9 +91,8 @@ exports.de_nl_translation = function (req, res, next) {
 				});
 			}
 		})
-		.then(null, function (err) {
-			next(err);
-		});
+		// Pass error on to next()
+		.then(null, next);
 };
 
 //

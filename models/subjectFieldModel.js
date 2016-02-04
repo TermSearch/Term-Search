@@ -32,12 +32,13 @@ function toStr(subjectFieldNr) {
 
 // Converts "Employments Policy" to 123
 function toNr(subjectFieldStr) {
-	var subjectFieldNr;
+	var subjectFieldNr = -1;
 	domainCodes.forEach(function(obj) {
 		if (obj.nl === subjectFieldStr || obj.en === subjectFieldStr) {
 			subjectFieldNr = obj.code;
 		}
 	});
+  // If subjectfield not found, return -1
 	return subjectFieldNr;
 }
 
