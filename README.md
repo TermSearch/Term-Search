@@ -13,7 +13,11 @@ To start the app you'll need to:
 5. `cd [repo dir]/utils/zip2json2mongo`
 6. Load data into server with node js script: `node index.js ../../json/IATE-nl.json.zip termentries`
 7. All done. Start server: `NODE_ENV=production PORT=80 node start /opt/term.world/server.js`
-8. See `utils/upstart-script` for Upstart config file.
+8. See [Upstart script](https://gist.github.com/vnglst/326efb4dfc1245ac89ca) for Upstart config file.
+
+## Upstart script
+
+
 
 ## Specs
 
