@@ -12,7 +12,7 @@ To start the app you'll need to:
 4. Copy zipped data to server: `cp database-seed/IATE-NL.json.zip ssh://root@terms.vangilst.eu/opt/IATE-NL.json.zip`
 5. `cd [repo dir]/utils/zip2json2mongo`
 6. Load data into server with node js script: `node index.js ../../json/IATE-nl.json.zip termentries`
-7. All done. Start server: `NODE_ENV=production PORT=80 node start /opt/term.world/server.js`
+7. All done. Start server: `NODE_ENV=production PORT=2016 node /opt/term.world/server.js`
 8. See [Upstart script](https://gist.github.com/vnglst/326efb4dfc1245ac89ca) for Upstart config file.
 
 ## Upstart script
