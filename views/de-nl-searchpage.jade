@@ -14,10 +14,10 @@ block results
   .panel.panel-default
     .panel-heading
       .panel-title
-        | Voor #{searchTerm} zijn 10 resultaten gevonden!                       
+        | Voor "#{searchTerm}" zijn #{dictEntries.length} resultaten gevonden!                       
     .panel-body
       ol.dictionaryList     
         each dictEntry in dictEntries
           li
             i
-              a(href='/duits-nederlands/'+'') Anlage
+              a(href='/duits-nederlands/#{dictEntry.deUrl}') #{dictEntry.de}

@@ -56,6 +56,20 @@ var dictEntryModel = function () {
 	};
 
 	// Finds the first 10 dictEntries of a string sourceWord e.g. "Anlage"
+	dictEntrySchema.statics.findTranslationByRegex = function (sourceWord) {
+		var qReg = { $regex: '^'+sourceWord };
+		return this.find({
+				'de': qReg
+			})
+			.limit(20)
+			.exec()
+			.then(resolveSubjectFields)
+			.then(function (dictEntries) {
+				return dictEntries;
+			});
+	};
+
+	// Finds the first 10 dictEntries of a string sourceWord e.g. "Anlage"
 	dictEntrySchema.statics.findTranslation = function (sourceWord) {
 		return this.find({
 				'de': sourceWord

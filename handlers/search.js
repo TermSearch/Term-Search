@@ -1,6 +1,7 @@
 'use strict';
 
 var DictEntry = require('../models/dictEntryModel');
+var url = require('../lib/url');
 
 exports.query = function (req, res) {
 	if (!req.body) return res.sendStatus(400)
@@ -14,7 +15,6 @@ const filterDuplicates = (dictEntries) => {
 		if (onlyUniques.forEach((uniqueEntry) => {
 				if (uniqueEntry.de === entry.de) unique = false;
 			}));
-
 		if (unique) onlyUniques.push(entry);
 	});
 	return onlyUniques;
@@ -23,7 +23,7 @@ const filterDuplicates = (dictEntries) => {
 exports.searchpage = (req, res, next) => {
 	const term = req.query.term;
 
-	DictEntry.findTranslation(term)
+	DictEntry.findTranslationByRegex(term)
 		.then(function (dictEntries) {
 			// if dictEntries found, render jade file
 			if (dictEntries) {
