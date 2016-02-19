@@ -34,6 +34,7 @@
     "chai": "^3.4.1",
     "grunt": "^0.4.5",
     "grunt-cafe-mocha": "^0.1.13",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.12.0",
     "grunt-exec": "^0.4.6",
     "jquery": "^2.1.3",
