@@ -22,8 +22,11 @@ module.exports = function(app) {
 	// API
 	app.get('/api/', api.getTranslations);
 
-	// Search page
+	// Post search request
 	app.post('/search', urlencodedParser, search.query);
+
+	// Search page
+	app.get('/search', urlencodedParser, search.searchpage);
 
 	// Footer links
 	app.get('/colofon', main.colofon);
