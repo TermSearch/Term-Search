@@ -57,11 +57,12 @@ var dictEntryModel = function () {
 
 	// Finds the first 10 dictEntries of a string sourceWord e.g. "Anlage"
 	dictEntrySchema.statics.findTranslationByRegex = function (sourceWord) {
-		var qReg = { $regex: '^'+sourceWord };
+		var qReg = { $regex: new RegExp('^' + sourceWord, 'i') };
+		console.log(qReg);
 		return this.find({
 				'de': qReg
 			})
-			.limit(20)
+			.limit(50)
 			.exec()
 			.then(resolveSubjectFields)
 			.then(function (dictEntries) {

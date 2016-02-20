@@ -1,14 +1,14 @@
-var search = require('../handlers/search.js');
+const search = require('../handlers/search.js');
 
-var expect = require('chai').expect;
+const expect = require('chai').expect;
 
 //
-// filter duplicated
+// Unit test for filter duplicated
 //
-suite('Testing filter duplicates function', function () {
+suite('Testing filter duplicates function', () => {
 
 	test('Duplicates should be removed', function () {
-		var input = [
+		const input = [
 			{
 				"id": "IATE-1",
 				"de": "anlage"
@@ -22,7 +22,7 @@ suite('Testing filter duplicates function', function () {
 				"de": "Anlage"
 			},
 		];
-		var expectedOutput = [
+		const expectedOutput = [
 			{
 				"id": "IATE-1",
 				"de": "anlage"
@@ -32,7 +32,7 @@ suite('Testing filter duplicates function', function () {
 				"de": "Anlage"
 			}
 		];
-		var actualOuput = search.filterDuplicates(input);
+		const actualOuput = search.filterDuplicates(input);
 		expect(actualOuput).to.eql(expectedOutput);
 	});
 });
