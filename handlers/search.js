@@ -22,8 +22,8 @@ const filterDuplicates = (dictEntries) => {
 
 exports.searchpage = (req, res, next) => {
 	const term = req.query.term;
-
-	DictEntry.findTranslationByRegex(term)
+	const regexQuery = new RegExp('^' + term, 'i');
+	DictEntry.findTranslationByRegex(regexQuery)
 		.then(function (dictEntries) {
 			// if dictEntries found, render jade file
 			if (dictEntries) {

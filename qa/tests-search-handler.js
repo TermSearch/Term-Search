@@ -7,7 +7,7 @@ const expect = require('chai').expect;
 //
 suite('Testing filter duplicates function', () => {
 
-	test('Duplicates should be removed', function () {
+	test('Duplicates should be removed', () => {
 		const input = [
 			{
 				"id": "IATE-1",
