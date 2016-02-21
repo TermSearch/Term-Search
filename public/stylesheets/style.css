@@ -56,38 +56,69 @@ footer {
   height: 500px;
 }
 
-/* Search results No-JS */
+/* Search results for static server generated results, no script */
 
-.searchResults ul
-{
-  list-style: none;
-  padding: 0;
-  margin: 0;
+div.searchResult {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
 }
 
-.searchResults h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
+div.searchResult:hover {
+  color: #000;
+  background: #eee;
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
 }
 
-.searchResults li
-{
-  margin-bottom: 15px;
+a.resultLink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /* Makes sure the link doesn't get underlined */
+  z-index: 10;
+  /* raises anchor tag above everything else in div */
+  background-color: white;
+  /*workaround to make clickable in IE */
+  opacity: 0;
+  /*workaround to make clickable in IE */
+  filter: alpha(opacity=0);
+  /*workaround to make clickable in IE */
+}
+
+.resultBox {
+  padding: 5px;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+.searchTerm  {
+  margin: 0;
+  padding: 0;
+  color: rgb(84, 84, 84);
+  font-size: 15px;
+  font-weight: bold;
+
 }
 
 .searchDefinition
 {
   color: rgb(84, 84, 84);
   font-size: 13px;
+  /* show ellipsis if longer than 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px;     /* fallback */
+  max-height: 40px;      /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
-
-.searchUrl
-{
-  font-size: 10px;
-  color: rgb(0, 102, 33);
-}
-
 
 /* Terminology View Dymanic */
 

@@ -73,7 +73,7 @@ var dictEntryModel = function () {
 		return this.find({
 				'de': sourceWord
 			})
-			.limit(10)
+			.limit(50)
 			.exec()
 			.then(resolveSubjectFields)
 			.then(function (dictEntries) {

@@ -37,7 +37,7 @@ suite('Testing merge duplicates function', () => {
 				"nl": ["bijlage", "terrein"]
 			}
 		];
-		const actualOuput = search.mergeDuplicates(input);
+		const actualOuput = search.mergeDuplicates(input)
 		expect(actualOuput).to.eql(expectedOutput);
 	});
 });
