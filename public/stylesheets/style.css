@@ -56,13 +56,45 @@ footer {
   height: 500px;
 }
 
+/* Search results No-JS */
+
+.searchResults ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchResults h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.searchResults li
+{
+  margin-bottom: 15px;
+}
+
+.searchDefinition
+{
+  color: rgb(84, 84, 84);
+  font-size: 13px;
+}
+
+.searchUrl
+{
+  font-size: 10px;
+  color: rgb(0, 102, 33);
+}
+
 
 /* Terminology View Dymanic */
 
-.termsList {
+/*.termsList {
   padding-left: 1.3em;
   margin: 0;
-}
+}*/
 
 /* Terminology View Static*/
 

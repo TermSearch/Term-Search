@@ -1,23 +1,28 @@
 extends layout
 
 block title
-  title Term niet gevonden!
+  title Zoekresulaten voor #{searchTerm}
 
 block breadcrumbs
   ul.breadcrumb
     li
       a(href="/") Home
     li.active
-      | Zoekresulaten voor #{searchTerm}
+      | Zoekresulaten voor "#{searchTerm}"
   
 block results
   .panel.panel-default
     .panel-heading
       .panel-title
         | Voor "#{searchTerm}" zijn #{dictEntries.length} resultaten gevonden!                       
-    .panel-body
-      ul.dictionaryList     
+    .panel-body.searchResults
+      ul     
         each dictEntry in dictEntries
           li
             i
-              a(href='/duits-nederlands/#{dictEntry.deUrl}') #{dictEntry.de}
+              h1
+                a(href='/duits-nederlands/#{dictEntry.deUrl}') #{dictEntry.de}
+              span.searchDefinition
+                | 1. Installatie 2. Bijlage 3. Lorem Ipsum 4. Installatie 5. Bijlage 6. Lorem Ipsum | 7. Installatie 8. Bijlage 10. Lorem Ipsum
+              br
+              span.searchUrl terms.vangilst.eu/duits-nederlands/#{dictEntry.deUrl}
