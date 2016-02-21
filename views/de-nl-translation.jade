@@ -42,9 +42,9 @@ block results
   
   hr
   h2 Duits Nederlandse vertaling van #{germanStr}
-  p De Nederlandse vertaling van het Duitse woord "#{germanStr}" is <mark>#{dictEntries[0].nl[0]}</mark>. Deze vertaling is gebaseerd op gegevens verstrekt door de EU 
+  p De Nederlandse vertaling van het Duitse woord "#{germanStr}" is <mark>#{dictEntries[0].nl[0]}</mark>. Deze vertaling is gebaseerd op gegevens verstrekt door de EU
     if (dictEntries[0].subjectFields.length > 0 && dictEntries[0].subjectFields[0].germanStr != "Geen domein")
-        | en geldt o.a. voor het vakgebied <i>#{dictEntries[0].subjectFields[0].termStr}</i>
-    | . Kijk voor meer informatie op 
+        |  en geldt o.a. voor het vakgebied <i>#{dictEntries[0].subjectFields[0].termStr}</i>
+    |. Kijk voor meer informatie op 
     a(href="http://iate.europa.eu/") de website van IATE
     | .
