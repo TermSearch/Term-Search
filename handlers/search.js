@@ -8,7 +8,7 @@ exports.query = function (req, res) {
 	res.redirect('/search?term=' + req.body.q);
 };
 
-const filterDuplicates = (dictEntries) => {
+const mergeDuplicates = (dictEntries) => {
 	const onlyUniques = [];
 	dictEntries.forEach((entry, i) => {
 		let unique = true;
@@ -16,7 +16,7 @@ const filterDuplicates = (dictEntries) => {
 				if (uniqueEntry.de === entry.de) {
 					unique = false;
 					// add Dutch translations to existing uniqueEntry
-					uniqueEntry.nl.push(entry.nl);
+					uniqueEntry.nl = uniqueEntry.nl.concat(entry.nl);
 				}
 			}));
 		if (unique) onlyUniques.push(entry);
@@ -32,9 +32,9 @@ exports.searchpage = (req, res, next) => {
 			// if dictEntries found, render jade file
 			if (dictEntries) {
         // Filter out duplicate search results
-				let onlyUniques = filterDuplicates(dictEntries);
+				let onlyMerged = mergeDuplicates(dictEntries);
 				res.render('de-nl-searchpage', {
-					dictEntries: onlyUniques,
+					dictEntries: onlyMerged,
 					searchTerm: term
 				})
 			} else {
@@ -48,4 +48,4 @@ exports.searchpage = (req, res, next) => {
 }
 
 // For tests
-exports.filterDuplicates = filterDuplicates;
+exports.mergeDuplicates = mergeDuplicates;
