@@ -5,7 +5,7 @@ var url = require('../lib/url');
 
 exports.query = function (req, res) {
 	if (!req.body) return res.sendStatus(400)
-	res.redirect('/duits-nederlands/' + req.body.q);
+	res.redirect('/search?term=' + req.body.q);
 };
 
 const filterDuplicates = (dictEntries) => {
@@ -13,7 +13,11 @@ const filterDuplicates = (dictEntries) => {
 	dictEntries.forEach((entry, i) => {
 		let unique = true;
 		if (onlyUniques.forEach((uniqueEntry) => {
-				if (uniqueEntry.de === entry.de) unique = false;
+				if (uniqueEntry.de === entry.de) {
+					unique = false;
+					// add Dutch translations to existing uniqueEntry
+					uniqueEntry.nl.push(entry.nl);
+				}
 			}));
 		if (unique) onlyUniques.push(entry);
 	});
