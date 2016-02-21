@@ -3,36 +3,41 @@ const search = require('../handlers/search.js');
 const expect = require('chai').expect;
 
 //
-// Unit test for filter duplicated
+// Unit test for merge duplicates
 //
-suite('Testing filter duplicates function', () => {
+suite('Testing merge duplicates function', () => {
 
-	test('Duplicates should be removed', () => {
+	test('Duplicates should be merged', () => {
 		const input = [
 			{
 				"id": "IATE-1",
-				"de": "anlage"
+				"de": "anlage",
+				"nl": ["installatie"]
 			},
 			{
 				"id": "IATE-2",
-				"de": "Anlage"
+				"de": "Anlage",
+				"nl": ["bijlage"]
 			},
 			{
 				"id": "IATE-3",
-				"de": "Anlage"
+				"de": "Anlage",
+				"nl": ["terrein"]
 			},
 		];
 		const expectedOutput = [
 			{
 				"id": "IATE-1",
-				"de": "anlage"
+				"de": "anlage",
+				"nl": ["installatie"]
 			},
 			{
 				"id": "IATE-2",
-				"de": "Anlage"
+				"de": "Anlage",
+				"nl": ["bijlage", "terrein"]
 			}
 		];
-		const actualOuput = search.filterDuplicates(input);
+		const actualOuput = search.mergeDuplicates(input);
 		expect(actualOuput).to.eql(expectedOutput);
 	});
 });
