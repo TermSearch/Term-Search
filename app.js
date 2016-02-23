@@ -51,7 +51,7 @@ function startServer() {
 		console.log('Express started in ' + app.get('env') +
 			' mode on http://localhost:' + app.get('port') +
 			'; press Ctrl-C to terminate. ' +
-			'Status view cache: ' + app.get('view cache') + '.\n'
+			'Status view cache: ' + !!app.get('view cache') + '.\n'
 		);
 	});
 }

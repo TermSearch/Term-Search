@@ -22,6 +22,6 @@ if (cluster.isMaster) {
 		startWorker();
 	});
 } else {
-	// start our app on worker; see meadowlark.js
+	// start our app on worker
 	require('./app.js')();
 }
