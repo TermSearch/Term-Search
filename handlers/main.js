@@ -95,28 +95,20 @@ exports.de_nl_translation = function (req, res, next) {
 		.then(null, next);
 };
 
-//
-// TODO: This has to be refactored > find function should be static method of TermEntry
-// TODO: Also: create and use new database collection for termEntries
-// TODO: URL of termEntries should become: /id/IATE-2314
-//
-// exports.de_nl_id = function (req, res, next) {
-// 	TermEntry.find({
-// 			'id': req.params.id
-// 		})
-// 		.exec()
-// 		.then(TermEntry.separateLanguages)
-// 		.then(function (termEntries) {
-// 			if (termEntries.length > 0) {
-// 				res.render('de-nl-id', {
-// 					termEntry: termEntries[0] // id's are unique, so only 1 termEntry in array
-// 				});
-// 			} else next(); // no entry found, fallback to 404, not found
-// 		})
-// 		.then(null, function (err) {
-// 			next(err);
-// 		});
-// };
+
+// Displays detailed information about dictEntry
+// Including a link to the IATE page of the term
+exports.de_nl_id = function (req, res, next) {
+	DictEntry.findById(req.params.id)
+		.then(function (dictEntries) {
+			if (dictEntries.length > 0) {
+				res.render('de-nl-id', {
+					dictEntry: dictEntries[0] // only 1 termEntry in array
+				});
+			} else next(); // no entry found, fallback to 404, not found
+		})
+		.then(null, next);
+};
 
 exports.notFound = function (req, res, next) {
 	res.status(404);
