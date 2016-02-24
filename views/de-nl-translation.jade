@@ -31,12 +31,12 @@ block results
             ul
               each translation in dictEntry.nl
                 li 
-                  a(href='/duits-nederlands/id/'+dictEntry.id) 
-                    span.glyphicon.glyphicon-play 
+                  //- a(href='/duits-nederlands/id/'+dictEntry.id) 
+                  span.glyphicon.glyphicon-play 
                   |  #{translation}
           else
-            a(href='/duits-nederlands/id/'+dictEntry.id) 
-              span.glyphicon.glyphicon-play 
+            //- a(href='/duits-nederlands/id/'+dictEntry.id) 
+            span.glyphicon.glyphicon-play 
             |  #{dictEntry.nl[0]} 
           
   

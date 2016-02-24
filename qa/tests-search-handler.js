@@ -1,5 +1,4 @@
 const search = require('../handlers/search.js');
-
 const expect = require('chai').expect;
 
 //

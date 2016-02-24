@@ -26,13 +26,14 @@ var resolveSubjectFields = function (dictEntries) {
 var dictEntryModel = function () {
 	var dictEntrySchema = Schemas.dictEntrySchema;
 
-	// If PORT varialbe is not set to production, assume development
-	if (process.env.PORT != 'production') {
+	// If process env != production, assume development
+	if (process.env.NODE_ENV != 'production') {
 		// activate debugging info for database
-		// mongoose.set('debug', true);
-		// automatically check indexing status database at startup
-		dictEntrySchema.set('autoIndex', true);
+		mongoose.set('debug', true);
 	}
+
+	// automatically check indexing status database at startup
+	dictEntrySchema.set('autoIndex', true);
 
 	// Returns an array of all subjectFields
 	dictEntrySchema.statics.getAllSubjectFields = function () {
@@ -47,7 +48,7 @@ var dictEntryModel = function () {
 					$all: [subjectFieldNr]
 				}
 			})
-			.limit(1000)
+			.limit(500)
 			.exec()
 			.then(resolveSubjectFields)
 			.then(function (dictEntries) {

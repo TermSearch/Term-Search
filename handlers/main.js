@@ -1,4 +1,4 @@
-var TermEntry = require('../models/termEntryModel');
+// var TermEntry = require('../models/termEntryModel');
 var	DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
 
@@ -100,23 +100,23 @@ exports.de_nl_translation = function (req, res, next) {
 // TODO: Also: create and use new database collection for termEntries
 // TODO: URL of termEntries should become: /id/IATE-2314
 //
-exports.de_nl_id = function (req, res, next) {
-	TermEntry.find({
-			'id': req.params.id
-		})
-		.exec()
-		.then(TermEntry.separateLanguages)
-		.then(function (termEntries) {
-			if (termEntries.length > 0) {
-				res.render('de-nl-id', {
-					termEntry: termEntries[0] // id's are unique, so only 1 termEntry in array
-				});
-			} else next(); // no entry found, fallback to 404, not found
-		})
-		.then(null, function (err) {
-			next(err);
-		});
-};
+// exports.de_nl_id = function (req, res, next) {
+// 	TermEntry.find({
+// 			'id': req.params.id
+// 		})
+// 		.exec()
+// 		.then(TermEntry.separateLanguages)
+// 		.then(function (termEntries) {
+// 			if (termEntries.length > 0) {
+// 				res.render('de-nl-id', {
+// 					termEntry: termEntries[0] // id's are unique, so only 1 termEntry in array
+// 				});
+// 			} else next(); // no entry found, fallback to 404, not found
+// 		})
+// 		.then(null, function (err) {
+// 			next(err);
+// 		});
+// };
 
 exports.notFound = function (req, res, next) {
 	res.status(404);
