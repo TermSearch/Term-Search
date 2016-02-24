@@ -33,6 +33,7 @@ var dictEntryModel = function () {
 	}
 
 	// automatically check indexing status database at startup
+	// Maybe turn this off in production?
 	dictEntrySchema.set('autoIndex', true);
 
 	// Returns an array of all subjectFields
@@ -75,6 +76,19 @@ var dictEntryModel = function () {
 				'de': sourceWord
 			})
 			.limit(50)
+			.exec()
+			.then(resolveSubjectFields)
+			.then(function (dictEntries) {
+				return dictEntries;
+			});
+	};
+
+	// Finds the 1 dictEntry by ID, e.g. "IATE-778835"
+	dictEntrySchema.statics.findById = function (id) {
+		return this.find({
+				'id': id
+			})
+			.limit(1)
 			.exec()
 			.then(resolveSubjectFields)
 			.then(function (dictEntries) {
