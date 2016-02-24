@@ -1,0 +1,37 @@
+extends layout
+
+block title
+  title #{dictEntry.id} | gedetailleerde gegevens, inclusief link naar IATE.
+  meta(name='description', content='')
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li.active
+      | #{dictEntry.id}
+
+block results
+    .panel.panel-default
+      .panel-body
+        dl.dl-horizontal
+          dt Domein(en)
+          dd
+            ul.list-unstyled
+              each sf in dictEntry.subjectFields
+                li
+                  a(href='/duits-nederlands/vakgebied/#{sf.termUrl}') #{sf.termStr}
+          dt Opmerkingen
+          dd #{dictEntry.note}
+          dt Vermelding
+          dd 
+            a(href='/duits-nederlands/#{dictEntry.deUrl}') #{dictEntry.de}
+          br
+          dt Bron
+          dd
+            a(href='http://iate.europa.eu/') IATE (= “Inter-Active Terminology for Europe”)
+          dt Link op IATE
+          dd
+            a(href='http://iate.europa.eu/FindTermsByOtherLanguage.do?lilId=#{dictEntry.id.slice(5, -1)}&langId=nl&typeOfSearch=&display=NL') #{dictEntry.id}
+
+          
