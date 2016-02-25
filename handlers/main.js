@@ -6,6 +6,10 @@ exports.home = function (req, res) {
 	res.render('home');
 };
 
+exports.lp = function (req, res) {
+	res.render('lp');
+};
+
 exports.colofon = function (req, res) {
 	res.render('colofon');
 };

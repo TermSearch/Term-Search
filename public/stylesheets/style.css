@@ -75,6 +75,9 @@ footer p {
   margin: 0 0 3px 0;
 }
 
+.red {
+  color: red;
+}
 
 /* Search results for static server generated results, no script */
 
@@ -176,7 +179,6 @@ a.resultLink {
 }*/
 
 /* Centering search input field for landingpage */
-
 /* Mobile first: default values for screen smaller than 768px */
 
 .headerLP {
@@ -208,7 +210,7 @@ a.resultLink {
   width: 95%;
   text-align: center;
   position: fixed;
-  top: 100%;
+  top: 90%;
   left: 50%;
   -ms-transform: translate(-50%, -100%);
   /* IE 9 */
@@ -225,7 +227,7 @@ a.resultLink {
 
 @media (min-width: 768px) {
   .headerLP {
-    width: 600px;
+    width: 50%;
     top: 50%;
   }
   .logoLP {

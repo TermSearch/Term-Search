@@ -19,6 +19,9 @@ module.exports = function(app) {
 	// Homepage
 	app.get('/', main.home);
 
+	// LP
+	app.get('/lp/', main.lp);
+
 	// API
 	app.get('/api/', api.getTranslations);
 
