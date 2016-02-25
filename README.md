@@ -1,7 +1,7 @@
-# Terminologica (working title)
+# Term Search
 
 ## Description
-A terminology search engine for specialized translations.
+A terminology search engine.
 
 ## Installation
 
