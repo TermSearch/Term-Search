@@ -34,20 +34,10 @@ html(lang='nl')
           .footerLP
             p Met  
               span.glyphicon.glyphicon-heart.red
-              |  gemaakt in Utrecht door 
+              |  gemaakt in 
+              a(href="/search?term=Utrecht") Utrecht
+              |  door 
               a(href="http://www.vangilst.de/") Van Gilst Übersetzungen
-
-                      
-          //- #results.row
-          //-   .col-xs-12.col-sm-10.col-md-8.col-lg-7
-          //-     #static-results()
-          //-       block breadcrumbs
-          //-       block results
-    
-          //- footer.row.footerLP
-          //-   .col-xs-12.col-sm-10.col-md-8.col-lg-7
-          //-     include ./includes/footertext.jade  
-  
 
     if (development)
       script.
