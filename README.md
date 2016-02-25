@@ -6,6 +6,7 @@ A terminology search engine.
 ## Installation
 
 To start the app you'll need to:
+
 1. `git clone [repo link]`
 2. `cd [repo dir]`
 3. `npm install`
