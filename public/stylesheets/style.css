@@ -45,16 +45,36 @@ p {
   font-size: 13px;
   line-height: 18px;
 }
-footer {
-  margin-top: 20px;
-  border-top: 1px dotted #ccc;
-  padding: 10px 0 0 0;
-  font-size: 13px;
-  /*background-color: yellow;*/
-}
+
 .emptyResults {
   height: 500px;
 }
+
+/*
+Footer on regular pages (terms and search results)
+*/
+
+footer {
+  margin-top: 20px 0 0 0;
+  border-top: 1px dotted #ccc;
+  padding: 10px 0 50px 0;
+  font-size: 13px;
+}
+
+footer ul {
+  margin: 0 0 20px 0;
+}
+
+footer li {
+  display: inline;
+  margin-right: 1em;
+}
+
+footer p {
+  color: #666666;
+  margin: 0 0 3px 0;
+}
+
 
 /* Search results for static server generated results, no script */
 
@@ -130,20 +150,17 @@ a.resultLink {
 /* Terminology View Static*/
 
 /* Makes number of ol bold */
-
 .dictionaryList {
   font-weight: bold;
   padding-left: 1.5em;
 }
 
 /*Removes boldness from all ol content*/
-
 .dictionaryList .notBold {
   font-weight: normal;
 }
 
 /*Puts some space between entries*/
-
 .dictionaryList > li {
   margin-bottom: 1em;
 }
@@ -154,13 +171,11 @@ a.resultLink {
 }
 
 /*This hides any Angular Tags from Indexing Bots and clients with Javascript disabled*/
-
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+/*[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
-}
+}*/
 
 /* Centering search input field for landingpage */
-
 
 /* Mobile first: default values for screen smaller than 768px */
 
