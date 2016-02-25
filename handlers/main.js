@@ -3,7 +3,7 @@ var	DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
 
 exports.home = function (req, res) {
-	res.render('home');
+	res.render('lp');
 };
 
 exports.lp = function (req, res) {
