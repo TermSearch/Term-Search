@@ -14,9 +14,10 @@ block breadcrumbs
 block results
   .panel.panel-default
     .panel-heading
-      .panel-title
-        | Voor "#{searchTerm}" zijn #{dictEntries.length} resultaten gevonden                       
-    .panel-body  
+      .panel-title.search-panel-titel
+        span.glyphicon.glyphicon-stop 
+        |  Voor "#{searchTerm}" zijn #{dictEntries.length} resultaten gevonden                       
+    .panel-body
       each dictEntry in dictEntries
         .searchResult
           .resultBox

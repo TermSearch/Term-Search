@@ -46,10 +46,6 @@ p {
   line-height: 18px;
 }
 
-.emptyResults {
-  height: 500px;
-}
-
 /*
 Footer on regular pages (terms and search results)
 */
@@ -79,16 +75,29 @@ footer p {
   color: red;
 }
 
+.blue {
+  color: #2196f3;
+}
+
+.orange {
+  color: #DE9525;
+}
+
 /* Search results for static server generated results, no script */
 
-div.searchResult {
+.search-panel-titel {
+  font-size: 13px;
+  line-height: normal;
+}
+
+.searchResult {
   position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
 }
 
-div.searchResult:hover {
+.searchResult:hover {
   color: #000;
   background: #eee;
   cursor: hand;
@@ -120,15 +129,6 @@ a.resultLink {
   text-indent: -1em;
 }
 
-.searchTerm  {
-  margin: 0;
-  padding: 0;
-  color: rgb(84, 84, 84);
-  font-size: 15px;
-  font-weight: bold;
-
-}
-
 .searchDefinition
 {
   color: rgb(84, 84, 84);
@@ -143,12 +143,13 @@ a.resultLink {
   -webkit-box-orient: vertical;
 }
 
-/* Terminology View Dymanic */
-
-/*.termsList {
-  padding-left: 1.3em;
+a.searchTerm {
+  text-decoration: underline;
   margin: 0;
-}*/
+  padding: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
 
 /* Terminology View Static*/
 
@@ -173,11 +174,7 @@ a.resultLink {
   margin: 0;
 }
 
-/*This hides any Angular Tags from Indexing Bots and clients with Javascript disabled*/
-/*[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}*/
-
+/* HOME LANDING PAGE */
 /* Centering search input field for landingpage */
 /* Mobile first: default values for screen smaller than 768px */
 
@@ -224,7 +221,6 @@ a.resultLink {
 }
 
 /* For screens larger than 768px put logo next to input field */
-
 @media (min-width: 768px) {
   .headerLP {
     width: 50%;

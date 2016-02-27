@@ -3,11 +3,7 @@ var	DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
 
 exports.home = function (req, res) {
-	res.render('lp');
-};
-
-exports.lp = function (req, res) {
-	res.render('lp');
+	res.render('home');
 };
 
 exports.colofon = function (req, res) {
