@@ -39,7 +39,8 @@ exports.searchpage = (req, res, next) => {
 				})
 			} else {
 				res.render('de-nl-notfound', {
-					germanStr: term
+					germanStr: term,
+					searchTerm: term
 				});
 			}
 		})
