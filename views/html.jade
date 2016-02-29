@@ -1,3 +1,4 @@
+- var bootswatchCDN = 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css'
 doctype
 html(lang='nl')
   head
@@ -5,8 +6,10 @@ html(lang='nl')
     meta(name="google-site-verification" content="d-6XLUoaiK_zMAtWp-8LhzvRL9kWaZR-PJs-W8RIBOI")
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="author" href="/humans.txt")
-    link(href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css' rel='stylesheet', media="load-later")
-    link(rel='stylesheet', href='/stylesheets/style.css', media="load-later")
+    // Load styles inline
+    include includes/style.html
+    // Use media="bogus" to load css below
+    link(href=bootswatchCDN rel='stylesheet', media="load-later")
     //- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     //- WARNING: Respond.js doesn't work if you view the page via file://
     <!--[if lt IE 9]>
@@ -19,5 +22,4 @@ html(lang='nl')
   
   block body
 
-  link(href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css' rel='stylesheet')
-  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(href=bootswatchCDN rel='stylesheet')

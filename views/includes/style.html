@@ -1,0 +1,257 @@
+<style type="text/css">
+
+  .highlighted {
+    background: yellow
+  }
+
+  header {
+    margin: 18px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .showResults h1 {
+    color: rgb(68, 68, 68);
+    display: block;
+    font-family: 'open sans', arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+  }
+
+  .letter {
+    font-family: 'open sans', arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+  }
+
+  .panel-title {
+    color: rgb(68, 68, 68);
+    display: block;
+    font-family: 'open sans', arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+  }
+
+  .showResults h2,
+  .showResults h3,
+  .showResults h4,
+  .showResults h5 {
+    color: rgb(68, 68, 68);
+    display: block;
+    font-family: 'open sans', arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  p {
+    font-family: arial, sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 13px;
+    line-height: 18px;
+  }
+  /*
+Footer on regular pages (terms and search results)
+*/
+
+  footer {
+    margin-top: 20px 0 0 0;
+    border-top: 1px dotted #ccc;
+    padding: 10px 0 50px 0;
+    font-size: 13px;
+  }
+
+  footer ul {
+    margin: 0 0 20px 0;
+  }
+
+  footer li {
+    display: inline;
+    margin-right: 1em;
+  }
+
+  footer p {
+    color: #666666;
+    margin: 0 0 3px 0;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .blue {
+    color: #2196f3;
+  }
+
+  .orange {
+    color: #DE9525;
+  }
+  /* Search results for static server generated results, no script */
+
+  .search-panel-titel {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .searchResult {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .searchResult:hover {
+    color: #000;
+    background: #eee;
+    cursor: hand;
+    cursor: pointer;
+    opacity: .9;
+  }
+
+  a.resultLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+  }
+
+  .resultBox {
+    padding: 5px;
+    margin-left: 1em;
+    text-indent: -1em;
+  }
+
+  .searchDefinition {
+    color: rgb(84, 84, 84);
+    font-size: 13px;
+    /* show ellipsis if longer than 2 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;
+    /* fallback */
+    max-height: 40px;
+    /* fallback */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+
+  a.searchTerm {
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  /* Terminology View Static*/
+  /* Makes number of ol bold */
+
+  .dictionaryList {
+    font-weight: bold;
+    padding-left: 1.5em;
+  }
+  /*Removes boldness from all ol content*/
+
+  .dictionaryList .notBold {
+    font-weight: normal;
+  }
+  /*Puts some space between entries*/
+
+  .dictionaryList > li {
+    margin-bottom: 1em;
+  }
+
+  .dictionaryList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* HOME LANDING PAGE */
+  /* Centering search input field for landingpage */
+  /* Mobile first: default values for screen smaller than 768px */
+
+  .headerLP {
+    width: 95%;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    /* IE 9 */
+    -o-transform: translate(-50%, -50%);
+    /* Opera 9 */
+    -moz-transform: translate(-50%, -50%);
+    /* Firefox */
+    -webkit-transform: translate(-50%, -50%);
+    /* Safari */
+    transform: translate(-50%, -50%);
+  }
+
+  .logoLP {
+    text-align: center;
+    height: 140px;
+  }
+
+  .logoImageLP {
+    width: 80px;
+  }
+
+  .searchLP {
+    margin-left: 0;
+  }
+
+  .footerLP {
+    width: 95%;
+    text-align: center;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -100%);
+    /* IE 9 */
+    -o-transform: translate(-50%, -100%);
+    /* Opera 9 */
+    -moz-transform: translate(-50%, -100%);
+    /* Firefox */
+    -webkit-transform: translate(-50%, -100%);
+    /* Safari */
+    transform: translate(-50%, -100%);
+  }
+  /* For screens larger than 768px put logo next to input field */
+
+  @media (min-width: 768px) {
+    .headerLP {
+      width: 50%;
+      top: 50%;
+    }
+    .logoLP {
+      float: left;
+      text-align: left;
+      height: 100%;
+    }
+    .inputLP {
+      margin-left: 50px;
+    }
+    .logoImageLP {
+      width: 40px;
+    }
+  }
+
+</style>
