@@ -48,7 +48,7 @@ require('./routes/routes.js')(app);
 
 function startServer() {
 	app.listen(app.get('port'), function () {
-		console.log('[APP] Express started in ' + app.get('env') +
+		console.log('[APP] '+ new Date() +': Express started in ' + app.get('env') +
 			' mode on http://localhost:' + app.get('port')
 		);
 	});
