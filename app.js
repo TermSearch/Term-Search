@@ -9,9 +9,9 @@ app.set('port', process.env.PORT || config.app.defaultPort);
 
 mongoose.connect(config.db.url);
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
+db.on('error', console.error.bind(console, '[APP] MongoDB connection error:'));
 db.once('open', function (callback) {
-	console.log("Connection MongoDB succesful!");
+	console.log("[APP] Connection MongoDB succesful!");
 });
 
 app.set('views', __dirname + '/views');
@@ -39,8 +39,8 @@ case 'production':
 
 app.use(function (req, res, next) {
 	var cluster = require('cluster');
-	if (cluster.isWorker) console.log('Worker %d received request',
-		cluster.worker.id);
+	if (cluster.isWorker) console.log('[APP] Worker %d received a request on port %d',
+		cluster.worker.id, app.get('port'));
 	next();
 });
 
@@ -48,10 +48,8 @@ require('./routes/routes.js')(app);
 
 function startServer() {
 	app.listen(app.get('port'), function () {
-		console.log('Express started in ' + app.get('env') +
-			' mode on http://localhost:' + app.get('port') +
-			'; press Ctrl-C to terminate. ' +
-			'Status view cache: ' + !!app.get('view cache') + '.\n'
+		console.log('[APP] Express started in ' + app.get('env') +
+			' mode on http://localhost:' + app.get('port')
 		);
 	});
 }
