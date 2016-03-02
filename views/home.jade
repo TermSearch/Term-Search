@@ -1,11 +1,12 @@
 extends html
 
 block body
+  body
     .container
         .headerLP
           .logoLP
             a(href="/")
-              img.logoImageLP(src='/img/logo-vangilst.png' alt='Van Gilst Übersetzungen')
+              img.logoImageLP(src='/img/logo-vangilst.jpg' alt='Logo Term Search')
           .inputLP
             form(action='/search' method='post')
               .input-group
@@ -13,6 +14,7 @@ block body
                 span.input-group-btn
                   button.btn.btn-primary(type='submit')
                     span.glyphicon.glyphicon-search(aria-hidden='true')
+          .taglineLP voor alle Duitse terminologie die niet in het woordenboek staat
         footer
           .footerLP
             include ./includes/made-with-love.jade

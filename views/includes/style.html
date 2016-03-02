@@ -1,5 +1,9 @@
 <style type="text/css">
 
+  body {
+    background-color: rgb(252, 252, 252);
+  }
+
   .highlighted {
     background: yellow
   }
@@ -186,14 +190,16 @@ Footer on regular pages (terms and search results)
     padding: 0;
     margin: 0;
   }
+
   /* HOME LANDING PAGE */
+
   /* Centering search input field for landingpage */
   /* Mobile first: default values for screen smaller than 768px */
 
   .headerLP {
     width: 95%;
     position: fixed;
-    top: 30%;
+    top: 40%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     /* IE 9 */
@@ -204,6 +210,13 @@ Footer on regular pages (terms and search results)
     -webkit-transform: translate(-50%, -50%);
     /* Safari */
     transform: translate(-50%, -50%);
+  }
+
+  .taglineLP {
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(140, 140, 140);
+    font-size: 16px;
   }
 
   .logoLP {
@@ -220,10 +233,10 @@ Footer on regular pages (terms and search results)
   }
 
   .footerLP {
-    width: 95%;
+    width: 100%;
     text-align: center;
     position: fixed;
-    top: 90%;
+    top: 98%;
     left: 50%;
     -ms-transform: translate(-50%, -100%);
     /* IE 9 */
@@ -235,12 +248,15 @@ Footer on regular pages (terms and search results)
     /* Safari */
     transform: translate(-50%, -100%);
   }
-  /* For screens larger than 768px put logo next to input field */
 
+  /* For screens larger than 768px put logo next to input field */
   @media (min-width: 768px) {
     .headerLP {
       width: 50%;
       top: 50%;
+    }
+    .taglineLP {
+      font-size: 16px;
     }
     .logoLP {
       float: left;
