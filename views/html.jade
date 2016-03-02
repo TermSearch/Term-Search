@@ -6,10 +6,11 @@ html(lang='nl')
     meta(name="google-site-verification" content="d-6XLUoaiK_zMAtWp-8LhzvRL9kWaZR-PJs-W8RIBOI")
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="author" href="/humans.txt")
-    // Load styles inline
+    link(href=bootswatchCDN rel='stylesheet')
+    
+    //- Load styles inline
     include includes/style.html
-    // Use media="bogus" to load css below
-    link(href=bootswatchCDN rel='stylesheet', media="load-later")
+
     //- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     //- WARNING: Respond.js doesn't work if you view the page via file://
     <!--[if lt IE 9]>
@@ -17,9 +18,5 @@ html(lang='nl')
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     <!-- [endif]-->
     //- Title, different for every view
-    
     block title
-  
   block body
-
-  link(href=bootswatchCDN rel='stylesheet')
