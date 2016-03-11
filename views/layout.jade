@@ -2,6 +2,22 @@ extends html
 
 block body
   body
+    script(type='text/javascript').
+      var doSearch = function() {
+        event.preventDefault();
+        var query = document.getElementById('query').value;
+        fetch('http://localhost:2020/api/translations?filter[where][DE-DE][like]=Beispiel&filter[limit]=3', { method: 'get'
+        }).then(function(res) {
+          return res.json();
+        }).then(function(json) {
+          console.log(json);
+        })
+        .catch(function(err) {
+          console.log(err);
+        })
+        window.history.pushState("", "", '/search?term='+query);
+        console.log(query);
+      }
     .container
       .a(name="top")
       .showResults
@@ -11,7 +27,7 @@ block body
               a(href="/")
                 img(src='/img/logo-vangilst.jpg' class='logo' alt='Logo Term Search')
           .col-xs-10.col-sm-9.col-md-7.col-lg-6
-            form(action='/search' method='post')
+            form(action='/search' method='post' onsubmit='doSearch()')
               .input-group
                 input.form-control(type='search' id='query' value=searchTerm || '' name='q' placeholder=germanStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap')
                 span.input-group-btn
