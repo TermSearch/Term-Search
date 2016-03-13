@@ -2,36 +2,6 @@ extends html
 
 block body
   body
-    script(type='text/javascript').
-    
-      var addContent = function(content) {
-        var p = document.createElement('p'); 
-        var newContent = document.createTextNode(content);
-        p.appendChild(newContent);
-        results.appendChild(p);
-      }
-      
-      var render = function(json) {
-        var results = document.getElementById('static-results');
-        json.map( function(e, i, arr) {
-          addContent('Duits: ' + e['DE-DE']);
-          addContent('Nederlands: ' + e['NL-NL']);
-        });
-        console.timeEnd("Query");      
-      }
-      
-      var doSearch = function() {
-        event.preventDefault();
-        var query = document.getElementById('query').value;
-        console.time("Query");
-        fetch('http://localhost:2020/api/translations?filter[where][DE-DE][like]='+query+'&filter[limit]=10', { method: 'get' })
-          .then(function(res) { return res.json(); })
-          .then(render)
-          .catch(function(err) {
-            console.log(err);
-          })
-        window.history.pushState("", "", '/search?term='+query);
-      }
     .container
       .a(name="top")
       .showResults
@@ -41,7 +11,7 @@ block body
               a(href="/")
                 img(src='/img/logo-vangilst.jpg' class='logo' alt='Logo Term Search')
           .col-xs-10.col-sm-9.col-md-7.col-lg-6
-            form(action='/search' method='post' onsubmit='doSearch()')
+            form(action='/search' method='post')
               .input-group
                 input.form-control(type='search' id='query' value=searchTerm || '' name='q' placeholder=germanStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap')
                 span.input-group-btn
@@ -58,3 +28,37 @@ block body
             include ./includes/footertext.jade      
     
     include ./includes/analytics.jade
+    
+    script(type='text/javascript').
+    
+      var addContent = function(content) {
+        var p = document.createElement('p'); 
+        var newContent = document.createTextNode(content);
+        p.appendChild(newContent);
+        results.appendChild(p);
+      }
+      
+      var render = function(json) {
+        console.log(json);
+        var results = document.getElementById('static-results');
+        json.results.results.map( function(e, i, arr) {
+          addContent('Duits: ' + e['DE-DE']);
+          addContent('Nederlands: ' + e['NL-NL']);
+        });
+        console.timeEnd("Query");      
+      }
+      
+      var doSearch = function() {
+        //- event.preventDefault();
+        var query = document.getElementById('query').value;
+        console.time("Query");
+        fetch('http://localhost:2020/api/translations/textsearch?searchPhrase='+query+'&limit=10&skip=0', { method: 'get' })
+          .then(function(res) { return res.json(); })
+          .then(render)
+          .catch(function(err) {
+            console.log(err);
+          })
+        //- window.history.pushState("", "", '/search?term='+query);
+      }
+      
+      doSearch();
