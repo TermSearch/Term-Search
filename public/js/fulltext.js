@@ -1,30 +1,68 @@
-ReactDOM.render(
-	React.DOM.h1(null, 'Hello world!'),
-	document.getElementById('fulltext')
-);
+var TranslationPair = React.createClass({
+  render:function() {
+    return (
+      <tr>
+        <td>{this.props.translationData['DE-DE']}</td>
+        <td>{this.props.translationData['NL-NL']}</td>
+      </tr>
+    );
+  }
+})
 
-var addContent = function (content) {
-	var p = document.createElement('p');
-	var newContent = document.createTextNode(content);
-	p.appendChild(newContent);
-	results.appendChild(p);
-}
+var SearchResults = React.createClass({
+  render: function() {
+    var translationNodes = this.props.data.map( function (translationData) {
+      return (
+        <TranslationPair translationData={translationData} />
+      );
+    });
+    return (
+        <table className="table table-condensed searchResults">
+          <thead>
+            <tr>
+              <th>Duits</th>
+              <th>Nederlands</th>
+            </tr>
+          </thead>
+          <tbody>
+            {translationNodes}
+          </tbody>
+        </table>
+    );
+  }
+});
+
+var SearchResultsPane = React.createClass({
+  render: function() {
+    return (
+      <div className="panel panel-default">
+        <div className="panel-heading">
+          <div className="panel-title search-panel-titel">
+            <span className="glyphicon glyphicon-stop"/>
+              Full text search results
+          </div>
+        </div>
+        <div className="panel-body">
+          <SearchResults data={this.props.data} />
+        </div>
+      </div>
+    );
+  }
+})
 
 var render = function (json) {
-	console.log(json);
-	var results = document.getElementById('static-results');
-	json.results.results.map(function (e, i, arr) {
-		addContent('Duits: ' + e['DE-DE']);
-		addContent('Nederlands: ' + e['NL-NL']);
-	});
-	console.timeEnd("Query");
+  ReactDOM.render(
+    <SearchResultsPane data={json.results.results} />,
+    document.getElementById('fulltext')
+  );
+	console.timeEnd("Query time");
 }
 
 var doSearch = function () {
 	//- event.preventDefault();
 	var query = document.getElementById('query').value;
-	console.time("Query");
-	fetch('http://localhost:2020/api/translations/textsearch?searchPhrase=' + query + '&limit=10&skip=0', {
+	console.time("Query time");
+  if (query) fetch('http://localhost:2020/api/translations/textsearch?searchPhrase=' + query + '&limit=50&skip=0', {
 			method: 'get'
 		})
 		.then(function (res) {
