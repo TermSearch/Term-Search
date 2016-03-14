@@ -19,46 +19,18 @@ block body
                     span.glyphicon.glyphicon-search(aria-hidden='true')
         #results.row
           .col-xs-12.col-sm-10.col-md-8.col-lg-7
-            #static-results()
+            #static-results
               block breadcrumbs
               block results
-  
+            #fulltext
+
         footer.row
           .col-xs-12.col-sm-10.col-md-8.col-lg-7
             include ./includes/footertext.jade      
     
     include ./includes/analytics.jade
     
-    script(type='text/javascript').
-    
-      var addContent = function(content) {
-        var p = document.createElement('p'); 
-        var newContent = document.createTextNode(content);
-        p.appendChild(newContent);
-        results.appendChild(p);
-      }
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.min.js")  
+    script(src="js/fulltext.js")
       
-      var render = function(json) {
-        console.log(json);
-        var results = document.getElementById('static-results');
-        json.results.results.map( function(e, i, arr) {
-          addContent('Duits: ' + e['DE-DE']);
-          addContent('Nederlands: ' + e['NL-NL']);
-        });
-        console.timeEnd("Query");      
-      }
-      
-      var doSearch = function() {
-        //- event.preventDefault();
-        var query = document.getElementById('query').value;
-        console.time("Query");
-        fetch('http://localhost:2020/api/translations/textsearch?searchPhrase='+query+'&limit=10&skip=0', { method: 'get' })
-          .then(function(res) { return res.json(); })
-          .then(render)
-          .catch(function(err) {
-            console.log(err);
-          })
-        //- window.history.pushState("", "", '/search?term='+query);
-      }
-      
-      doSearch();
