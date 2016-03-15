@@ -3,6 +3,15 @@
 var DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
 
+//
+// REACT EXPERIMENT
+//
+var React = require('react');
+var ReactDOMServer = require('react-dom/server');
+var SearchPanel = require('../components/SearchPanel.jsx');
+
+// END REACT EXPERIMENT
+
 exports.query = function (req, res) {
 	if (!req.body) return res.sendStatus(400)
 	res.redirect('/search?term=' + req.body.q);
@@ -33,9 +42,14 @@ exports.searchpage = (req, res, next) => {
 			if (dictEntries) {
         // Filter out duplicate search results
 				let onlyMerged = mergeDuplicates(dictEntries);
+
+				// REACT EXPERIMENT
+				var markup = ReactDOMServer.renderToString(React.createElement(SearchPanel, null));
+
 				res.render('de-nl-searchpage', {
 					dictEntries: onlyMerged,
-					searchTerm: term
+					searchTerm: term,
+					markup: markup // REACT EXPERIMENT
 				})
 			} else {
 				res.render('de-nl-notfound', {

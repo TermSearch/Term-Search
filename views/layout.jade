@@ -17,11 +17,13 @@ block body
                 span.input-group-btn
                   button.btn.btn-primary(type='submit')
                     span.glyphicon.glyphicon-search(aria-hidden='true')
+        
         #results.row
           .col-xs-12.col-sm-10.col-md-8.col-lg-7
             #static-results
               block breadcrumbs
               block results
+            !{markup}
             #fulltext
 
         footer.row
