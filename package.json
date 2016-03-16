@@ -1,11 +1,14 @@
 {
-  "name": "Terminologica",
+  "name": "Term-Search",
   "version": "0.0.2",
-  "description": "Terminology Search Engine",
+  "description": "A Terminology Search Engine",
   "main": "server.js",
   "scripts": {
     "test": "grunt",
-    "start": "nodemon",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "api": "cd ../tmxAPI && nodemon",
+    "start": "npm run api && npm run watch & nodemon",
     "deploy": "git push live"
   },
   "repository": {
