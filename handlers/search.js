@@ -4,13 +4,12 @@ var DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
 
 //
-// REACT EXPERIMENT
+// REACT + COMPONENTS
 //
-var React = require('react');
-var ReactDOMServer = require('react-dom/server');
-var SearchPanel = require('../components/SearchPanel.jsx');
+// var React = require('react');
+// var ReactDOMServer = require('react-dom/server');
+// var SearchPanel = require('../components/SearchPanel.jsx');
 
-// END REACT EXPERIMENT
 
 exports.query = function (req, res) {
 	if (!req.body) return res.sendStatus(400)
@@ -43,13 +42,13 @@ exports.searchpage = (req, res, next) => {
         // Filter out duplicate search results
 				let onlyMerged = mergeDuplicates(dictEntries);
 
-				// REACT EXPERIMENT
-				var markup = ReactDOMServer.renderToString(React.createElement(SearchPanel, null));
+				// Creates a string from the React Component to inject into Jade template
+				// var markup = ReactDOMServer.renderToString(React.createElement(SearchPanel, null));
 
 				res.render('de-nl-searchpage', {
 					dictEntries: onlyMerged,
 					searchTerm: term,
-					markup: markup // REACT EXPERIMENT
+					markup: 'currently disabled' // REACT EXPERIMENT
 				})
 			} else {
 				res.render('de-nl-notfound', {
