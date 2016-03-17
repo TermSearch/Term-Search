@@ -19,7 +19,7 @@ var dictEntrySchema = new Schema({
 	nl: {
 		type: [String]
 	}
-});
+}, {collection: 'dictentry'});
 
 dictEntrySchema.plugin(mongoosePaginate);
 
