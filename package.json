@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vnglst/Terminologica"
+    "url": "https://github.com/vnglst/Term-Search"
   },
   "author": "Koen van Gilst",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vnglst/Terminologica/issues"
+    "url": "https://github.com/vnglst/Term-Search/issues"
   },
-  "homepage": "https://terminologica.eu",
+  "homepage": "https://term-search.nl",
   "dependencies": {
     "body-parser": "^1.14.2",
     "compression": "^1.4.1",
