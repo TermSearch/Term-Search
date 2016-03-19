@@ -1,5 +1,4 @@
 var main = require('../handlers/main');
-// var api = require('../handlers/api');
 var	search = require('../handlers/search');
 var bodyParser = require('body-parser')
 
@@ -18,9 +17,6 @@ module.exports = function(app) {
 
 	// Homepage
 	app.get('/', main.home);
-
-	// // API
-	// app.get('/api/', api.getTranslations);
 
 	// Post search request
 	app.post('/search', urlencodedParser, search.query);
