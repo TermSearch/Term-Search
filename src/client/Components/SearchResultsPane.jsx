@@ -1,5 +1,4 @@
 import React from 'react';
-import SearchResults from './SearchResults.jsx';
 
 var SearchResultsPane = React.createClass({
   render: function() {
@@ -8,11 +7,11 @@ var SearchResultsPane = React.createClass({
         <div className="panel-heading">
           <div className="panel-title search-panel-titel">
             <span className="glyphicon glyphicon-stop"/>
-              Full text search results
+              &nbsp; {this.props.label}
           </div>
         </div>
         <div className="panel-body">
-          <SearchResults data={this.props.data} />
+          {this.props.children}
         </div>
       </div>
     );

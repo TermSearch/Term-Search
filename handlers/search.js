@@ -44,7 +44,6 @@ exports.searchpage = (req, res, next) => {
 
 				// Creates a string from the React Component to inject into Jade template
 				// var markup = ReactDOMServer.renderToString(React.createElement(SearchPanel, null));
-
 				res.render('de-nl-searchpage', {
 					dictEntries: onlyMerged,
 					searchTerm: term,

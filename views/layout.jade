@@ -11,7 +11,7 @@ block body
               a(href="/")
                 img(src='/img/logo-vangilst.jpg' class='logo' alt='Logo Term Search')
           .col-xs-10.col-sm-9.col-md-7.col-lg-6
-            form(action='/search' method='post')
+            form(action='/search' method='post' onSubmit='doSearch()')
               .input-group
                 input.form-control(type='search' id='query' value=searchTerm || '' name='q' placeholder=germanStr || '', style='overflow: hidden; text-overflow: ellipsis; white-space: nowrap')
                 span.input-group-btn
@@ -20,13 +20,13 @@ block body
         
         #results.row
           .col-xs-12.col-sm-10.col-md-8.col-lg-7
-            #static-results
+            #terms
               block breadcrumbs
               block results
             // - This is where the server injects the React Component
             //- !{markup}
             // This is where clients injects Full Text Search Results
-            #fulltext
+            #sentences
 
         footer.row
           .col-xs-12.col-sm-10.col-md-8.col-lg-7
@@ -36,6 +36,4 @@ block body
     
     script(type="text/javascript" src="/js/build.js")
     script(type='text/javascript').
-      var query = document.getElementById('query').value;
-      fulltextSearch(query);
       
