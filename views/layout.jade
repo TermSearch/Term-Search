@@ -25,6 +25,7 @@ block body
               block results
             // - This is where the server injects the React Component
             //- !{markup}
+            // This is where clients injects Full Text Search Results
             #fulltext
 
         footer.row
@@ -33,5 +34,8 @@ block body
     
     include ./includes/analytics.jade
     
-    script(type="text/javascript" src="/js/build/build.js")
+    script(type="text/javascript" src="/js/build.js")
+    script(type='text/javascript').
+      var query = document.getElementById('query').value;
+      fulltextSearch(query);
       
