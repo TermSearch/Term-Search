@@ -1,14 +1,14 @@
 var path = require('path');
 module.exports = {
-  entry: path.join(process.cwd(), 'client-render.js'),
+  entry: path.join(process.cwd(), 'src/client/index.js'),
   output: {
-    path: './public/js/build',
+    path: './public/js/',
     filename: 'build.js'
   },
   module: {
     loaders: [
       {
-        test: /.js$/,
+        test: /.js|jsx$/,
         loader: 'babel'
       }
     ]
