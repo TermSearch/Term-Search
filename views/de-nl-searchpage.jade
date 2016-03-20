@@ -12,18 +12,18 @@ block breadcrumbs
       | Zoekresulaten voor "#{searchTerm}"
   
 block results
-  .panel.panel-default
-    .panel-heading
-      .panel-title.search-panel-titel
-        span.glyphicon.glyphicon-stop 
-        |  Voor "#{searchTerm}" zijn #{dictEntries.length} Duits-Nederlandse vertalingen gevonden. 
-    .panel-body
-      each dictEntry in dictEntries
-        .searchResult
-          .resultBox
-            a.resultLink(href='/duits-nederlands/#{dictEntry.deUrl}')
-              span.searchDefinition
-                a.searchTerm(href='/duits-nederlands/#{dictEntry.deUrl}') #{dictEntry.de}
-                each nl, index in dictEntry.nl
-                  b  #{index+1}  
-                  span #{nl} 
+  //- .panel.panel-default
+  //-   .panel-heading
+  //-     .panel-title.search-panel-titel
+  //-       span.glyphicon.glyphicon-stop 
+  //-       |  Voor "#{searchTerm}" zijn #{dictEntries.length} Duits-Nederlandse vertalingen gevonden. 
+  //-   .panel-body
+  //-     each dictEntry in dictEntries
+  //-       .searchResult
+  //-         .resultBox
+  //-           a.resultLink(href='/duits-nederlands/#{dictEntry.deUrl}')
+  //-             span.searchDefinition
+  //-               a.searchTerm(href='/duits-nederlands/#{dictEntry.deUrl}') #{dictEntry.de}
+  //-               each nl, index in dictEntry.nl
+  //-                 b  #{index+1}  
+  //-                 span #{nl} 
