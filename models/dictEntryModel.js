@@ -29,12 +29,12 @@ var dictEntryModel = function () {
 	// If process env != production, assume development
 	if (process.env.NODE_ENV != 'production') {
 		// activate debugging info for database
-		mongoose.set('debug', true);
+		// mongoose.set('debug', true);
 	}
 
 	// automatically check indexing status database at startup
-	// Maybe turn this off in production?
-	dictEntrySchema.set('autoIndex', true);
+	// Turn this off in production?
+	// dictEntrySchema.set('autoIndex', true);
 
 	// Returns an array of all subjectFields
 	dictEntrySchema.statics.getAllSubjectFields = function () {
