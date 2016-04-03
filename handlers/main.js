@@ -1,4 +1,3 @@
-// var TermEntry = require('../models/termEntryModel');
 var	DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
 
@@ -24,7 +23,6 @@ exports.de_nl_vakgebied_alle = function (req, res) {
 
 // Finds the first 1000 terms for a certain subjectField
 // And renders them to the page /duits-nederlands/vakgebied/xxx
-
 exports.de_nl_vakgebied = function (req, res, next) {
 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
 	DictEntry.findBySubjectField(subjectFieldStr)
