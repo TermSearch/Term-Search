@@ -19,7 +19,7 @@ var dictEntrySchema = new Schema({
 	nl: {
 		type: [String]
 	}
-}, {collection: 'dictentry'});
+}, {collection: 'dictentries'}); // use plural for collection, default for Mongoose
 
 dictEntrySchema.plugin(mongoosePaginate);
 
