@@ -1,6 +1,6 @@
 {
 	"db": {
-		"url": "mongodb://localhost/termworld"
+		"url": "mongodb://localhost/termsearch"
 	},
 	"app": {
 		"defaultPort": 3000
