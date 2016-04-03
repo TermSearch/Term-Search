@@ -2,7 +2,5 @@
 	"ignore": [
       ".git",
       "node_modules/**/node_modules",
-      "src/client",
-			"public/js/build.js"
     ]
 }
