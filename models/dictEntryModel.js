@@ -102,7 +102,6 @@ var dictEntryModel = function () {
 		var resultsPerPage = 100;
 		var pageNumber = number;
 		return this.find({})
-			// .sort('de')
 			.skip(resultsPerPage * pageNumber)
 			.limit(resultsPerPage)
 			.exec()
