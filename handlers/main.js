@@ -26,7 +26,6 @@ exports.de_nl_vakgebied_alle = function (req, res) {
 exports.de_nl_vakgebied = function (req, res, next) {
 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
 	var isSubjectField = (SubjectField.toNr(subjectFieldStr) > -1);
-
 	DictEntry.findBySubjectField(subjectFieldStr)
 		.then(function (dictEntries) {
 			if (dictEntries || isSubjectField) {
@@ -96,6 +95,12 @@ exports.de_nl_translation = function (req, res, next) {
 		.then(null, next);
 };
 
+
+// Redirect old id page to new
+exports.id_redirect = function (req, res, next) {
+	var id = req.params.id;
+	res.redirect('/id/'+id);
+};
 
 // Displays detailed information about dictEntry
 // Including a link to the IATE page of the term

@@ -34,6 +34,7 @@ module.exports = function(app) {
 	app.get('/duits-nederlands/', main.de_nl_alle);
 	app.get('/duits-nederlands/pagina/:pageNumber', main.de_nl_page);
 	app.get('/duits-nederlands/:term', main.de_nl_translation);
+	app.get('/duits-nederlands/id/:id', main.id_redirect);	// old id page
 	app.get('/id/:id', main.de_nl_id);
 
 	// Handle 404
