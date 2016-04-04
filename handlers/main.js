@@ -1,8 +1,8 @@
 var	DictEntry = require('../models/dictEntryModel');
+var SubjectField = require('../models/subjectFieldModel');
 var url = require('../lib/url');
 
 exports.home = function (req, res) {
-
 	res.render('home');
 };
 
@@ -25,11 +25,13 @@ exports.de_nl_vakgebied_alle = function (req, res) {
 // And renders them to the page /duits-nederlands/vakgebied/xxx
 exports.de_nl_vakgebied = function (req, res, next) {
 	var subjectFieldStr = url.decodeSlug(req.params.vakgebied);
+	var isSubjectField = (SubjectField.toNr(subjectFieldStr) > -1);
+
 	DictEntry.findBySubjectField(subjectFieldStr)
 		.then(function (dictEntries) {
-			if (dictEntries) {
+			if (dictEntries || isSubjectField) {
 				res.render('de-nl-vakgebied', {
-					dictEntries: dictEntries,
+					dictEntries: dictEntries || [],
 					subjectFieldStr: subjectFieldStr
 				});
 			} else next(); // no more pages found, fallback to 404, not found
