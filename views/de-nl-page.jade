@@ -18,8 +18,9 @@ block results
   p In de terminologische databank van de EU (IATE) zijn de volgende Duitse termen met een Nederlandse vertaling gevonden. Klik op de Duitse term om naar de Nederlandse vertaling te gaan.
   
   ul.pager
-    li.previous
-      a(href="../pagina/" + (requestedPageNr - 1)) ← Vorige pagina
+    if (requestedPageNr < 0)
+      li.previous
+        a(href="../pagina/" + (requestedPageNr - 1)) ← Vorige pagina
     li.next
       a(href="../pagina/" + (requestedPageNr + 1)) Volgende pagina →
     
