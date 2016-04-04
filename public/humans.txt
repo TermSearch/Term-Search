@@ -1,6 +1,6 @@
 /* TEAM */
 Development: Koen van Gilst
-Contact: terms [at] vangilst.eu
+Contact: info [at] term-search.nl
 Twitter: @vnglst
 From: Utrecht, The Netherlands
 
@@ -8,8 +8,7 @@ From: Utrecht, The Netherlands
 Terminology: EU, Microsoft
 
 /* SITE */
-Last update: 2015/04/12
 Language: Dutch
 Doctype: HTML5
-Components: Node, Express, Jade, AngularJS
+Components: Node, Express, Jade, ReactJS, Redux
 IDE: Atom
