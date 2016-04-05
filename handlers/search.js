@@ -22,9 +22,7 @@ const mergeDuplicates = (dictEntries) => {
 };
 
 exports.searchClient = (req, res, next) => {
-	res.render('search-client', {
-		manifest: manifest
-	});
+	res.render('search-client');
 }
 
 exports.searchpage = (req, res, next) => {
