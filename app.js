@@ -5,6 +5,9 @@ var	compression = require('compression');
 var	app = express();
 var config = require('./config/config.json');
 
+// manifest from webpack for web client
+app.locals.manifest = require('./public/js/manifest.json');
+
 app.set('port', process.env.PORT || config.app.defaultPort);
 
 mongoose.connect(config.db.url);

@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "grunt",
-    "start": "node server.js"
+    "start": "node server.js",
+    "remote-clean": "ssh caddy@178.62.196.36 'rm /opt/term.world/public/dist/*'",
+    "copy": "scp -r ./public/dist caddy@178.62.196.36:/opt/term.world/public",
+    "deploy": "npm run remote-clean && npm run copy"
   },
   "repository": {
     "type": "git",

@@ -2,6 +2,7 @@
 
 var DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
+var manifest =
 
 // Helper function
 // TODO: Move to lib
@@ -22,7 +23,9 @@ const mergeDuplicates = (dictEntries) => {
 };
 
 exports.searchClient = (req, res, next) => {
-	res.render('search-client');
+	res.render('search-client', {
+		manifest: manifest
+	});
 }
 
 exports.searchpage = (req, res, next) => {

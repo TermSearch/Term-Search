@@ -7,6 +7,8 @@ html(lang='nl')
     link(rel="author" href="/humans.txt")
     link(href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css' rel='stylesheet')
     
+    link(href='/dist/'+locals.manifest['app.css'] rel='stylesheet')
+  
     //- Load styles inline for PageSpeed
     include includes/style.html
 
@@ -18,4 +20,12 @@ html(lang='nl')
     <!-- [endif]-->
     //- Title, different for every view
     block title
+    
   block body
+  
+  //- Front end client
+  //- Loads JS files on every page
+  //- Renders only when web client is started
+  script(src='/dist/'+locals.manifest['vendor.js'])
+  script(src='/dist/'+locals.manifest['app.js'])
+  
