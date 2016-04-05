@@ -2,7 +2,6 @@
 
 var DictEntry = require('../models/dictEntryModel');
 var url = require('../lib/url');
-var manifest =
 
 // Helper function
 // TODO: Move to lib
