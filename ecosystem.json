@@ -31,7 +31,7 @@
       ref  : "origin/master",
       repo : "https://github.com/TermSearch/Term-Search.git",
       path : "/opt/term-search",
-      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production --watch"
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
