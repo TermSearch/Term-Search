@@ -6,7 +6,7 @@
   "scripts": {
     "test": "grunt",
     "start": "node server.js",
-    "deploy": "git push live"
+    "deploy": "pm2 deploy production"
   },
   "repository": {
     "type": "git",
