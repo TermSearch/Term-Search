@@ -1,0 +1,37 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+
+    // Static web server term-search
+    {
+      name      : "term-search",
+      script    : "server.js",
+      env: {
+        COMMON_VARIABLE: "true"
+      },
+      env_production : {
+        NODE_ENV: "production",
+        HOME: "/opt/term-search/",
+        PORT: "1996"
+      }
+    }
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  deploy : {
+    production : {
+      user : "caddy",
+      host : "178.62.196.36",
+      ref  : "origin/master",
+      repo : "https://github.com/TermSearch/Term-Search.git",
+      path : "/opt/term-search",
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
