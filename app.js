@@ -5,9 +5,6 @@ var	compression = require('compression');
 var	app = express();
 var config = require('./config/config.json');
 
-// manifest from webpack for web client
-app.locals.manifest = require('./public/dist/manifest.json');
-
 app.set('port', process.env.PORT || config.app.defaultPort);
 
 mongoose.connect(config.db.url);
@@ -31,12 +28,18 @@ case 'development':
 	app.use(require('morgan')('dev'));
 	// Make sure html is human readable
 	app.locals.pretty = true;
+	// manifest from webpack for web client
+	app.locals.clienturl = '/dist/';
+	app.locals.manifest = require('./public/dist/manifest.json');
 	break;
 case 'production':
 	// module 'express-logger' supports daily log rotation
 	app.use(require('express-logger')({
 		path: __dirname + '/log/requests.log'
 	}));
+	// manifest from webpack for web client
+	app.locals.clienturl = 'https://client.term-search.nl/';
+	app.locals.manifest = require('/opt/term-search-client/manifest.json');
 	break;
 }
 
