@@ -29,8 +29,8 @@ case 'development':
 	// Make sure html is human readable
 	app.locals.pretty = true;
 	// manifest from webpack for web client
-	app.locals.clienturl = '/dist/';
-	app.locals.manifest = require('./public/dist/manifest.json');
+	app.locals.clienturl = config.client.dev.url;
+	app.locals.manifest = require(config.client.dev.manifest);
 	break;
 case 'production':
 	// module 'express-logger' supports daily log rotation
@@ -38,8 +38,8 @@ case 'production':
 		path: __dirname + '/log/requests.log'
 	}));
 	// manifest from webpack for web client
-	app.locals.clienturl = 'https://client.term-search.nl/';
-	app.locals.manifest = require('/opt/term-search-client/manifest.json');
+	app.locals.clienturl = config.client.prod.url;
+	app.locals.manifest = require(config.client.prod.manifest);
 	break;
 }
 

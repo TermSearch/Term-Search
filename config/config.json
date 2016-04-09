@@ -4,5 +4,15 @@
 	},
 	"app": {
 		"defaultPort": 3000
+	},
+	"client": {
+		"dev": {
+			"url": "/dist/",
+			"manifest": "./public/dist/manifest.json"
+		},
+		"prod": {
+			"url": "https://client.term-search.nl/",
+			"manifest": "/opt/term-search-client/manifest.json"
+		}
 	}
 }
