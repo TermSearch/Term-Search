@@ -1,6 +1,6 @@
 var mongoose = require('mongoose'),
 	Schemas = require('./Schemas.js'),
-	SubjectField = require('../models/subjectFieldModel'),
+	SubjectField = require('../lib/subjectField'),
 	url = require('../lib/url');
 
 var resolveSubjectFields = function (dictEntries) {

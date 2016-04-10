@@ -1,12 +1,12 @@
-var sf = require('../models/subjectFieldModel.js');
+var sf = require('../lib/subjectField');
 var	url = require('../lib/url');
 
 var expect = require('chai').expect;
 
 //
-// subjectFieldModel
+// subjectField
 //
-suite('Unit testing SubjectFieldModel', function() {
+suite('Unit testing SubjectField', function() {
 	test('testing toStrArr(416005 416008)', function() {
 		expect(sf.toStrArr([416005, 416008]) === ['Organisation of elections', 'Voting method']);
 	});

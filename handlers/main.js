@@ -1,5 +1,5 @@
 var	DictEntry = require('../models/dictEntryModel');
-var SubjectField = require('../models/subjectFieldModel');
+var SubjectField = require('../lib/subjectField');
 var url = require('../lib/url');
 
 exports.home = function (req, res) {
