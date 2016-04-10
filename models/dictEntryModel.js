@@ -26,15 +26,13 @@ var resolveSubjectFields = function (dictEntries) {
 var dictEntryModel = function () {
 	var dictEntrySchema = Schemas.dictEntrySchema;
 
-	// If process env != production, assume development
-	if (process.env.NODE_ENV != 'production') {
+	// If process env is not production, assume development
+	if (process.env.NODE_ENV !== 'development') {
 		// activate debugging info for database
 		// mongoose.set('debug', true);
+		// automatically check indexing status database at startup
+		// dictEntrySchema.set('autoIndex', true);
 	}
-
-	// automatically check indexing status database at startup
-	// Turn this off in production?
-	// dictEntrySchema.set('autoIndex', true);
 
 	// Returns an array of all subjectFields
 	dictEntrySchema.statics.getAllSubjectFields = function () {
