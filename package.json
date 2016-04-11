@@ -21,8 +21,10 @@
   "dependencies": {
     "body-parser": "^1.14.2",
     "compression": "^1.4.1",
+    "es6-promise": "^3.1.2",
     "express": "^4.13.3",
     "express-logger": "0.0.3",
+    "isomorphic-fetch": "^2.2.1",
     "jade": "^1.9.2",
     "jstransformer-markdown": "^1.1.0",
     "kerberos": "0.0.19",

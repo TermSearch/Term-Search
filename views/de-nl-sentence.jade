@@ -1,0 +1,21 @@
+extends layout
+
+block title
+  title Duits Nederlandse voorbeeldzin voor | Term Search
+  //- meta(name='description', content='De Duits-Nederlandse vertaling van het Duitse woord #{germanStr} is #{dictEntries[0].nl[0]}. Deze vertaling is gebaseerd op gegevens verstrekt door de EU.')
+
+block breadcrumbs
+  ul.breadcrumb
+    li
+      a(href="/") Home
+    li
+      a(href="/duits-nederlands") Duits-Nederlands
+    li.active
+      | voorbeeldzin
+
+block results
+  h1 Voorbeeld
+  - var resp = JSON.stringify(sentences, null, 4)
+  p #{resp}
+
+  

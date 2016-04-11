@@ -1,4 +1,5 @@
 var	DictEntry = require('../models/dictEntryModel');
+var Translations = require('../adapters/Translations');
 var SubjectField = require('../lib/subjectField');
 var url = require('../lib/url');
 
@@ -112,6 +113,18 @@ exports.de_nl_id = function (req, res, next) {
 					dictEntry: dictEntries[0] // only 1 termEntry in array
 				});
 			} else next(); // no entry found, fallback to 404, not found
+		})
+		.then(null, next);
+};
+
+//
+//
+exports.de_nl_sentence = function (req, res, next) {
+	Translations.textSearch()
+		.then(function(sentences) {
+			res.render('de-nl-sentence', {
+				sentences: sentences
+			});
 		})
 		.then(null, next);
 };
