@@ -1,5 +1,5 @@
 {
-  "app.css": "app.f274289f0fc6393db73ed95c1e158221.css",
-  "app.js": "app.1c92a1bd9ee4fd08d8be.js",
-  "vendor.js": "vendor.f4ff1fd8aa53d93ca571.js"
+  "app.js": "app.js",
+  "manifest.js": "manifest.js",
+  "vendor.js": "vendor.js"
 }
