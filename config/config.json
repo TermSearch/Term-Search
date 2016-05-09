@@ -11,7 +11,7 @@
 			"manifest": "./public/client/manifest.json"
 		},
 		"prod": {
-			"url": "client",
+			"url": "/client/",
 			"manifest": "./public/client/manifest.json"
 		}
 	}
