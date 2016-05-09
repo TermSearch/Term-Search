@@ -11,8 +11,8 @@
 			"manifest": "./public/client/manifest.json"
 		},
 		"prod": {
-			"url": "https://client.term-search.nl/",
-			"manifest": "/opt/term-search-client/manifest.json"
+			"url": "client",
+			"manifest": "./public/client/manifest.json"
 		}
 	}
 }
