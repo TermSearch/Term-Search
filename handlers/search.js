@@ -5,11 +5,12 @@ var url = require('../lib/url');
 
 // Helper function
 // TODO: Move to lib
+// TODO: Use same function for webclient as well
 const mergeDuplicates = (dictEntries) => {
 	const onlyUniques = [];
 	dictEntries.forEach((entry, i) => {
 		let unique = true;
-		if (onlyUniques.forEach((uniqueEntry) => {
+		if (onlyUniques.forEach((uniqueEntry) => { // FIXME Why if here? See search.js webclient
 				if (uniqueEntry.de === entry.de) {
 					unique = false;
 					// add Dutch translations to existing uniqueEntry

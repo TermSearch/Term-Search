@@ -24,10 +24,7 @@ module.exports = function(app) {
 	// Search page
 	app.get('/search', urlencodedParser, search.searchpage);
 
-	// Search page frontend
-	app.get('/search-client', search.searchClient);
-
-	// Footer links
+		// Footer links
 	app.get('/colofon', main.colofon);
 	app.get('/woordenboeken', main.woordenboeken);
 

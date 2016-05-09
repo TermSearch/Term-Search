@@ -20,6 +20,7 @@ app.set('view engine', 'jade');
 // Use compression for responses
 app.use(compression());
 
+// Static content
 app.use(express.static(__dirname + '/public'));
 
 switch (app.get('env')) {
