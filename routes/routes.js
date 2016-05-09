@@ -1,11 +1,11 @@
 var main = require('../handlers/main');
 var	search = require('../handlers/search');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 
 // create application/json parser
-var jsonParser = bodyParser.json()
+var jsonParser = bodyParser.json();
 // create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 module.exports = function(app) {
 

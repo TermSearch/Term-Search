@@ -25,6 +25,6 @@ html(lang='nl')
   //- Front end client
   //- Loads JS files on every page
   //- Renders only when web client is started
-  //- script(src=locals.clienturl+locals.manifest['manifest.js'])
-  //- script(src=locals.clienturl+locals.manifest['app.js'])
-  //- script(src=locals.clienturl+locals.manifest['vendor.js'])
+  script(src=locals.clienturl+locals.manifest['manifest.js'])
+  script(src=locals.clienturl+locals.manifest['vendor.js'])
+  script(src=locals.clienturl+locals.manifest['app.js'])

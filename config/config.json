@@ -7,8 +7,8 @@
 	},
 	"client": {
 		"dev": {
-			"url": "/dist/",
-			"manifest": "./public/dist/manifest.json"
+			"url": "/client/",
+			"manifest": "./public/client/manifest.json"
 		},
 		"prod": {
 			"url": "https://client.term-search.nl/",

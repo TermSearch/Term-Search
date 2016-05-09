@@ -24,37 +24,6 @@ const mergeDuplicates = (dictEntries) => {
 
 exports.searchClient = (req, res, next) => {
 	res.render('search-client');
-}
-
-exports.searchpage = (req, res, next) => {
-	const term = req.query.term;
-	const regexQuery = new RegExp('^' + term, 'i');
-	DictEntry.findTranslationByRegex(regexQuery)
-		.then(function (dictEntries) {
-			// if dictEntries found, render jade file
-			if (dictEntries) {
-        // Filter out duplicate search results
-				let onlyMerged = mergeDuplicates(dictEntries);
-
-				res.render('de-nl-searchpage', {
-					dictEntries: onlyMerged,
-					searchTerm: term
-				})
-			} else {
-				res.render('de-nl-notfound', {
-					germanStr: term,
-					searchTerm: term
-				});
-			}
-		})
-    // Pass error on to next()
-    .then(null, next);
-}
-
-// Handles search query from submit post
-exports.query = function (req, res) {
-	if (!req.body) return res.sendStatus(400)
-	res.redirect('/search?term=' + req.body.q);
 };
 
 exports.searchpage = (req, res, next) => {
@@ -70,7 +39,7 @@ exports.searchpage = (req, res, next) => {
 				res.render('de-nl-searchpage', {
 					dictEntries: onlyMerged,
 					searchTerm: term
-				})
+				});
 			} else {
 				res.render('de-nl-notfound', {
 					germanStr: term,
@@ -80,7 +49,38 @@ exports.searchpage = (req, res, next) => {
 		})
     // Pass error on to next()
     .then(null, next);
-}
+};
+
+// Handles search query from submit post
+exports.query = function (req, res) {
+	if (!req.body) return res.sendStatus(400);
+	res.redirect('/search?term=' + req.body.q); // TODO: Change search -> client
+};
+
+exports.searchpage = (req, res, next) => {
+	const term = req.query.term;
+	const regexQuery = new RegExp('^' + term, 'i');
+	DictEntry.findTranslationByRegex(regexQuery)
+		.then(function (dictEntries) {
+			// if dictEntries found, render jade file
+			if (dictEntries) {
+        // Filter out duplicate search results
+				let onlyMerged = mergeDuplicates(dictEntries);
+
+				res.render('de-nl-searchpage', {
+					dictEntries: onlyMerged,
+					searchTerm: term
+				});
+			} else {
+				res.render('de-nl-notfound', {
+					germanStr: term,
+					searchTerm: term
+				});
+			}
+		})
+    // Pass error on to next()
+    .then(null, next);
+};
 
 // For tests
 exports.mergeDuplicates = mergeDuplicates;
