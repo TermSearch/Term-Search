@@ -22,6 +22,7 @@ app.use(compression());
 
 // Static content
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/client/images'));
 
 switch (app.get('env')) {
 case 'development':
