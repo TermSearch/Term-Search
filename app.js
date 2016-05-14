@@ -32,7 +32,7 @@ case 'development':
 	app.locals.pretty = true;
 	// manifest from webpack for web client
 	app.locals.clienturl = config.client.dev.url;
-	app.locals.manifest = require(config.client.dev.manifest);
+	app.locals.manifest = require(config.client.dev.path + config.client.dev.manifest);
 	break;
 case 'production':
 	// module 'express-logger' supports daily log rotation
@@ -40,8 +40,8 @@ case 'production':
 		path: __dirname + '/log/requests.log'
 	}));
 	// manifest from webpack for web client
-	app.locals.clienturl = config.client.prod.url;
-	app.locals.manifest = require(config.client.prod.manifest);
+	app.locals.clienturl = config.client.prod.path;
+	app.locals.manifest = require(config.client.prod.path + config.client.prod.manifest);
 	break;
 }
 

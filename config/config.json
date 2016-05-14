@@ -7,12 +7,14 @@
 	},
 	"client": {
 		"dev": {
-			"url": "/client/",
-			"manifest": "./public/client/manifest.json"
+			"path": "/Users/vnglst/Websites/LIVE/term-search/webclient/dist/",
+			"url": "http://localhost:8081/",
+			"manifest": "manifest.json"
 		},
 		"prod": {
-			"url": "/client/",
-			"manifest": "./public/client/manifest.json"
+			"path": "/opt/term-search-client/",
+			"url": "https://client.term-search.nl/",
+			"manifest": "manifest.json"
 		}
 	}
 }
