@@ -40,7 +40,7 @@ case 'production':
 		path: __dirname + '/log/requests.log'
 	}));
 	// manifest from webpack for web client
-	app.locals.clienturl = config.client.prod.path;
+	app.locals.clienturl = config.client.prod.url;
 	app.locals.manifest = require(config.client.prod.path + config.client.prod.manifest);
 	break;
 }
