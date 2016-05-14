@@ -25,24 +25,31 @@ app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
 switch (app.get('env')) {
+
 case 'development':
+
 	// compact, colorful dev logging
 	app.use(require('morgan')('dev'));
 	// Make sure html is human readable
 	app.locals.pretty = true;
+	
 	// manifest from webpack for web client
 	app.locals.clienturl = config.client.dev.url;
 	app.locals.manifest = require(config.client.dev.path + config.client.dev.manifest);
 	break;
+
 case 'production':
+
 	// module 'express-logger' supports daily log rotation
 	app.use(require('express-logger')({
 		path: __dirname + '/log/requests.log'
 	}));
+
 	// manifest from webpack for web client
 	app.locals.clienturl = config.client.prod.url;
 	app.locals.manifest = require(config.client.prod.path + config.client.prod.manifest);
 	break;
+
 }
 
 app.use(function (req, res, next) {
