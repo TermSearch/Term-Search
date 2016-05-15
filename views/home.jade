@@ -6,7 +6,7 @@ block body
       .headerLP
         .logoLP
           a(href="/")
-            img.logoImageLP(src='/img/logo-vangilst.jpg' alt='Logo Term Search')
+            img.logoImageLP(src=locals.clienturl+locals.manifest['assets/images/logo.png'] alt='Logo Term Search')
         .inputLP
           form(action='/search' method='post')
             .input-group
