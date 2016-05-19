@@ -22,9 +22,9 @@ const mergeDuplicates = (dictEntries) => {
 	return onlyUniques;
 };
 
-exports.searchClient = (req, res, next) => {
-	res.render('search-client');
-};
+// exports.searchClient = (req, res, next) => {
+// 	res.render('search-client');
+// };
 
 exports.searchpage = (req, res, next) => {
 	const term = req.query.term;
@@ -54,7 +54,7 @@ exports.searchpage = (req, res, next) => {
 // Handles search query from submit post
 exports.query = function (req, res) {
 	if (!req.body) return res.sendStatus(400);
-	res.redirect('/search?term=' + req.body.q); // TODO: Change search -> client
+	res.redirect(req.app.locals.clienturl + '?term=' + req.body.q);
 };
 
 exports.searchpage = (req, res, next) => {

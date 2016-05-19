@@ -2,8 +2,8 @@ var express = require('express');
 var	morgan = require('morgan');
 var	mongoose = require('mongoose');
 var	compression = require('compression');
-var	app = express();
 var config = require('./config/config.json');
+var app = express();
 
 app.set('port', process.env.PORT || config.app.defaultPort);
 
@@ -32,7 +32,7 @@ case 'development':
 	app.use(require('morgan')('dev'));
 	// Make sure html is human readable
 	app.locals.pretty = true;
-	
+
 	// manifest from webpack for web client
 	app.locals.clienturl = config.client.dev.url;
 	app.locals.manifest = require(config.client.dev.path + config.client.dev.manifest);
