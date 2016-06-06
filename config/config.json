@@ -7,7 +7,7 @@
 	},
 	"client": {
 		"dev": {
-			"path": "/Users/vnglst/Websites/LIVE/term-search/webclient/dist/",
+			"path": "../webclient/dist/",
 			"url": "http://localhost:8081/",
 			"manifest": "manifest.json"
 		},
