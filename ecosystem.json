@@ -1,10 +1,5 @@
 {
-  /**
-   * Application configuration section
-   * http://pm2.keymetrics.io/docs/usage/application-declaration/
-   */
   apps : [
-
     // Static web server term-search
     {
       name      : "term-search",
@@ -19,11 +14,6 @@
       }
     }
   ],
-
-  /**
-   * Deployment section
-   * http://pm2.keymetrics.io/docs/usage/deployment/
-   */
   deploy : {
     production : {
       user : "caddy",
